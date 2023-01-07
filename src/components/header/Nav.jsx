@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
 
-function Nav({ toggleMenu }) {
+function Nav({ toggleMenu, removeActiveLink }) {
 	const handleOnClick = (e) => {
 		toggleMenu()
 
-		const oldActive = document.querySelector('header nav a.active')
-
-		oldActive ? oldActive.classList.remove('active') : ''
+		removeActiveLink()
 		e.target.classList.add('active')
 
 	}

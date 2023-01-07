@@ -6,15 +6,19 @@ import { useState } from "react";
 
 function Header() {
 	const [showMenu, setShowMenu] = useState(false)
-	const toggleMenu = ()=>{
+	const toggleMenu = () => {
 		setShowMenu(!showMenu)
+	}
+	const removeActiveLink = () => {
+		const oldActive = document.querySelector('header nav a.active')
+		oldActive ? oldActive.classList.remove('active') : ''
 	}
 	return (
 		<>
 			<header className={`p-fixed w-100 ${showMenu ? 'show-menu' : ''}`}>
 				<div className="container d-flex align-center jc-between flex-column-md">
-					<Logo />
-					<Nav toggleMenu={toggleMenu}/>
+					<Logo removeActiveLink={removeActiveLink}  />
+					<Nav toggleMenu={toggleMenu} removeActiveLink={removeActiveLink} />
 					<ToggleTheme />
 					<SettingTheme />
 				</div>
