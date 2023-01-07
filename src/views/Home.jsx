@@ -4,6 +4,7 @@ import Projects from '../sections/Projects'
 import Experience from '../sections/Experience'
 import Certificates from '../sections/Certificates'
 import Timeline from '../sections/Timeline'
+import { Outlet } from 'react-router-dom'
 
 function Home() {
 	return <>
@@ -13,6 +14,7 @@ function Home() {
 		<Experience/>
 		<Certificates/>
 		<Timeline/>
+		<Outlet/>
 	</>;
 }
 

@@ -1,13 +1,13 @@
 import { useNavigate } from "react-router-dom";
 
-function Modal() {
+function ModalProject() {
 	const navigate = useNavigate()
 	return (
 		<div>
-			Modal
+			ModalProject
 			<button onClick={() => navigate(-1)}>← Back</button>
 		</div>
 	);
 }
 
-export default Modal;
+export default ModalProject;
