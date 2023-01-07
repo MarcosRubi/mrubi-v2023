@@ -1,0 +1,19 @@
+[
+	{
+		"id": 1,
+		"title": "Mi proyecto",
+		"description": "Una descripción del proyecto",
+		"technologies": ["HTML", "CSS", "JavaScript"],
+		"startDate": "2022-01-01",
+		"endDate": "2022-01-31",
+		"learning": "He aprendido mucho trabajando en este proyecto",
+		"difficulties": "La mayor dificultad ha sido integrar la API de tal servicio",
+		"urlDemo": "https://mi-proyecto.com",
+		"urlRepo": "https://github.com/mi-usuario/mi-proyecto",
+		"routeImages": {
+			"preview": "rutaimagen/preview.jpg",
+			"mobileDesign": "rutaimagen/mobiledesign.jpg",
+			"desktopDesign": "rutaimagen/desktopdesign.jpg"
+		}
+	}
+]
