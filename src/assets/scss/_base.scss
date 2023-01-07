@@ -26,6 +26,10 @@ button{
 	outline: none;
 	cursor: pointer;
 }
+svg{
+	width: 32px;
+	height: 32px;
+}
 
 .container{
 	width: 90%;
@@ -57,9 +61,6 @@ button{
 .w-100{
 	width: 100%;
 }
-.p-absolute{
-	position: absolute;
-}
 .btn{
 	padding: 1rem 1.25rem;
 	border-radius: .25rem;
@@ -81,10 +82,23 @@ button{
 .p-fixed{
 	position: fixed;
 }
+.p-relative{
+	position: relative;
+}
+.p-absolute{
+	position: absolute;
+}
 
 
 @media (min-width:768px) {
 	.flex-column-sm{
 		flex-direction: initial;
+	}
+	.flex-column-md{
+		flex-direction: column;
+	}
+	section,
+	footer{
+		margin-left: 8rem;
 	}
 }

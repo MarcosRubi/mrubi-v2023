@@ -12,11 +12,11 @@ function Header() {
 	return (
 		<>
 			<header className={`p-fixed w-100 ${showMenu ? 'show-menu' : ''}`}>
-				<div className="container d-flex align-center jc-between">
+				<div className="container d-flex align-center jc-between flex-column-md">
 					<Logo />
+					<Nav toggleMenu={toggleMenu}/>
 					<ToggleTheme />
 					<SettingTheme />
-					<Nav toggleMenu={toggleMenu}/>
 				</div>
 			</header>
 		</>

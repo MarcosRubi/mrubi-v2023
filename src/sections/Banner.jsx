@@ -1,5 +1,5 @@
 function Banner() {
-	return <div>Banner</div>;
+	return <section>Banner</section>;
 }
 
 export default Banner;

@@ -1,11 +1,11 @@
 import { Link, Outlet } from "react-router-dom";
 
 function ProjectView() {
-	return <>
+	return <section>
 		<div>Datos del proyecto</div>
 		<Link to={'imagenes'}>Ver imagenes</Link>
-		<Outlet/>
-	</>;
+		<Outlet />
+	</section>;
 }
 
 export default ProjectView;

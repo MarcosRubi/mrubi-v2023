@@ -1,8 +1,8 @@
 header {
 	padding: 1rem 0;
-	background-color: red;
+	background-color: green;
 	left: 0;
-	&.show-menu .menu__content{
+	&.show-menu .menu__content {
 		top: 0;
 	}
 }
@@ -20,14 +20,17 @@ header {
 		width: 32px;
 		cursor: pointer;
 	}
+	&__hamburguer {
+		order: 5;
+	}
 	&__close {
 		height: 32px;
 		&:hover {
 			.line:first-child {
-				animation: menuCloseLine1 .75s ease-in-out;
+				animation: menuCloseLine1 0.75s ease-in-out;
 			}
 			.line:last-child {
-				animation: menuCloseLine2 .75s ease-in-out;
+				animation: menuCloseLine2 0.75s ease-in-out;
 				animation-delay: 0.1s;
 			}
 		}
@@ -51,7 +54,8 @@ header {
 		width: 100vw;
 		padding: 1rem 0;
 		color: var(--text-color);
-		transition: top .75s ease-in-out;
+		transition: top 0.75s ease-in-out;
+		z-index: 999;
 		nav {
 			margin-top: 1rem;
 			a {
@@ -62,11 +66,51 @@ header {
 	}
 	&__footer {
 		bottom: 1rem;
-		.btn {
-			margin-right: 1rem;
-		}
-		.social-list a{
+		.social-list a {
 			padding: 1rem 0.35rem;
+		}
+	}
+}
+.setting {
+	.btn {
+		padding: 0.75rem 1rem;
+		border: none;
+		color: var(--text-color);
+	}
+}
+.menu {
+	&__preset-colors {
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%);
+		color: #fff;
+		background: #555;
+		padding: 10px;
+		border-radius: 0.25rem;
+		min-width: 10rem;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 500ms;
+		&.show {
+			top: 100%;
+			opacity: 1;
+			visibility: visible;
+		}
+		li {
+			display: block;
+			float: left;
+			margin-bottom: 10px;
+			cursor: pointer;
+		}
+		span {
+			width: 50%;
+			height: 24px;
+			float: left;
+			zoom: 1;
+			border-radius: 2px 0px 0px 2px;
+		}
+		p {
+			margin-bottom: 1rem;
 		}
 	}
 }
@@ -102,14 +146,40 @@ header {
 	}
 }
 
-@media (min-width:768px) {
-	.menu__content{
-		top: 0;
-		left: -100vw;
-		transition: left .75s ease-in-out;
+@media (min-width: 768px) {
+	header {
+		height: 100vh;
+		&.w-100 {
+			width: auto;
+		}
+		& > div {
+			height: 100%;
+		}
+		&.show-menu .menu__content {
+			top: 0;
+			left: 0;
+		}
 	}
-	header.show-menu .menu__content{
-		top: 0;
-		left: 0;
+	.menu {
+		&__content {
+			top: 0;
+			left: -100vw;
+			transition: left 0.75s ease-in-out;
+		}
+		&__hamburguer {
+			order: initial;
+			flex-grow: 1;
+		}
+		&__preset-colors {
+			top: -50%;
+			min-width: 10rem;
+			left: 50%;
+			transform: translateY(-50%);
+			&.show {
+				top: -50%;
+				left: 100%;
+				min-width: 11rem;
+			}
+		}
 	}
 }

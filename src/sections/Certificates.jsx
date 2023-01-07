@@ -1,6 +1,6 @@
 
 function Certificates() {
-	return <div>Certificates</div>;
+	return <section>Certificates</section>;
 }
 
 export default Certificates;

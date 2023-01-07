@@ -12,10 +12,12 @@ function Nav({ toggleMenu }) {
 	}
 	return (
 		<>
-			<div className="menu__hamburguer d-flex flex-column jc-center" onClick={toggleMenu}>
-				<span className="line w-100"></span>
-				<span className="line w-100"></span>
-				<span className="line w-100"></span>
+			<div className="menu__hamburguer d-flex align-center">
+				<div className="d-flex flex-column w-100" onClick={toggleMenu}>
+					<span className="line w-100"></span>
+					<span className="line w-100"></span>
+					<span className="line w-100"></span>
+				</div>
 			</div>
 			<div className="menu__content p-fixed d-flex flex-column jc-between">
 				<div className="menu__header container d-flex align-center jc-between">
