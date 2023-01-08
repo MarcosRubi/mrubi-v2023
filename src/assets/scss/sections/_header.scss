@@ -1,7 +1,6 @@
 header {
-	background-color: var(--bg-color);
-	color: var(--text-color);
 	left: 0;
+	z-index: 999;
 	&::before {
 		content: "";
 		position: absolute;
@@ -13,6 +12,9 @@ header {
 	&.show-menu .menu__content {
 		top: 0;
 		visibility: visible;
+	}
+	&.sticky{
+		background-color: var(--bg-footer);
 	}
 }
 .line {
@@ -113,7 +115,7 @@ header {
 		li {
 			display: block;
 			float: left;
-			margin-bottom: 10px;
+			margin-bottom: 7px;
 			cursor: pointer;
 		}
 		p {
@@ -242,6 +244,9 @@ header {
 			top: 0;
 			left: 0;
 		}
+		&.sticky{
+			background-color: transparent;
+		}
 	}
 	.menu {
 		&__content {
@@ -299,7 +304,7 @@ header {
 }
 
 @media (min-width: 1024px) {
-	.btn {
+	header .btn {
 		font-size: 1.5rem;
 	}
 	.menu {

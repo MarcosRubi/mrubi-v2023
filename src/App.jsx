@@ -13,7 +13,7 @@ function App() {
 	return (
 		<>
 			<Header />
-			<main className="main-container">
+			<main>
 				<Routes>
 					<Route path="/" element={<Home />}>
 						<Route path="certificados/:id" element={<ModalCertificate />}></Route>

@@ -1,0 +1,9 @@
+.about-me{
+	svg{
+		transform: translateY(-0.32rem);
+		height: 100%;
+		path{
+			fill: var(--color-link);
+		}
+	}
+}

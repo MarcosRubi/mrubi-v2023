@@ -1,0 +1,73 @@
+.skill-container {
+	align-items: flex-start;
+	& > div {
+		padding: 1rem;
+	}
+	svg {
+		color: var(--color-hover);
+		width: 2.25rem;
+		height: 2.25rem;
+		margin-top: 0.5rem;
+	}
+}
+
+.banner {
+	& > svg{
+		height: 100%;
+		path{
+			fill:var(--color-link);
+		}
+	}
+	.btn {
+		display: inline-flex;
+		svg {
+			margin-right: 0.5rem;
+		}
+	}
+	&__about-me {
+		p {
+			margin: 1rem 0;
+		}
+	}
+	&__skills {
+		margin-top: 4rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.skill-container {
+		& > div {
+			padding: .25rem;
+			margin-top: 1rem;
+			border: 1px solid var(--color-hover);
+			&:first-child{
+				border-radius: .25rem 0 0 .25rem;
+			}
+			&:last-child{
+				border-radius: 0 .25rem .25rem 0;
+			}
+		}
+		svg {
+			margin: 0 1rem;
+		}
+	}
+	.banner{
+		padding: 0;
+		.container{
+			padding-left: 4rem;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.skill-container svg {
+		width: 3.25rem;
+		height: 3.25rem;
+	}
+	.banner {
+		&__about-me p {
+			margin: 1rem 0;
+			font-size: 1.5rem;
+		}
+	}
+}

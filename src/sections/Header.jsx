@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 
 function Header() {
 	const [showMenu, setShowMenu] = useState(false)
+	const [sticky, setSticky] = useState('')
 
 	useEffect(() => {
 		const { matches } = window.matchMedia("(prefers-color-scheme: dark)");
@@ -42,9 +43,21 @@ function Header() {
 		)
 
 	}
+
+
+	// Función optimizada con requestAnimationFrame
+	function optimizedFunction() {
+		requestAnimationFrame(() => {
+			window.scrollY > 0 ? setSticky('sticky') : setSticky('');
+		});
+	}
+
+	// Asignación de la función optimizada al evento scroll
+	window.addEventListener('scroll', optimizedFunction);
+
 	return (
 		<>
-			<header className={`p-fixed w-100 ${showMenu ? 'show-menu' : ''}`}>
+			<header className={`p-fixed w-100 ${showMenu ? 'show-menu' : ''} ${sticky}`}>
 				<div className="container d-flex align-center jc-between flex-column-md">
 					<Logo removeActiveLink={removeActiveLink} />
 					<Nav toggleMenu={toggleMenu} removeActiveLink={removeActiveLink} />
