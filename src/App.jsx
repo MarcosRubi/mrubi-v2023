@@ -13,15 +13,17 @@ function App() {
 	return (
 		<>
 			<Header />
-			<Routes>
-				<Route path="/" element={<Home />}>
-					<Route path="certificados/:id" element={<ModalCertificate/>}></Route>
-				</Route>
-				<Route path="/proyecto/:title" element={<Project />}>
-					<Route path="imagenes" element={<ModalProject />}></Route>
-				</Route>
-				<Route path="*" element={<Error />}></Route>
-			</Routes>
+			<main className="main-container">
+				<Routes>
+					<Route path="/" element={<Home />}>
+						<Route path="certificados/:id" element={<ModalCertificate />}></Route>
+					</Route>
+					<Route path="/proyecto/:title" element={<Project />}>
+						<Route path="imagenes" element={<ModalProject />}></Route>
+					</Route>
+					<Route path="*" element={<Error />}></Route>
+				</Routes>
+			</main>
 			<Footer />
 		</>
 	);

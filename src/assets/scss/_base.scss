@@ -89,6 +89,12 @@ svg{
 	position: absolute;
 }
 
+.main-container{
+	max-width: 1440px;
+    margin: 0 auto;
+	padding-top: 4rem;
+}
+
 
 @media (min-width:768px) {
 	.flex-column-sm{
@@ -97,8 +103,9 @@ svg{
 	.flex-column-md{
 		flex-direction: column;
 	}
-	section,
+	.main-container,
 	footer{
-		margin-left: 8rem;
+		padding-top: 0;
+		margin-left: 4rem;
 	}
 }
