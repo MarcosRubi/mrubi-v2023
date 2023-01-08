@@ -1,5 +1,5 @@
 
-function SettingTheme() {
+function SettingTheme({changeTheme}) {
 	const handleOnClick = ()=>{
 		document.querySelector('.menu__preset-colors').classList.toggle('show')
 	}
@@ -10,17 +10,29 @@ function SettingTheme() {
 		<div className="menu__preset-colors p-absolute w-100">
 			<p>Seleccione el tema</p>
 			<ul>
-				<li className="w-100">
-					<div><span className="theme-color" style={{ background: "#3959a2" }}></span><span className="theme-color" style={{ background: "#a8dbd2" }}></span></div>
+				<li className="w-100" onClick={()=>{changeTheme('default')}}>
+					<div>
+						<span className="theme-color" style={{ background: "#3959a2" }}></span>
+						<span className="theme-color" style={{ background: "#a8dbd2" }}></span>
+					</div>
 				</li>
-				<li className="w-100">
-					<div><span className="theme-color" style={{ background: "#9A9CEA" }}></span><span className="theme-color" style={{ background: "#A2DCEE" }}></span></div>
+				<li className="w-100" onClick={()=>{changeTheme('purple')}}>
+					<div>
+						<span className="theme-color" style={{ background: "#9A9CEA" }}></span>
+						<span className="theme-color" style={{ background: "#A2DCEE" }}></span>
+					</div>
 				</li>
-				<li className="w-100">
-					<div><span className="theme-color" style={{ background: "#78A6C8" }}></span><span className="theme-color" style={{ background: "#E65C4F" }}></span></div>
+				<li className="w-100" onClick={()=>{changeTheme('gray')}}>
+					<div>
+						<span className="theme-color" style={{ background: "#78A6C8" }}></span>
+						<span className="theme-color" style={{ background: "#E65C4F" }}></span>
+					</div>
 				</li>
-				<li className="w-100">
-					<div><span className="theme-color" style={{ background: "#53D2B2" }}></span><span className="theme-color" style={{ background: "#FFE3B3" }}></span></div>
+				<li className="w-100" onClick={()=>{changeTheme('green')}}>
+					<div>
+						<span className="theme-color" style={{ background: "#53D2B2" }}></span>
+						<span className="theme-color" style={{ background: "#FFE3B3" }}></span>
+					</div>
 				</li>
 			</ul>
 		</div>

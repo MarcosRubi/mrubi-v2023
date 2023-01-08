@@ -8,6 +8,7 @@ function Nav({ toggleMenu, removeActiveLink }) {
 		e.target.classList.add('active')
 
 	}
+
 	return (
 		<>
 			<div className="menu__hamburguer d-flex align-center">
