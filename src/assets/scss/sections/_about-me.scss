@@ -19,7 +19,7 @@
 	}
 }
 
-@media (min-width:1024px) {
+@mixin styles-about-me-1024 {
 	.about-me{
 		padding: 4rem 0;
 		&__content {

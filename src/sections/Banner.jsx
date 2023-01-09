@@ -1,9 +1,8 @@
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { TbBrandCss3, TbBrandBootstrap, TbBrandJavascript, TbBrandPhp } from "react-icons/tb";
 import { FaSass, FaReact } from "react-icons/fa";
-import { FiGithub } from "react-icons/fi";
+import { FiGithub, FiDownload } from "react-icons/fi";
 import { SiMysql } from "react-icons/si";
-import { AiOutlineCloudDownload } from "react-icons/ai";
 
 function Banner() {
 	return <section className="banner p-relative text-center align-center">
@@ -15,7 +14,7 @@ function Banner() {
 				<p>Técnico en sistemas y redes, actualmente estoy cursando último año de ingeniería en sistemas y redes.</p>
 				<button className="btn btn-primary  align-center">
 					<span>Descargar CV</span>
-					<AiOutlineCloudDownload />
+					<FiDownload />
 				</button>
 			</div>
 			<div className="banner__skills">

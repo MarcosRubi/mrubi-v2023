@@ -120,6 +120,7 @@ header {
 		}
 		p {
 			margin-bottom: 1rem;
+			font-size: 0.9rem;
 		}
 	}
 	&__toggle {
@@ -222,7 +223,8 @@ header {
 	}
 }
 
-@media (min-width: 768px) {
+
+@mixin styles-header-768{
 	.logo {
 		padding-top: 1em;
 	}
@@ -267,9 +269,6 @@ header {
 			min-width: 10rem;
 			left: 50%;
 			transform: translateY(-55%);
-			p {
-				font-size: 1.15rem;
-			}
 			&.show {
 				top: -50%;
 				left: 105%;
@@ -308,8 +307,7 @@ header {
 		}
 	}
 }
-
-@media (min-width: 1024px) {
+@mixin styles-header-1024 {
 	header .btn {
 		font-size: 1.5rem;
 	}
@@ -322,7 +320,7 @@ header {
 		}
 	}
 }
-@media (min-width: 1200px) {
+@mixin styles-header-1200 {
 	.menu {
 		&__content nav a {
 			font-size: 2rem;

@@ -128,7 +128,7 @@ h1,h2,h3,h4,h5,.btn{
 }
 
 
-@media (min-width:768px) {
+@mixin styles-base-768 {
 	.flex-column-sm{
 		flex-direction: initial;
 	}
@@ -142,10 +142,8 @@ h1,h2,h3,h4,h5,.btn{
 	section .container{
 		padding-left: 4rem;
 	}
-
 }
-
-@media (min-width:1024px) {
+@mixin styles-base-1024 {
 	h1{
 		font-size: 4.25rem;
 	}
@@ -168,8 +166,7 @@ h1,h2,h3,h4,h5,.btn{
 		flex-direction: row;
 	}
 }
-
-@media (min-width:1200px) {
+@mixin styles-base-1200{
 	h1{
 		font-size: 5rem;
 	}
