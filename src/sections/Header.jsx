@@ -46,14 +46,14 @@ function Header() {
 
 
 	// Función optimizada con requestAnimationFrame
-	function optimizedFunction() {
+	function headerSticky() {
 		requestAnimationFrame(() => {
 			window.scrollY > 0 ? setSticky('sticky') : setSticky('');
 		});
 	}
 
 	// Asignación de la función optimizada al evento scroll
-	window.addEventListener('scroll', optimizedFunction);
+	window.addEventListener('scroll', headerSticky);
 
 	return (
 		<>
