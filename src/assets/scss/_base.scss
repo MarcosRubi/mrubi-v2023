@@ -12,6 +12,7 @@ body{
 	font-size: 18px;
 	background-color: var(--bg-color);
 	color: var(--text-color);
+	font-family: "Montserrat", sans-serif;
 }
 li{
 	list-style: none;
@@ -40,6 +41,12 @@ h1{
 }
 h2{
 	font-size: 2.75rem;
+}
+p{
+	line-height: 1.5;
+}
+h1,h2,h3,h4,h5,.btn{
+	font-family: "Telex", sans-serif;
 }
 
 .container{
@@ -107,7 +114,18 @@ h2{
 .p-absolute{
 	position: absolute;
 }
-
+.top-0{
+	top: 0;
+}
+.bottom-0{
+	bottom: 0;
+}
+.h-auto{
+	height: auto;
+}
+.fill-link{
+	fill: var(--color-link);
+}
 
 
 @media (min-width:768px) {
@@ -139,6 +157,15 @@ h2{
 	}
 	p{
 		font-size: 1.35rem;
+	}
+	.p-absolute-lg{
+		position: absolute;
+	}
+	.opacity-25-lg{
+		opacity: .25;
+	}
+	.flex-row-lg{
+		flex-direction: row;
 	}
 }
 

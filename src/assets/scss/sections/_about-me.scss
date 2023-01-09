@@ -1,13 +1,9 @@
 .about-me {
-	svg {
-		transform: translateY(-0.02rem);
-		height: 100%;
-		path {
-			fill: var(--color-link);
-		}
-	}
 	.d-flex{
 		gap:2rem;
+	}
+	svg{
+		z-index: -1;
 	}
 	&__content {
 		h3 {
@@ -22,8 +18,10 @@
 		margin: 0 auto;
 	}
 }
-@media (min-width: 768px) {
-	.about-me {
+
+@media (min-width:1024px) {
+	.about-me{
+		padding: 4rem 0;
 		&__content {
 			max-width: 60%;
 		}

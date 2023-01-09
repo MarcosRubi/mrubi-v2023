@@ -254,6 +254,9 @@ header {
 			left: -100vw;
 			visibility: visible;
 			transition: left 0.75s ease-in-out;
+			nav a{
+				font-size: 1.25rem;
+			}
 		}
 		&__hamburguer {
 			order: initial;
@@ -314,7 +317,7 @@ header {
 		&__content {
 			font-size: 1.5rem;
 			nav a {
-				font-size: 2rem;
+				font-size: 1.75rem;
 			}
 		}
 	}
@@ -322,7 +325,7 @@ header {
 @media (min-width: 1200px) {
 	.menu {
 		&__content nav a {
-			font-size: 2.5rem;
+			font-size: 2rem;
 		}
 	}
 }
