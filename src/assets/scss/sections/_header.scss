@@ -13,7 +13,7 @@ header {
 		top: 0;
 		visibility: visible;
 	}
-	&.sticky{
+	&.sticky {
 		background-color: var(--bg-footer);
 	}
 }
@@ -79,7 +79,7 @@ header {
 		width: 100vw;
 		padding: 1rem 0;
 		visibility: hidden;
-		transition: top 0.75s ease-in-out, visibility .75s linear;
+		transition: top 0.75s ease-in-out, visibility 0.75s linear;
 		z-index: 999;
 		nav {
 			margin-top: 1rem;
@@ -178,7 +178,7 @@ header {
 			left: -50%;
 			top: 150%;
 			cursor: pointer;
-			&.hide{
+			&.hide {
 				visibility: hidden;
 			}
 		}
@@ -244,7 +244,7 @@ header {
 			top: 0;
 			left: 0;
 		}
-		&.sticky{
+		&.sticky {
 			background-color: transparent;
 		}
 	}
@@ -264,6 +264,9 @@ header {
 			min-width: 10rem;
 			left: 50%;
 			transform: translateY(-55%);
+			p {
+				font-size: 1.15rem;
+			}
 			&.show {
 				top: -50%;
 				left: 105%;

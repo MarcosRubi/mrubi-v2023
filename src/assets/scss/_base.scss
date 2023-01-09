@@ -121,11 +121,24 @@ h2{
 		text-align: start;
 	}
 
+	section .container{
+		padding-left: 4rem;
+	}
+
 }
 
 @media (min-width:1024px) {
 	h1{
 		font-size: 4.25rem;
+	}
+	h2{
+		font-size: 3rem;
+	}
+	h3{
+		font-size: 2rem;
+	}
+	p{
+		font-size: 1.35rem;
 	}
 }
 

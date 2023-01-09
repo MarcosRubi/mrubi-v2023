@@ -13,7 +13,7 @@
 
 .banner {
 	& > svg{
-		height: 100%;
+		height: auto;
 		path{
 			fill:var(--color-link);
 		}
@@ -21,7 +21,7 @@
 	.btn {
 		display: inline-flex;
 		svg {
-			margin-right: 0.5rem;
+			margin-left: 0.5rem;
 		}
 	}
 	&__about-me {
@@ -53,9 +53,6 @@
 	}
 	.banner{
 		padding: 0;
-		.container{
-			padding-left: 4rem;
-		}
 	}
 }
 
@@ -68,6 +65,9 @@
 		&__about-me p {
 			margin: 1rem 0;
 			font-size: 1.5rem;
+		}
+		.container{
+			transform: translateY(-5rem);
 		}
 	}
 }
