@@ -1,17 +1,119 @@
 [
 	{
 		"id": 1,
-		"title": "Mi proyecto",
-		"description": "Una descripción del proyecto",
-		"technologies": ["HTML", "CSS", "JavaScript"],
-		"startDate": "2022-01-01",
-		"endDate": "2022-01-31",
+		"title": "Mi proyecto landing page",
+		"description": "This fun project will be an excellent way to practice DOM manipulation and form validation while also putting your HTML and CSS skills to the test.",
+		"technologies": ["HTML", "CSS", "JavaScript", "SCSS", "API", "React", "PHP", "POO", "AJAX", "Pug", "MySQL"],
+		"startDate": "01/Septiembre/2022",
+		"endDate": "10/Septiembre/2022",
 		"learning": "He aprendido mucho trabajando en este proyecto",
 		"difficulties": "La mayor dificultad ha sido integrar la API de tal servicio",
 		"urlDemo": "https://mi-proyecto.com",
 		"urlRepo": "https://github.com/mi-usuario/mi-proyecto",
 		"routeImages": {
-			"preview": "rutaimagen/preview.jpg",
+			"preview": "images/projects/preview/a.webp",
+			"mobileDesign": "rutaimagen/mobiledesign.jpg",
+			"desktopDesign": "rutaimagen/desktopdesign.jpg"
+		}
+	},
+	{
+		"id": 2,
+		"title": "Mi proyecto",
+		"description": "This fun project will be an excellent way to practice DOM manipulation and form validation while also putting your HTML and CSS skills to the test.",
+		"technologies": ["HTML", "CSS", "JavaScript"],
+		"startDate": "01/Septiembre/2022",
+		"endDate": "10/Enero/2022",
+		"learning": "He aprendido mucho trabajando en este proyecto",
+		"difficulties": "La mayor dificultad ha sido integrar la API de tal servicio",
+		"urlDemo": "https://mi-proyecto.com",
+		"urlRepo": "https://github.com/mi-usuario/mi-proyecto",
+		"routeImages": {
+			"preview": "images/projects/preview/a.webp",
+			"mobileDesign": "rutaimagen/mobiledesign.jpg",
+			"desktopDesign": "rutaimagen/desktopdesign.jpg"
+		}
+	},
+	{
+		"id": 3,
+		"title": "Mi proyecto",
+		"description": "This fun project will be an excellent way to practice DOM manipulation and form validation while also putting your HTML and CSS skills to the test.",
+		"technologies": ["HTML", "CSS", "JavaScript"],
+		"startDate": "01/Septiembre/2022",
+		"endDate": "21/Febrero/2022",
+		"learning": "He aprendido mucho trabajando en este proyecto",
+		"difficulties": "La mayor dificultad ha sido integrar la API de tal servicio",
+		"urlDemo": "https://mi-proyecto.com",
+		"urlRepo": "https://github.com/mi-usuario/mi-proyecto",
+		"routeImages": {
+			"preview": "images/projects/preview/a.webp",
+			"mobileDesign": "rutaimagen/mobiledesign.jpg",
+			"desktopDesign": "rutaimagen/desktopdesign.jpg"
+		}
+	},
+	{
+		"id": 4,
+		"title": "Mi proyecto",
+		"description": "This fun project will be an excellent way to practice DOM manipulation and form validation while also putting your HTML and CSS skills to the test.",
+		"technologies": ["HTML", "CSS", "JavaScript"],
+		"startDate": "01/Junio/2022",
+		"endDate": "10/Junio/2022",
+		"learning": "He aprendido mucho trabajando en este proyecto",
+		"difficulties": "La mayor dificultad ha sido integrar la API de tal servicio",
+		"urlDemo": "https://mi-proyecto.com",
+		"urlRepo": "https://github.com/mi-usuario/mi-proyecto",
+		"routeImages": {
+			"preview": "images/projects/preview/a.webp",
+			"mobileDesign": "rutaimagen/mobiledesign.jpg",
+			"desktopDesign": "rutaimagen/desktopdesign.jpg"
+		}
+	},
+	{
+		"id": 5,
+		"title": "Mi proyecto",
+		"description": "This fun project will be an excellent way to practice DOM manipulation and form validation while also putting your HTML and CSS skills to the test.",
+		"technologies": ["HTML", "CSS", "JavaScript"],
+		"startDate": "01/Septiembre/2022",
+		"endDate": "10/Agosto/2022",
+		"learning": "He aprendido mucho trabajando en este proyecto",
+		"difficulties": "La mayor dificultad ha sido integrar la API de tal servicio",
+		"urlDemo": "https://mi-proyecto.com",
+		"urlRepo": "https://github.com/mi-usuario/mi-proyecto",
+		"routeImages": {
+			"preview": "images/projects/preview/a.webp",
+			"mobileDesign": "rutaimagen/mobiledesign.jpg",
+			"desktopDesign": "rutaimagen/desktopdesign.jpg"
+		}
+	},
+	{
+		"id": 6,
+		"title": "Mi proyecto",
+		"description": "This fun project will be an excellent way to practice DOM manipulation and form validation while also putting your HTML and CSS skills to the test.",
+		"technologies": ["HTML", "CSS", "JavaScript"],
+		"startDate": "01/Noviembre/2022",
+		"endDate": "10/Noviembre/2022",
+		"learning": "He aprendido mucho trabajando en este proyecto",
+		"difficulties": "La mayor dificultad ha sido integrar la API de tal servicio",
+		"urlDemo": "https://mi-proyecto.com",
+		"urlRepo": "https://github.com/mi-usuario/mi-proyecto",
+		"routeImages": {
+			"preview": "images/projects/preview/a.webp",
+			"mobileDesign": "rutaimagen/mobiledesign.jpg",
+			"desktopDesign": "rutaimagen/desktopdesign.jpg"
+		}
+	},
+	{
+		"id": 7,
+		"title": "Mi proyecto",
+		"description": "This fun project will be an excellent way to practice DOM manipulation and form validation while also putting your HTML and CSS skills to the test.",
+		"technologies": ["HTML", "CSS", "JavaScript"],
+		"startDate": "01/Septiembre/2022",
+		"endDate": "10/Diciembre/2022",
+		"learning": "He aprendido mucho trabajando en este proyecto",
+		"difficulties": "La mayor dificultad ha sido integrar la API de tal servicio",
+		"urlDemo": "https://mi-proyecto.com",
+		"urlRepo": "https://github.com/mi-usuario/mi-proyecto",
+		"routeImages": {
+			"preview": "images/projects/preview/a.webp",
 			"mobileDesign": "rutaimagen/mobiledesign.jpg",
 			"desktopDesign": "rutaimagen/desktopdesign.jpg"
 		}
