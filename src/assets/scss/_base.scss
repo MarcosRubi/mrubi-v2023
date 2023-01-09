@@ -8,7 +8,6 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	min-height: 600vh;
 	font-size: 18px;
 	background-color: var(--bg-color);
 	color: var(--text-color);
@@ -147,6 +146,9 @@ section{
 }
 .flex-wrap{
 	flex-wrap: wrap;
+}
+.d-block{
+	display: block;
 }
 
 @mixin styles-base-768 {

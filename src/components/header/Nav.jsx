@@ -1,13 +1,11 @@
 import { Link } from "react-router-dom";
 import { SlSocialLinkedin, SlSocialInstagram, SlSocialFacebook, SlSocialTwitter } from 'react-icons/sl'
 
-function Nav({ toggleMenu, removeActiveLink }) {
+function Nav({ toggleMenu }) {
 
-	const handleOnClick = (event, element) => {
+	const handleOnClick = (element) => {
 		toggleMenu()
 
-		removeActiveLink()
-		event.target.classList.add('active')
 
 		const section = document.getElementById(element);
 		if (element) { section.scrollIntoView(); }
@@ -39,11 +37,11 @@ function Nav({ toggleMenu, removeActiveLink }) {
 				</div>
 				<nav className="container">
 					<ul className="d-flex align-center flex-column-sm text-center">
-						<li className="w-100"><Link to={'#sobre-mi'} className="w-100 d-inline-block" onClick={(e) => handleOnClick(e, 'sobre-mi')}>Sobre Mí</Link></li>
-						<li className="w-100"><Link to={'#proyectos'} className="w-100 d-inline-block" onClick={(e) => handleOnClick(e, 'proyectos')}>Proyectos</Link></li>
-						<li className="w-100"><Link to={'#experiencia'} className="w-100 d-inline-block" onClick={(e) => handleOnClick(e, 'experiencia')}>Experiencia</Link></li>
-						<li className="w-100"><Link to={'#certificados'} className="w-100 d-inline-block" onClick={(e) => handleOnClick(e, 'certificados')}>Certificados</Link></li>
-						<li className="w-100"><Link to={'#contactar'} className="w-100 d-inline-block" onClick={(e) => handleOnClick(e, 'contactar')}>Contactar</Link></li>
+						<li className="w-100"><Link to={'#sobre-mi'} className="w-100 d-inline-block" onClick={() => handleOnClick('sobre-mi')}>Sobre Mí</Link></li>
+						<li className="w-100"><Link to={'#proyectos'} className="w-100 d-inline-block" onClick={() => handleOnClick('proyectos')}>Proyectos</Link></li>
+						<li className="w-100"><Link to={'#experiencia'} className="w-100 d-inline-block" onClick={() => handleOnClick('experiencia')}>Experiencia</Link></li>
+						<li className="w-100"><Link to={'#certificados'} className="w-100 d-inline-block" onClick={() => handleOnClick('certificados')}>Certificados</Link></li>
+						<li className="w-100"><Link to={'#contactar'} className="w-100 d-inline-block" onClick={() => handleOnClick('contactar')}>Contactar</Link></li>
 					</ul>
 				</nav>
 				<div className="menu__footer">

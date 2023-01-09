@@ -21,7 +21,7 @@ export function MainContextProvider(props) {
 
 	//Sustituimos espacios en blanco por un guión y todo el título sea en minúsculas
 	const resetTitle = (title) => {
-		return title.split(" ").join("-").toLoweCase();
+		return title.split(" ").join("-").toLowerCase();
 	};
 
 	return (

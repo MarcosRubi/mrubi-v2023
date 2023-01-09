@@ -25,10 +25,6 @@ function Header() {
 
 	const toggleMenu = () => setShowMenu(!showMenu)
 
-	const removeActiveLink = () => {
-		const oldActive = document.querySelector('header nav a.active')
-		oldActive ? oldActive.classList.remove('active') : ''
-	}
 	const toggleDark = () => {
 		const newValue = localStorage.getItem('isDark') === 'dark' ? 'light' : 'dark'
 		localStorage.setItem("isDark", newValue)
@@ -59,8 +55,8 @@ function Header() {
 		<>
 			<header className={`p-fixed w-100 ${showMenu ? 'show-menu' : ''} ${sticky}`}>
 				<div className="container d-flex align-center jc-between flex-column-md">
-					<Logo removeActiveLink={removeActiveLink} />
-					<Nav toggleMenu={toggleMenu} removeActiveLink={removeActiveLink} />
+					<Logo />
+					<Nav toggleMenu={toggleMenu} />
 					<ToggleTheme toggleDark={toggleDark} />
 					<SettingTheme changeTheme={changeTheme} />
 				</div>

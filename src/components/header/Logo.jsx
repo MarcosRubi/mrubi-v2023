@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 
-function Logo({removeActiveLink}) {
+function Logo() {
 	const handleOnClick = ()=>{
-		removeActiveLink()
 		document.querySelector('body').scrollIntoView();
 	}
 	return <Link to={"/"} onClick={handleOnClick} className="logo">

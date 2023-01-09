@@ -5,8 +5,7 @@
 		gap: 2rem;
 	}
 	p {
-		font-size: 1.15rem;
-		max-width: 50rem;
+		max-width: 60rem;
 		margin: 1rem auto;
 	}
 }
@@ -16,6 +15,16 @@
 		border: 1px solid var(--bg-footer);
 		border-radius: 0.25rem;
 		overflow: hidden;
+	}
+	&__img {
+		overflow: hidden;
+		img {
+			overflow: hidden;
+			transition: transform .3s ease-in-out;
+		}
+		&:hover img {
+			transform: scale(1.10);
+		}
 	}
 	&__content {
 		padding: 1rem;
@@ -29,14 +38,14 @@
 		.d-flex {
 			margin: 1rem 0;
 		}
-		.technologies{
-			gap:.25rem;
+		.technologies {
+			gap: 0.25rem;
 		}
 		span {
 			font-size: 0.9rem;
 			padding: 0.25rem;
 			background-color: var(--bg-footer);
-			border-radius: .25rem;
+			border-radius: 0.25rem;
 			font-weight: bold;
 			&:nth-child(odd) {
 				color: var(--color-hover);
