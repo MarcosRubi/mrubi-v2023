@@ -6,9 +6,8 @@ function Nav({ toggleMenu }) {
 	const handleOnClick = (element) => {
 		toggleMenu()
 
-
-		const section = document.getElementById(element);
-		if (element) { section.scrollIntoView(); }
+		const section = document.getElementById(element)
+		if (element) { section.scrollIntoView() }
 	}
 
 	return (
@@ -37,11 +36,11 @@ function Nav({ toggleMenu }) {
 				</div>
 				<nav className="container">
 					<ul className="d-flex align-center flex-column-sm text-center">
-						<li className="w-100"><Link to={'#sobre-mi'} className="w-100 d-inline-block" onClick={() => handleOnClick('sobre-mi')}>Sobre Mí</Link></li>
-						<li className="w-100"><Link to={'#proyectos'} className="w-100 d-inline-block" onClick={() => handleOnClick('proyectos')}>Proyectos</Link></li>
-						<li className="w-100"><Link to={'#experiencia'} className="w-100 d-inline-block" onClick={() => handleOnClick('experiencia')}>Experiencia</Link></li>
-						<li className="w-100"><Link to={'#certificados'} className="w-100 d-inline-block" onClick={() => handleOnClick('certificados')}>Certificados</Link></li>
-						<li className="w-100"><Link to={'#contactar'} className="w-100 d-inline-block" onClick={() => handleOnClick('contactar')}>Contactar</Link></li>
+						<li className="w-100"><Link className="w-100 d-inline-block" onClick={() => handleOnClick('sobre-mi')}>Sobre Mí</Link></li>
+						<li className="w-100"><Link className="w-100 d-inline-block" onClick={() => handleOnClick('proyectos')}>Proyectos</Link></li>
+						<li className="w-100"><Link className="w-100 d-inline-block" onClick={() => handleOnClick('experiencia')}>Experiencia</Link></li>
+						<li className="w-100"><Link className="w-100 d-inline-block" onClick={() => handleOnClick('certificados')}>Certificados</Link></li>
+						<li className="w-100"><Link className="w-100 d-inline-block" onClick={() => handleOnClick('contactar')}>Contactar</Link></li>
 					</ul>
 				</nav>
 				<div className="menu__footer">
