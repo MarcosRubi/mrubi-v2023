@@ -7,6 +7,7 @@ export const MainContext = createContext();
 export function MainContextProvider(props) {
 	const [certificates, setCertificates] = useState([]);
 	const [projects, setProjects] = useState([]);
+	const [projectsToShow, setProjectsToShow] = useState(6)
 
 	useEffect(() => {
 		setCertificates(dataCertificates);
@@ -24,9 +25,24 @@ export function MainContextProvider(props) {
 		return title.split(" ").join("-").toLowerCase();
 	};
 
+	const updateProjectsToShow = (val) => {
+		if((projectsToShow+val) <= 6){
+			setProjectsToShow(6)
+			return
+		}
+
+		if((projects.length + val) <= projectsToShow){
+			setProjectsToShow(projectsToShow - 3)
+			return
+		}
+		
+		setProjectsToShow(projectsToShow+val)
+
+	}
+
 	return (
 		<MainContext.Provider
-			value={{ certificates, projects, findProjectByTitle }}
+			value={{ certificates, projects, findProjectByTitle, projectsToShow, updateProjectsToShow }}
 		>
 			{props.children}
 		</MainContext.Provider>

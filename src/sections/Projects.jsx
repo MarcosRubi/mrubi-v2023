@@ -4,9 +4,8 @@ import Card from "../components/projects/Card";
 import { AiOutlineDown } from "react-icons/ai";
 
 function Projects() {
-	const { projects } = useContext(MainContext);
+	const { projects, projectsToShow, updateProjectsToShow } = useContext(MainContext);
 	const [activeOption, setActiveOption] = useState("");
-	const [projectsToShow, setProjectsToShow] = useState(6)
 
 	const handleOnClick = (e, selected) => {
 		if (activeOption === selected) {
@@ -23,20 +22,7 @@ function Projects() {
 		setActiveOption("");
 	};
 
-	const updateProjectsToShow = (val) => {
-		if((projectsToShow+val) <= 6){
-			setProjectsToShow(6)
-			return
-		}
-
-		if((projects.length + val) <= projectsToShow){
-			setProjectsToShow(projectsToShow - 3)
-			return
-		}
-		
-		setProjectsToShow(projectsToShow+val)
-
-	}
+	
 
 
 
