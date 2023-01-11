@@ -53,7 +53,7 @@ function Header() {
 
 	return (
 		<>
-			<header className={`p-fixed w-100 ${showMenu ? 'show-menu' : ''} ${sticky}`}>
+			<header className={`menu p-fixed w-100 ${showMenu ? 'show-menu' : ''} ${sticky}`}>
 				<div className="container d-flex align-center jc-between flex-column-md">
 					<Logo />
 					<Nav toggleMenu={toggleMenu} />
