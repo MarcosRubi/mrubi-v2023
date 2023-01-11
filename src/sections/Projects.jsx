@@ -7,7 +7,7 @@ function Projects() {
 	const { projects, projectsToShow, updateProjectsToShow } = useContext(MainContext);
 	const [activeOption, setActiveOption] = useState("");
 
-	const handleOnClick = (e, selected) => {
+	const handleOnClickOptions = (e, selected) => {
 		if (activeOption === selected) {
 			setActiveOption("");
 			return;
@@ -21,6 +21,18 @@ function Projects() {
 	const removeActiveOption = () => {
 		setActiveOption("");
 	};
+
+	const handleOnClickProjectsBtn = (e, val)=>{
+		
+		updateProjectsToShow(val)
+
+		e.target.classList.contains('show-more') 
+		? e.target.scrollIntoView(true) 
+		: setTimeout(() => {
+			e.target.scrollIntoView(false)
+		}, 10); 
+		
+	}
 
 	
 
@@ -43,12 +55,12 @@ function Projects() {
 				</div>
 				<div className="filters d-flex jc-center align-center p-relative">
 					<div className={`filter date d-flex jc-center align-center ${activeOption === "date" ? "active" : ""}`}
-						onClick={(e) => { handleOnClick(e, "date") }} >
+						onClick={(e) => { handleOnClickOptions(e, "date") }} >
 						<span>Ordenar por</span>
 						<AiOutlineDown />
 					</div>
 					<div className={`filter date d-flex jc-center align-center ${activeOption === "language" ? "active" : ""}`}
-						onClick={(e) => { handleOnClick(e, "language"); }} >
+						onClick={(e) => { handleOnClickOptions(e, "language"); }} >
 						<span>Filtrar por</span>
 						<AiOutlineDown />
 					</div>
@@ -107,8 +119,8 @@ function Projects() {
 					))}
 				</div>
 				<div className="btn-updates d-flex jc-center flex-wrap">
-					<button className={`btn btn-primary show-more ${projectsToShow >= projects.length ? 'hide' : ''}`} onClick={() => { updateProjectsToShow(+3) }}><span>Ver más</span></button>
-					<button className={`btn btn-secondary show-less ${projectsToShow <= 6 ? 'hide' : ''}`} onClick={() => { updateProjectsToShow(-3) }}><span>Ver menos</span></button>
+					<button className={`btn btn-primary show-more ${projectsToShow >= projects.length ? 'hide' : ''}`} onClick={(e) => { handleOnClickProjectsBtn(e, +3) }}><span>Ver más</span></button>
+					<button className={`btn btn-secondary show-less ${projectsToShow <= 6 ? 'hide' : ''}`} onClick={(e) => { handleOnClickProjectsBtn(e, -3) }}><span>Ver menos</span></button>
 				</div>
 			</div>
 		</section>

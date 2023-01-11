@@ -108,14 +108,16 @@
 	}
 	.show-more.hide,
 	.show-less.hide {
-		display: none;
+		visibility: hidden;
+		margin: 0;
+		padding: 0;
+		width: 0;
 	}
 	.show-more,
 	.show-less {
-		display: block;
+		visibility: visible;
 		width: 100%;
 		margin: 1rem;
-		padding: 1.10rem;
 		max-width: 14rem;
 	}
 	.btn-updates{
