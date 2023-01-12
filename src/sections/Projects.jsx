@@ -39,7 +39,7 @@ function Projects() {
 						project.id <= projectsToShow && <Card project={project} key={project.id} />
 					))}
 				</div>
-				<div className="btn-updates d-flex jc-center flex-wrap">
+				<div className="btn-updates d-flex jc-center flex-wrap align-center flex-column-sm">
 					<button 
 						className={`btn btn-primary show-more ${projectsToShow >= projects.length && 'hide' }`} 
 						onClick={(e) => { handleOnClickProjectsBtn(e, +3) }}>

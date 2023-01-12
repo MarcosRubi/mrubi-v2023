@@ -90,6 +90,12 @@ section{
 .jc-center {
 	justify-content: center;
 }
+.jc-end{
+	justify-content: flex-end;
+}
+.mb-2{
+	margin-bottom: 5rem;
+}
 .flex-column,
 .flex-column-sm {
 	flex-direction: column;

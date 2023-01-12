@@ -16,7 +16,7 @@ function App() {
 			<main>
 				<Routes>
 					<Route path="/" element={<Home />}>
-						<Route path="certificados/:id" element={<ModalCertificate />}></Route>
+						<Route path="certificado/:name" element={<ModalCertificate />}></Route>
 					</Route>
 					<Route path="/proyecto/:title" element={<Project />}>
 						<Route path="imagenes" element={<ModalProject />}></Route>

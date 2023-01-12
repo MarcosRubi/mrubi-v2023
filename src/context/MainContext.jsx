@@ -20,6 +20,10 @@ export function MainContextProvider(props) {
 		return projects.filter((project) => resetTitle(project.title) === title);
 	};
 
+	const findCertificateByName = (name) => {
+		return certificates.filter((certificate) => resetTitle(certificate.name) === name);
+	};
+
 	//Sustituimos espacios en blanco por un guión y todo el título sea en minúsculas
 	const resetTitle = (title) => {
 		return title.split(" ").join("-").toLowerCase();
@@ -42,7 +46,7 @@ export function MainContextProvider(props) {
 
 	return (
 		<MainContext.Provider
-			value={{ certificates, projects, findProjectByTitle, projectsToShow, updateProjectsToShow }}
+			value={{ certificates, projects, findProjectByTitle, projectsToShow, updateProjectsToShow, resetTitle, findCertificateByName }}
 		>
 			{props.children}
 		</MainContext.Provider>

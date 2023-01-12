@@ -1,6 +1,33 @@
 [
 	{
 		"id": 1,
-		"routeImg": "rutaImagen/imagen.jpg"
+		"routeImg": "images/certificates/ccna-switching-routing-and-wireless-essentials.png",
+		"name": "CNNA Switching, Routing and wireless essentials"
+	},
+	{
+		"id": 2,
+		"routeImg": "images/certificates/html.webp",
+		"name": "HTML desde cero"
+	},
+	{
+		"id": 3,
+		"routeImg": "images/certificates/pug.webp",
+		"name": "Pug desde cero"
+	},
+	{
+		"id": 4,
+		"routeImg": "images/certificates/master-css.webp",
+		"name": "Master en CSS"
+	},
+	{
+		"id": 5,
+		"routeImg": "images/certificates/crear-pagina-web-desde-cero.webp",
+		"name": "Crear una página web desde cero"
+	},
+	{
+		"id": 6,
+		"routeImg": "images/certificates/master-js.webp",
+		"name": "Master en JavaScript"
 	}
 ]
+

@@ -1,0 +1,10 @@
+.certificates{
+	h2{
+		margin-bottom: 2rem;
+	}
+	&__container{
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+	}
+}
