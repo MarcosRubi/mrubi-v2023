@@ -36,11 +36,11 @@ function Nav({ toggleMenu }) {
 				</div>
 				<nav className="container">
 					<ul className="d-flex align-center flex-column-sm text-center">
-						<li className="w-100"><Link className="w-100 d-inline-block" onClick={() => handleOnClick('sobre-mi')}>Sobre Mí</Link></li>
-						<li className="w-100"><Link className="w-100 d-inline-block" onClick={() => handleOnClick('proyectos')}>Proyectos</Link></li>
-						<li className="w-100"><Link className="w-100 d-inline-block" onClick={() => handleOnClick('experiencia')}>Experiencia</Link></li>
-						<li className="w-100"><Link className="w-100 d-inline-block" onClick={() => handleOnClick('certificados')}>Certificados</Link></li>
-						<li className="w-100"><Link className="w-100 d-inline-block" onClick={() => handleOnClick('contactar')}>Contactar</Link></li>
+						<li className="w-100"><Link className="w-100 d-inline-block" onClick={() => handleOnClick('about-me')}>Sobre Mí</Link></li>
+						<li className="w-100"><Link className="w-100 d-inline-block" onClick={() => handleOnClick('projects')}>Proyectos</Link></li>
+						<li className="w-100"><Link className="w-100 d-inline-block" onClick={() => handleOnClick('experience')}>Experiencia</Link></li>
+						<li className="w-100"><Link className="w-100 d-inline-block" onClick={() => handleOnClick('certificates')}>Certificados</Link></li>
+						<li className="w-100"><Link className="w-100 d-inline-block" onClick={() => handleOnClick('contact')}>Contactar</Link></li>
 					</ul>
 				</nav>
 				<div className="menu__footer">

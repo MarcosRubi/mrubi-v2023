@@ -20,7 +20,7 @@ function Projects() {
 
 	return (
 		<section className="projects">
-			<div className="container" id="proyectos">
+			<div className="container" id="projects">
 				<h2 className="text-center">Proyectos</h2>
 				<div className="text-justify-sm">
 					<p>

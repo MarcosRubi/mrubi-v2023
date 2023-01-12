@@ -1,0 +1,41 @@
+.experience {
+	h2{
+		margin-bottom: 2rem;
+	}
+	
+	&__item {
+		border: 1px solid var(--color-hover);
+		padding: 1rem;
+	}
+	&__date {
+		background-color: var(--color-link);
+		color: var(--bg-color);
+		padding: 1rem;
+		border-radius: 0.25rem;
+		p {
+			font-size: 0.95rem;
+		}
+	}
+	&__activities {
+		padding: 2rem 0 1rem 0;
+		p {
+			margin-top: .5em;
+		}
+	}
+}
+
+@mixin styles-experience-1024{
+	.experience{
+		&__item{
+			flex-direction: row;
+			gap: 4rem;
+			padding: 1rem 3rem;
+			&:nth-child(odd) .experience__activities{
+				order: -1;
+			}
+		}
+		&__date{
+			max-width: 16rem;
+		}
+	}
+}
