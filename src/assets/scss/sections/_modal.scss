@@ -41,3 +41,32 @@
 		}
 	}
 }
+@mixin styles-modal-1024 {
+	.modal {
+		top: 0;
+		width: calc(100vw - 4rem);
+		height: 100vh;
+		margin-left: 4rem;
+		overflow-x: hidden;
+		&__img {
+			max-width: 55%;
+			margin: auto;
+		}
+		.btn{
+			color: var(--color-hover);
+			background-color: rgba(0, 0, 0, 0.25);
+		}
+		.buttons {
+			position: absolute;
+			top: 60vh;
+			transform: translateY(-50%);
+			width: 100%;
+			padding: 0 4rem 0 2rem;
+			.btn {
+				svg polygon {
+					stroke: var(--color-hover);
+				}
+			}
+		}
+	}
+}
