@@ -20,22 +20,24 @@
 		height: 100vh;
 		margin-left: 4rem;
 		overflow-x: hidden;
-		&__img{
+		&__img {
 			padding: 1rem;
 		}
-	}
-	.buttons {
-		position: absolute;
-		top: 70vh;
-		transform: translateY(-50%);
-		width: 100%;
-		padding: 0 2rem 0 1rem;
 		.btn{
-			background-color: rgba(0,0,0,0.25);
-			svg polygon {
-				stroke: var(--color-hover);
+			color: var(--color-hover);
+			background-color: rgba(0, 0, 0, 0.25);
+		}
+		.buttons {
+			position: absolute;
+			top: 70vh;
+			transform: translateY(-50%);
+			width: 100%;
+			padding: 0 2rem 0 1rem;
+			.btn {
+				svg polygon {
+					stroke: var(--color-hover);
+				}
 			}
 		}
 	}
-
 }

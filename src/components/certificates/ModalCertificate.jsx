@@ -9,10 +9,13 @@ function ModalCertificate() {
 	const { name } = useParams()
 	const { findCertificateByName, certificates, resetTitle } = useContext(MainContext)
 
-
 	useEffect(() => {
 		setCertificateActive(findCertificateByName(name))
 	}, [])
+
+	useEffect(()=>{
+		certificateActive.length > 0 && history.pushState({}, '', resetTitle(certificateActive[0].name))
+	},[certificateActive])
 
 
 	const showNewCertificate = (id) => {
@@ -24,6 +27,7 @@ function ModalCertificate() {
 			setCertificateActive([certificates[1]])
 			return
 		}
+
 		setCertificateActive([certificates[id - 1]])
 	}
 
@@ -40,8 +44,8 @@ function ModalCertificate() {
 				<img src={`../${certificateActive[0].routeImg}`} alt={`Certificado del curso ${certificateActive[0].name} completado por Marcos Rubí`} />
 			</div>
 			<div className="d-flex jc-between mb-2 buttons">
-				<Link to={`/certificado/${resetTitle(certificateActive[0].name)}`} className="btn btn-secondary" onClick={() => showNewCertificate(certificateActive[0].id - 1)}><GrCaretPrevious /></Link>
-				<Link to={`/certificado/${resetTitle(certificateActive[0].name)}`} className="btn btn-secondary" onClick={() => showNewCertificate(certificateActive[0].id + 1)}><GrCaretNext /></Link>
+				<button className="btn btn-secondary" onClick={() => showNewCertificate(certificateActive[0].id - 1)}><GrCaretPrevious /></button>
+				<button className="btn btn-secondary" onClick={() => showNewCertificate(certificateActive[0].id + 1)}><GrCaretNext /></button>
 			</div>
 		</div>
 	);
