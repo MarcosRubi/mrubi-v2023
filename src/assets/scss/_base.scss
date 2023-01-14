@@ -5,13 +5,14 @@
 }
 
 html {
-	scroll-behavior: smooth;
+	scroll-behavior: smooth !important;
 }
 body {
 	font-size: 18px;
 	background-color: var(--bg-color);
 	color: var(--text-color);
 	font-family: "Montserrat", sans-serif;
+	overflow-x: hidden;
 }
 li {
 	list-style: none;
@@ -95,6 +96,12 @@ section{
 }
 .mb-2{
 	margin-bottom: 5rem;
+}
+.full-screen {
+	display: block;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
 }
 .flex-column,
 .flex-column-sm {

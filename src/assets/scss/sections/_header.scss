@@ -23,6 +23,7 @@
 .menu {
 	left: 0;
 	z-index: 999;
+	width: 100vw;
 	&::before {
 		content: "";
 		position: absolute;
@@ -231,14 +232,12 @@
 	}
 	.menu {
 		height: 100vh;
+		width: auto;
 		&::before {
 			top: 0;
 			height: 100%;
 			border-right: 1px solid var(--color-hover-alpha);
 			border-bottom: none;
-		}
-		&.w-100 {
-			width: auto;
 		}
 		& > div {
 			height: 100%;
@@ -248,7 +247,7 @@
 			left: 0;
 		}
 		&.sticky {
-			background-color: transparent;
+			background-color: var(--bg-color);
 		}
 		&__content {
 			top: 0;
