@@ -40,7 +40,6 @@ function Header() {
 
 	}
 
-
 	// Función optimizada con requestAnimationFrame
 	function headerSticky() {
 		requestAnimationFrame(() => {
