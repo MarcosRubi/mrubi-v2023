@@ -183,7 +183,8 @@ section{
 	}
 	
 
-	section .container {
+	section .container,
+	footer .container {
 		padding: 4rem 0 4rem 4rem;
 	}
 }

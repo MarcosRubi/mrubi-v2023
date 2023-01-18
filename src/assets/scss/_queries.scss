@@ -4,6 +4,7 @@
 	@include styles-banner-768;
 	@include styles-projects-768;
 	@include styles-modal-768;
+	@include styles-footer-768;
 }
 
 @media (min-width: 1024px) {
@@ -13,10 +14,12 @@
 	@include styles-about-me-1024;
 	@include styles-experience-1024;
 	@include styles-modal-1024;
+	@include styles-footer-1024;
 }
 
 @media (min-width: 1200px) {
 	@include styles-base-1200;
 	@include styles-header-1200;
 	@include styles-timeline-1200;
+	@include styles-footer-1200;
 }

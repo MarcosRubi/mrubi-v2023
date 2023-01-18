@@ -6,7 +6,7 @@ function Experience() {
 			<div className="experience__item d-flex align-center flex-column">
 				<div className="experience__date w-100 text-center">
 					<h4>Soporte técnico</h4>
-					<p>01 Nov 2018 ~ 10 de Dic 2018</p>
+					<p>01 Nov 2018 ~ 10 Dic 2018</p>
 				</div>
 				<div className="experience__activities">
 					<h4>Calvo Conservas S.A de C.V</h4>
