@@ -87,7 +87,7 @@ function Timeline() {
 				<div className="container">
 					<div className="timeline__element d-flex flex-column">
 						<div className="content">
-							<h5 className='text-center'><span>Enero - Junio 2020</span><br />Inico de: Ingeniería en sistemas y redes.</h5>
+							<h5 className='text-center'><span>Enero - Junio 2020</span><br />Inicio de: Ingeniería en sistemas y redes.</h5>
 							<p>En mi primer ciclo curse la asignatura <span>Programación Computacional IV</span>, enfocada en <span>PHP</span>, <span>POO</span> y <span>MVC</span>.</p>
 							<p>A pesar de seguir convencido de que no era apto para programar, la pasión que siento por el desarrollo web me llevó a seguirlo estudiando como un pasatiempo.</p>
 						</div>
@@ -146,7 +146,7 @@ function Timeline() {
 							<img src={testImg} alt="" />
 						</div>
 						<div className="content">
-							<h5 className='text-center'><span>Enero - Actualidad</span><br />Un sueño posible.</h5>
+							<h5 className='text-center'><span>Enero 2023 - Actualidad</span><br />Un sueño posible.</h5>
 							<p>Realicé este portafolio usando react y tengo la esperanza de algún día poder dedicarme al desarrollo web.</p>
 							<p><span><i>El éxito es un viaje, no un destino final. No dejes de aprender, crecer y evolucionar para alcanzar tus sueños y vivir lo que te apasiona.</i></span></p>
 						</div>

@@ -8,6 +8,7 @@ footer {
 	.container {
 		display: grid;
 		gap: 2rem;
+		justify-content: space-between;
 	}
 }
 .repositories {
@@ -100,6 +101,10 @@ textarea {
 
 @mixin styles-footer-1200 {
 	footer .container {
+		grid-template-columns: repeat(3, 1fr);
 		padding: 1rem 0 0rem 4rem;
+	}
+	.social a{
+		padding: 1.5rem 1rem 1.5rem 0rem;
 	}
 }

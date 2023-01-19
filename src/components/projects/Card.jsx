@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import MainContext from '../../context/MainContext'
 
 function Card({ project }) {
-	const {resetTitle} = useContext(MainContext)
+	const { resetTitle } = useContext(MainContext)
+	console.log(project)
 	return (
 		<div className='project__card'>
 			<Link to={`/proyecto/${resetTitle(project.title)}`} className="project__img d-block">
@@ -16,10 +17,15 @@ function Card({ project }) {
 						{project.technologies.map((technology, index) => <span key={index}>{technology}</span>)}
 					</div>
 					<div className="date">
-						{project.endDate}
+						{project.endDate.map((date, index) => {
+							if (index+1 === project.endDate.length) {
+								return date;
+							}
+							return date + "/"
+						})}
 					</div>
 				</div>
-				<p>{project.description}</p>
+				<p dangerouslySetInnerHTML={{__html : project.description}}></p>
 			</div>
 		</div>
 	)
