@@ -1,6 +1,8 @@
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import MainContext from '../../context/MainContext'
+import Technologies from './Technologies'
+import Date from './Date'
 
 function Card ({ project }) {
   const { resetTitle } = useContext(MainContext)
@@ -12,17 +14,8 @@ function Card ({ project }) {
       <div className='project__content'>
         <Link to={`/proyecto/${resetTitle(project.title)}`}><h3>{project.title}</h3></Link>
         <div className='d-flex align-center jc-between flex-wrap'>
-          <div className='technologies d-flex align-center flex-wrap'>
-            {project.technologies.map((technology, index) => <span key={index}>{technology}</span>)}
-          </div>
-          <div className='date'>
-            {project.endDate.map((date, index) => {
-              if (index + 1 === project.endDate.length) {
-                return date
-              }
-              return date + '/'
-            })}
-          </div>
+          <Technologies technologies={project.technologies} />
+          <Date date={project.endDate} />
         </div>
         <p dangerouslySetInnerHTML={{ __html: project.description }} />
       </div>

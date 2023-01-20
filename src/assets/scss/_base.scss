@@ -42,6 +42,9 @@ h1 {
 h2 {
 	font-size: 2.75rem;
 }
+h3{
+  font-size: 1.4rem;
+}
 h4 {
 	font-size: 1.35rem;
 }
@@ -168,6 +171,9 @@ section{
 }
 .d-block{
 	display: block;
+}
+.back{
+  padding: 1rem 0;
 }
 
 @mixin styles-base-768 {
