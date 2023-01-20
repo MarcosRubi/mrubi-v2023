@@ -1,6 +1,6 @@
 
-function Error() {
-	return <div>Error, ruta desconocida</div>;
+function Error () {
+  return <div>Error, ruta desconocida</div>
 }
 
-export default Error;
+export default Error

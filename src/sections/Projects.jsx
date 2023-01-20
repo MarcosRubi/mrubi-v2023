@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import MainContext from "../context/MainContext";
 import Card from "../components/projects/Card";
 import NavFilters from "../components/projects/NavFilters";

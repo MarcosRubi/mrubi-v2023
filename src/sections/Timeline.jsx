@@ -148,7 +148,7 @@ function Timeline() {
 						<div className="content">
 							<h5 className='text-center'><span>Enero 2023 - Actualidad</span><br />Un sueño posible.</h5>
 							<p>Realicé este portafolio usando react y tengo la esperanza de algún día poder dedicarme al desarrollo web.</p>
-							<p><span><i>El éxito es un viaje, no un destino final. No dejes de aprender, crecer y evolucionar para alcanzar tus sueños y vivir lo que te apasiona.</i></span></p>
+							<p><span><i>El éxito es un viaje, no un destino final. No dejaré de aprender, crecer y evolucionar para alcanzar mis sueños y vivir lo que me apasiona.</i></span></p>
 						</div>
 					</div>
 				</div>

@@ -7,25 +7,27 @@ import Timeline from '../sections/Timeline'
 import { Outlet } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
-function Home() {
-	const [width, setWidth] = useState()
+function Home () {
+  const [width, setWidth] = useState()
 
-	useEffect(() => {
-		setWidth(window.innerWidth)
-	}, [])
+  useEffect(() => {
+    setWidth(window.innerWidth)
+  }, [])
 
-	window.addEventListener('resize', ()=>{
-		setWidth(window.innerWidth)
-	})
-	return <>
-		<Banner />
-		<AboutMe />
-		<Projects />
-		<Experience />
-		<Certificates />
-		{width >= 768 && <Timeline />}
-		<Outlet />
-	</>;
+  window.addEventListener('resize', () => {
+    setWidth(window.innerWidth)
+  })
+  return (
+    <>
+      <Banner />
+      <AboutMe />
+      <Projects />
+      <Experience />
+      <Certificates />
+      {width >= 768 && <Timeline />}
+      <Outlet />
+    </>
+  )
 }
 
-export default Home;
+export default Home
