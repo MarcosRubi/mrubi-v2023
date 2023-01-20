@@ -42,9 +42,13 @@ export function MainContextProvider (props) {
     setProjectsToShow(projectsToShow + val)
   }
 
+  const scrollToTop = () => {
+    document.querySelector('body').scrollIntoView()
+  }
+
   return (
     <MainContext.Provider
-      value={{ certificates, projects, findProjectByTitle, projectsToShow, updateProjectsToShow, resetTitle, findCertificateByName }}
+      value={{ certificates, projects, findProjectByTitle, projectsToShow, updateProjectsToShow, resetTitle, findCertificateByName, scrollToTop }}
     >
       {props.children}
     </MainContext.Provider>

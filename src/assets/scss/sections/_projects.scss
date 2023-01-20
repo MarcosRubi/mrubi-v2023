@@ -4,7 +4,8 @@
     grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
     gap: 2rem;
   }
-  .btn span{
+
+  .btn span {
     font-size: 1rem;
   }
 
@@ -164,6 +165,35 @@
   .btn-updates {
     margin: 2rem 0;
   }
+
+  .technologies {
+    gap: 0.25rem;
+    margin: 1rem 0;
+
+    span {
+      font-size: 0.9rem;
+      padding: 0.25rem;
+      background-color: var(--bg-footer);
+      border-radius: 0.25rem;
+      font-weight: bold;
+
+      &:nth-child(odd) {
+        color: var(--color-hover);
+      }
+
+      &:nth-child(even) {
+        color: var(--color-link);
+      }
+    }
+  }
+
+  .date {
+    background-color: var(--bg-footer);
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    display: inline-block;
+  }
 }
 
 .project {
@@ -186,80 +216,51 @@
     }
   }
 
-  &__content {
-    padding: 1rem;
-
-
-    p {
-      margin: 0;
-      font-weight: bold;
-      font-size: 1rem;
-    }
-
-    .d-flex {
-      margin: 1rem 0;
-    }
-
-    .technologies {
-      gap: 0.25rem;
-
-      span {
-        font-size: 0.9rem;
-        padding: 0.25rem;
-        background-color: var(--bg-footer);
-        border-radius: 0.25rem;
-        font-weight: bold;
-
-        &:nth-child(odd) {
-          color: var(--color-hover);
-        }
-
-        &:nth-child(even) {
-          color: var(--color-link);
-        }
-      }
-    }
-
-    .date {
-      background-color: var(--bg-footer);
-      padding: 0.25rem;
-      border-radius: 0.25rem;
-      font-size: 0.9rem;
-      display: inline-block;
-    }
-
-    .buttons {
-      margin: 1rem 0;
-
-      .d-flex {
-        gap: 1rem;
-        margin: 0;
-      }
-
-      .btn {
-        width: 9rem;
-        margin-top: 0.25rem;
-      }
-    }
-
-    .dates {
-      gap: 1rem;
-
-      .d-flex {
-        margin: 0;
-      }
-
-      span {
-        font-size: 1rem;
-        margin-right: 0.5rem;
-      }
-    }
-
+  p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1rem;
   }
 
-  .description,
-  &__learning {
+  .buttons {
     margin: 1rem 0;
+
+    .d-flex {
+      gap: 1rem;
+      margin: 0;
+    }
+
+    .btn {
+      width: 9rem;
+    }
+  }
+
+  .dates {
+    gap: 1rem;
+
+    .d-flex {
+      margin: 0;
+    }
+
+    span {
+      font-size: 1rem;
+      margin: 0.5rem;
+    }
+  }
+
+  &__content {
+    padding: 1rem;
+  }
+
+  &.view {
+    display: grid;
+    gap: 1rem;
+
+    .d-flex,
+    .buttons,
+    .description {
+      margin: 0;
+    }
   }
 }
 
@@ -288,6 +289,88 @@
 
     .options {
       max-width: 19.5rem;
+    }
+  }
+
+  .project {
+    &.view {
+      grid-template-areas:
+        "img title"
+        "img buttons"
+        "img buttons"
+        "img technologies"
+        "learning time"
+        "learning time"
+        "learning description"
+        "difficulties description "
+        "difficulties description";
+    }
+
+    h3 {
+      grid-area: title;
+    }
+
+    .img {
+      grid-area: img;
+    }
+
+    .description {
+      grid-area: description;
+    }
+
+    .technologies {
+      grid-area: technologies;
+    }
+
+    .buttons {
+      grid-area: buttons;
+
+      .btn {
+        width: 8rem;
+      }
+    }
+
+    .learning {
+      grid-area: learning;
+    }
+
+    .difficulties {
+      grid-area: difficulties;
+    }
+
+    .dates {
+      grid-area: time;
+    }
+  }
+}
+
+@mixin styles-projects-1024 {
+  .projects {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .project {
+
+    &.view {
+      h3 {
+        font-size: 2.5rem;
+      }
+
+      gap: 1rem 2rem;
+      grid-template-areas: "img title"
+      "img buttons"
+      "img technologies"
+      "img time"
+      "img time"
+      "learning description"
+      "difficulties description "
+      "difficulties description";
+
+      p {
+        max-width: 30rem;
+      }
     }
   }
 }

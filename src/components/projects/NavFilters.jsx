@@ -31,14 +31,14 @@ function NavFilters () {
   return (
     <div className='filters d-flex jc-center align-center p-relative'>
       <div
-        className={`filter date d-flex jc-center align-center ${activeOption === 'date' ? 'active' : ''}`}
+        className={`filter d-flex jc-center align-center ${activeOption === 'date' ? 'active' : ''}`}
         onClick={(e) => { handleOnClickToggleOptions(e, 'date') }}
       >
         <span>Ordenar por</span>
         <AiOutlineDown />
       </div>
       <div
-        className={`filter date d-flex jc-center align-center ${activeOption === 'language' ? 'active' : ''}`}
+        className={`filter d-flex jc-center align-center ${activeOption === 'language' ? 'active' : ''}`}
         onClick={(e) => { handleOnClickToggleOptions(e, 'language') }}
       >
         <span>Filtrar por</span>

@@ -94,7 +94,8 @@ section{
 .jc-between {
 	justify-content: space-between;
 }
-.jc-center {
+.jc-center,
+.jc-center-sm {
 	justify-content: center;
 }
 .jc-end{
@@ -163,6 +164,7 @@ section{
 .fill-link {
 	fill: var(--color-link);
 }
+.text-justify,
 .text-justify-sm{
 	text-align: justify;
 }
@@ -187,6 +189,9 @@ section{
 	.text-justify-sm {
 		text-align: start;
 	}
+  .jc-center-sm{
+    justify-content: start;
+  }
 	
 
 	section .container,

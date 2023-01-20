@@ -1,11 +1,11 @@
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import MainContext from '../../context/MainContext'
 
 function Logo () {
-  const handleOnClick = () => {
-    document.querySelector('body').scrollIntoView()
-  }
+  const { scrollToTop } = useContext(MainContext)
   return (
-    <Link to='/' onClick={handleOnClick} className='logo'>
+    <Link to='/' onClick={scrollToTop} className='logo'>
       <img src='https://marcosrubi.github.io/_mrubi-v2023/public/images/logo.webp' alt='Logo de Marcos Rubí' />
     </Link>
   )
