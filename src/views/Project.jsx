@@ -7,7 +7,7 @@ import Date from '../components/projects/Date'
 function Project () {
   const navigate = useNavigate()
   const { title } = useParams()
-  const { findProjectByTitle, scrollToTop } = useContext(MainContext)
+  const { findProjectByTitle, scrollToTop, updateProjectImages } = useContext(MainContext)
   const project = findProjectByTitle(title)
 
   scrollToTop()
@@ -21,7 +21,7 @@ function Project () {
           <button className='btn btn-secondary' onClick={() => { navigate(-1) }}><span>Ir a proyectos</span> </button>
         </div>
         <div className='project view'>
-          <Link to='imagenes' className='img d-flex jc-center-sm'>
+          <Link to='imagenes' className='img d-flex jc-center-sm' onClick={() => { updateProjectImages(project[0].routeImages) }}>
             <img src={`../public/${project[0].routeImages.preview}`} alt='Imagen del proyecto' className='d-flex' />
           </Link>
           <h3>{project[0].title}</h3>
@@ -32,8 +32,8 @@ function Project () {
           <div className='buttons'>
             <h4>Enlaces</h4>
             <div className='d-flex flex-wrap'>
-              <button className='btn btn-primary'><span>Ver Demo</span></button>
-              <button className='btn btn-secondary'><span>Ver Código</span></button>
+              <a href={project[0].urlDemo} target='_blank' className='btn btn-primary' rel='noreferrer'><span>Ver Demo</span></a>
+              <a href={project[0].urlRepo} target='_blank' className='btn btn-secondary' rel='noreferrer'><span>Ver Código</span></a>
             </div>
           </div>
           <div className='dates'>
