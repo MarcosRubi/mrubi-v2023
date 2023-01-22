@@ -376,6 +376,24 @@
       }
 
       gap: 1rem 2rem;
+
+      p {
+        max-width: 30rem;
+      }
+
+      .buttons {
+        .btn {
+          min-width: 10rem;
+        }
+      }
+    }
+  }
+}
+
+@mixin styles-projects-1200 {
+  .project {
+
+    &.view {
       grid-template-areas: "img title"
       "img buttons"
       "img technologies"
@@ -384,10 +402,6 @@
       "learning description"
       "difficulties description "
       "difficulties description";
-
-      p {
-        max-width: 30rem;
-      }
     }
   }
 }

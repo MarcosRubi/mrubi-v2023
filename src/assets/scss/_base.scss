@@ -121,6 +121,9 @@ section{
 	padding: 1rem 1.25rem;
 	border-radius: 0.25rem;
 	font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 	span {
 		pointer-events: none;
 	}

@@ -1,73 +1,114 @@
 .modal {
-	background-color: var(--bg-color);
-	top: 60px;
-	width: 100%;
-	height: 100vh;
-	padding: 0 0.5rem;
-	overflow-y: scroll;
-	.btn {
-		margin: 1rem 0;
-		svg polygon {
-			stroke: var(--text-color);
-		}
-	}
+  background-color: var(--bg-color);
+  top: 56px;
+  width: 100%;
+  height: 100vh;
+  padding: 0 0.5rem;
+  overflow-y: scroll;
+
+  .btn {
+    margin: 1rem 0;
+
+    svg polygon {
+      stroke: var(--text-color);
+    }
+  }
+
+  &.project-images {
+    overflow-y: hidden;
+
+    .modal__img {
+      height: 100%;
+
+      div {
+        height: 100%;
+        overflow-y: scroll;
+      }
+    }
+  }
 }
 
 @mixin styles-modal-768 {
-	.modal {
-		top: 0;
-		width: calc(100vw - 4rem);
-		height: 100vh;
-		margin-left: 4rem;
-		overflow-x: hidden;
-    z-index: 777;
-		&__img {
-			padding: 1rem;
-		}
-		.btn{
-			color: var(--color-hover);
-			background-color: rgba(0, 0, 0, 0.25);
-		}
-		.buttons {
-			position: absolute;
-			top: 70vh;
-			transform: translateY(-50%);
-			width: 100%;
-			padding: 0 2rem 0 1rem;
-			.btn {
-				svg polygon {
-					stroke: var(--color-hover);
-				}
-			}
-		}
-	}
+  .modal {
+    top: 0;
+    width: calc(100vw - 4rem);
+    height: 100vh;
+    margin-left: 4rem;
+    overflow-x: hidden;
+    z-index: 888;
+
+    .close {
+      position: fixed;
+      width: calc(100vw - 6rem);
+      z-index: 100;
+    }
+
+    &__img {
+      padding: 1rem;
+    }
+
+    .btn {
+      color: var(--color-hover);
+      background-color: rgba(0, 0, 0, 0.25);
+    }
+
+    .buttons {
+      position: absolute;
+      top: 70vh;
+      transform: translateY(-50%);
+      width: 100%;
+      padding: 0 2rem 0 1rem;
+
+      .btn {
+        svg polygon {
+          stroke: var(--color-hover);
+        }
+      }
+    }
+  }
+  .projects .modal.project-images .buttons {
+    padding: 0 2rem;
+  }
 }
+
 @mixin styles-modal-1024 {
-	.modal {
-		top: 0;
-		width: calc(100vw - 4rem);
-		height: 100vh;
-		margin-left: 4rem;
-		overflow-x: hidden;
-		&__img {
-			max-width: 55%;
-			margin: auto;
-		}
-		.btn{
-			color: var(--color-hover);
-			background-color: rgba(0, 0, 0, 0.25);
-		}
-		.buttons {
-			position: absolute;
-			top: 60vh;
-			transform: translateY(-50%);
-			width: 100%;
-			padding: 0 4rem 0 2rem;
-			.btn {
-				svg polygon {
-					stroke: var(--color-hover);
-				}
-			}
-		}
-	}
+  .modal {
+    top: 0;
+    width: calc(100vw - 4rem);
+    height: 100vh;
+    margin-left: 4rem;
+    overflow-x: hidden;
+
+    &__img {
+      max-width: 55%;
+      margin: auto;
+    }
+
+    .btn {
+      color: var(--color-hover);
+      background-color: rgba(0, 0, 0, 0.25);
+    }
+
+    .buttons {
+      position: absolute;
+      top: 60vh;
+      transform: translateY(-50%);
+      width: 100%;
+      padding: 0 4rem 0 2rem;
+
+      .btn {
+        svg polygon {
+          stroke: var(--color-hover);
+        }
+      }
+    }
+  }
+
+  .projects .modal__img {
+    margin: initial;
+    max-width: 100%;
+    .p-absolute {
+      max-width: 1000px;
+    }
+  }
 }

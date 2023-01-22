@@ -12,8 +12,9 @@
 		"urlRepo": "https://github.com/MarcosRubi/pintelog",
 		"routeImages": {
 			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "rutaimagen/mobiledesign.jpg",
-			"desktopDesign": "rutaimagen/desktopdesign.jpg"
+			"mobileDesign": "images/projects/mobileDesign/a.jpg",
+			"tabletDesign": "images/projects/tabletDesign/a.jpg",
+			"desktopDesign": "images/projects/desktopDesign/a.jpg"
 		}
 	},
 	{
@@ -29,8 +30,9 @@
 		"urlRepo": "https://github.com/MarcosRubi/Manage-landing-page",
 		"routeImages": {
 			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "rutaimagen/mobiledesign.jpg",
-			"desktopDesign": "rutaimagen/desktopdesign.jpg"
+			"mobileDesign": "images/projects/mobileDesign/a.jpg",
+			"tabletDesign": "images/projects/tabletDesign/a.jpg",
+			"desktopDesign": "images/projects/desktopDesign/a.jpg"
 		}
 	},
 	{
@@ -46,8 +48,9 @@
 		"urlRepo": "https://github.com/MarcosRubi/Crowdfunding-product-page",
 		"routeImages": {
 			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "rutaimagen/mobiledesign.jpg",
-			"desktopDesign": "rutaimagen/desktopdesign.jpg"
+			"mobileDesign": "images/projects/mobileDesign/a.jpg",
+			"tabletDesign": "images/projects/tabletDesign/a.jpg",
+			"desktopDesign": "images/projects/desktopDesign/a.jpg"
 		}
 	},
 	{
@@ -63,8 +66,9 @@
 		"urlRepo": "https://github.com/MarcosRubi/Tip-calculator-app",
 		"routeImages": {
 			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "rutaimagen/mobiledesign.jpg",
-			"desktopDesign": "rutaimagen/desktopdesign.jpg"
+			"mobileDesign": "images/projects/mobileDesign/a.jpg",
+			"tabletDesign": "images/projects/tabletDesign/a.jpg",
+			"desktopDesign": "images/projects/desktopDesign/a.jpg"
 		}
 	},
 	{
@@ -80,8 +84,9 @@
 		"urlRepo": "https://github.com/MarcosRubi/Social-media-dashboard-with-theme-switcher",
 		"routeImages": {
 			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "rutaimagen/mobiledesign.jpg",
-			"desktopDesign": "rutaimagen/desktopdesign.jpg"
+			"mobileDesign": "images/projects/mobileDesign/a.jpg",
+			"tabletDesign": "images/projects/tabletDesign/a.jpg",
+			"desktopDesign": "images/projects/desktopDesign/a.jpg"
 		}
 	},
 	{
@@ -97,8 +102,9 @@
 		"urlRepo": "https://github.com/MarcosRubi/ListaTareas",
 		"routeImages": {
 			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "rutaimagen/mobiledesign.jpg",
-			"desktopDesign": "rutaimagen/desktopdesign.jpg"
+			"mobileDesign": "images/projects/mobileDesign/a.jpg",
+			"tabletDesign": "images/projects/tabletDesign/a.jpg",
+			"desktopDesign": "images/projects/desktopDesign/a.jpg"
 		}
 	},
 	{
@@ -114,8 +120,9 @@
 		"urlRepo": "https://github.com/MarcosRubi/Job-listings-with-filtering",
 		"routeImages": {
 			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "rutaimagen/mobiledesign.jpg",
-			"desktopDesign": "rutaimagen/desktopdesign.jpg"
+			"mobileDesign": "images/projects/mobileDesign/a.jpg",
+			"tabletDesign": "images/projects/tabletDesign/a.jpg",
+			"desktopDesign": "images/projects/desktopDesign/a.jpg"
 		}
 	},
 	{
@@ -131,8 +138,9 @@
 		"urlRepo": "https://github.com/MarcosRubi/Advice-generator-app-with-react-and-tailwind",
 		"routeImages": {
 			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "rutaimagen/mobiledesign.jpg",
-			"desktopDesign": "rutaimagen/desktopdesign.jpg"
+			"mobileDesign": "images/projects/mobileDesign/a.jpg",
+			"tabletDesign": "images/projects/tabletDesign/a.jpg",
+			"desktopDesign": "images/projects/desktopDesign/a.jpg"
 		}
 	},
 	{
@@ -148,8 +156,9 @@
 		"urlRepo": "https://github.com/MarcosRubi/Clipboard-landing-page",
 		"routeImages": {
 			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "rutaimagen/mobiledesign.jpg",
-			"desktopDesign": "rutaimagen/desktopdesign.jpg"
+			"mobileDesign": "images/projects/mobileDesign/a.jpg",
+			"tabletDesign": "images/projects/tabletDesign/a.jpg",
+			"desktopDesign": "images/projects/desktopDesign/a.jpg"
 		}
 	},
 	{
@@ -165,8 +174,9 @@
 		"urlRepo": "https://github.com/MarcosRubi/Fylo-dark-theme-landing-page",
 		"routeImages": {
 			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "rutaimagen/mobiledesign.jpg",
-			"desktopDesign": "rutaimagen/desktopdesign.jpg"
+			"mobileDesign": "images/projects/mobileDesign/a.jpg",
+			"tabletDesign": "images/projects/tabletDesign/a.jpg",
+			"desktopDesign": "images/projects/desktopDesign/a.jpg"
 		}
 	},
 	{
@@ -182,8 +192,9 @@
 		"urlRepo": "https://github.com/MarcosRubi/inveto",
 		"routeImages": {
 			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "rutaimagen/mobiledesign.jpg",
-			"desktopDesign": "rutaimagen/desktopdesign.jpg"
+			"mobileDesign": "images/projects/mobileDesign/a.jpg",
+			"tabletDesign": "images/projects/tabletDesign/a.jpg",
+			"desktopDesign": "images/projects/desktopDesign/a.jpg"
 		}
 	},
 	{
@@ -199,8 +210,9 @@
 		"urlRepo": "https://github.com/MarcosRubi/charity",
 		"routeImages": {
 			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "rutaimagen/mobiledesign.jpg",
-			"desktopDesign": "rutaimagen/desktopdesign.jpg"
+			"mobileDesign": "images/projects/mobileDesign/a.jpg",
+			"tabletDesign": "images/projects/tabletDesign/a.jpg",
+			"desktopDesign": "images/projects/desktopDesign/a.jpg"
 		}
 	},
 	{
@@ -216,8 +228,9 @@
 		"urlRepo": "https://github.com/MarcosRubi/studyInk",
 		"routeImages": {
 			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "rutaimagen/mobiledesign.jpg",
-			"desktopDesign": "rutaimagen/desktopdesign.jpg"
+			"mobileDesign": "images/projects/mobileDesign/a.jpg",
+			"tabletDesign": "images/projects/tabletDesign/a.jpg",
+			"desktopDesign": "images/projects/desktopDesign/a.jpg"
 		}
 	},
 	{
@@ -233,8 +246,9 @@
 		"urlRepo": "https://github.com/MarcosRubi/Interactive-card-details-form",
 		"routeImages": {
 			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "rutaimagen/mobiledesign.jpg",
-			"desktopDesign": "rutaimagen/desktopdesign.jpg"
+			"mobileDesign": "images/projects/mobileDesign/a.jpg",
+			"tabletDesign": "images/projects/tabletDesign/a.jpg",
+			"desktopDesign": "images/projects/desktopDesign/a.jpg"
 		}
 	}
 ]
