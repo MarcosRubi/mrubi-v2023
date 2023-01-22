@@ -9,13 +9,23 @@ function ModalProject () {
   const { projectImages } = useContext(MainContext)
 
   const [imageToShow, setImageToShow] = useState(projectImages.mobileDesign)
+  const [positionImage, setPositionImage] = useState(1)
 
   const handleOnClick = (value) => {
-    if (value === 'mobile') {
+    const position = positionImage + value
+
+    if (position <= 1) {
       setImageToShow(projectImages.mobileDesign)
+      setPositionImage(1)
+      return
+    }
+    if (position === 2) {
+      setImageToShow(projectImages.tabletDesign)
+      setPositionImage(2)
       return
     }
     setImageToShow(projectImages.desktopDesign)
+    setPositionImage(3)
   }
   return (
     <div className='modal project-images p-fixed d-flex flex-column'>
@@ -30,8 +40,8 @@ function ModalProject () {
         </div>
       </div>
       <div className='d-flex jc-between mb-2 buttons'>
-        <button className='btn btn-secondary' onClick={() => { handleOnClick('mobile') }}><GrCaretPrevious /></button>
-        <button className='btn btn-secondary' onClick={() => { handleOnClick('desktop') }}><GrCaretNext /></button>
+        <button className={`btn btn-secondary ${positionImage === 1 && 'hide'}`} onClick={() => { handleOnClick(-1) }}><GrCaretPrevious /></button>
+        <button className={`btn btn-secondary ${positionImage === 3 && 'hide'}`} onClick={() => { handleOnClick(+1) }}><GrCaretNext /></button>
       </div>
     </div>
   )

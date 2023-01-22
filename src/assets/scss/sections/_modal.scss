@@ -25,6 +25,10 @@
         overflow-y: scroll;
       }
     }
+    .buttons .btn.hide{
+      opacity: 0;
+      pointer-events: none;
+    }
 
   }
 }
