@@ -13,7 +13,7 @@ function Banner () {
         <div className='banner__about-me'>
           <h1>Hola, soy <span>Marcos Rubí</span></h1>
           <p>Técnico en sistemas y redes, actualmente estoy cursando último año de ingeniería en sistemas y redes.</p>
-          <button className='btn btn-primary  align-center'>
+          <button className='btn btn-primary'>
             <span>Descargar CV</span>
             <FiDownload />
           </button>

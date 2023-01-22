@@ -8,6 +8,7 @@ export function MainContextProvider (props) {
   const [certificates, setCertificates] = useState([])
   const [projects, setProjects] = useState([])
   const [projectsToShow, setProjectsToShow] = useState(6)
+  const [projectImages, setProjectImages] = useState([])
 
   useEffect(() => {
     setCertificates(dataCertificates)
@@ -46,9 +47,13 @@ export function MainContextProvider (props) {
     document.querySelector('body').scrollIntoView()
   }
 
+  const updateProjectImages = (images) => {
+    setProjectImages(images)
+  }
+
   return (
     <MainContext.Provider
-      value={{ certificates, projects, findProjectByTitle, projectsToShow, updateProjectsToShow, resetTitle, findCertificateByName, scrollToTop }}
+      value={{ certificates, projects, findProjectByTitle, projectsToShow, updateProjectsToShow, resetTitle, findCertificateByName, scrollToTop, projectImages, updateProjectImages }}
     >
       {props.children}
     </MainContext.Provider>

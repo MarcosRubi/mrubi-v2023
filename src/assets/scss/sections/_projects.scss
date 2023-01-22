@@ -194,9 +194,17 @@
     font-size: 0.9rem;
     display: inline-block;
   }
+
+  .modal {
+    left: 0;
+  }
 }
 
 .project {
+  h3 {
+    max-width: 30rem;
+  }
+
   &__card {
     border: 1px solid var(--bg-footer);
     border-radius: 0.25rem;
@@ -290,6 +298,14 @@
     .options {
       max-width: 19.5rem;
     }
+
+    .modal {
+      .buttons {
+        top: 50%;
+        left: 0;
+        padding: 0 0 0 4rem;
+      }
+    }
   }
 
   .project {
@@ -349,6 +365,7 @@
     h3 {
       font-size: 1.5rem;
     }
+
   }
 
   .project {
@@ -359,6 +376,24 @@
       }
 
       gap: 1rem 2rem;
+
+      p {
+        max-width: 30rem;
+      }
+
+      .buttons {
+        .btn {
+          min-width: 10rem;
+        }
+      }
+    }
+  }
+}
+
+@mixin styles-projects-1200 {
+  .project {
+
+    &.view {
       grid-template-areas: "img title"
       "img buttons"
       "img technologies"
@@ -367,10 +402,6 @@
       "learning description"
       "difficulties description "
       "difficulties description";
-
-      p {
-        max-width: 30rem;
-      }
     }
   }
 }
