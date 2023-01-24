@@ -53,7 +53,7 @@ export function MainContextProvider (props) {
 
   return (
     <MainContext.Provider
-      value={{ certificates, projects, findProjectByTitle, projectsToShow, updateProjectsToShow, resetTitle, findCertificateByName, scrollToTop, projectImages, updateProjectImages }}
+      value={{ certificates, projects, findProjectByTitle, projectsToShow, updateProjectsToShow, resetTitle, findCertificateByName, scrollToTop, projectImages, updateProjectImages, setProjects }}
     >
       {props.children}
     </MainContext.Provider>

@@ -1,31 +1,19 @@
 import { useState } from 'react'
+
 import { AiOutlineDown } from 'react-icons/ai'
 
-function NavFilters () {
+function NavFilters ({ changeOrder, order }) {
   const [activeOption, setActiveOption] = useState('')
-  const [order, setOrder] = useState('default')
 
   const handleOnClickToggleOptions = (e, selected) => {
     if (activeOption === selected) {
-      removeActiveOption()
+      setActiveOption('')
       return
     }
 
     document.querySelector('body').offsetWidth >= 768 && e.target.scrollIntoView()
 
     setActiveOption(selected)
-  }
-
-  const handleOnClickOptions = (newOrder) => {
-    changeOrder(newOrder)
-  }
-
-  const changeOrder = (newOrder) => {
-    setOrder(newOrder)
-  }
-
-  const removeActiveOption = () => {
-    setActiveOption('')
   }
 
   return (
@@ -46,9 +34,9 @@ function NavFilters () {
       </div>
       <div className={`options w-100 p-absolute ${activeOption === 'date' ? 'show' : ''}`}>
         <div className=' d-flex flex-column'>
-          <button className={`btn btn-secondary ${order === 'default' ? 'selected' : ''}`} onClick={() => handleOnClickOptions('default')}> Destacados </button>
-          <button className={`btn btn-secondary ${order === 'new' ? 'selected' : ''}`} onClick={() => handleOnClickOptions('new')}> Más recientes </button>
-          <button className={`btn btn-secondary ${order === 'old' ? 'selected' : ''}`} onClick={() => handleOnClickOptions('old')}> Más antiguos </button>
+          <button className={`btn btn-secondary ${order === 'default' ? 'selected' : ''}`} onClick={() => { changeOrder('default') }}> Destacados </button>
+          <button className={`btn btn-secondary ${order === 'new' ? 'selected' : ''}`} onClick={() => { changeOrder('new') }}> Más recientes </button>
+          <button className={`btn btn-secondary ${order === 'old' ? 'selected' : ''}`} onClick={() => { changeOrder('old') }}> Más antiguos </button>
         </div>
       </div>
       <div className={`options w-100 p-absolute languages ${activeOption === 'language' ? 'show' : ''}`}>
