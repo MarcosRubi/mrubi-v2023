@@ -12,6 +12,7 @@
 }
 
 .banner {
+  overflow-x: hidden;
 	& > svg{
 		z-index: -1;
 	}

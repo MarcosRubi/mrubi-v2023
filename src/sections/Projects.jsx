@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import MainContext from '../context/MainContext'
 import Card from '../components/projects/Card'
 import NavFilters from '../components/projects/NavFilters'
+import NotResults from '../components/projects/NotResults'
 
 function Projects () {
   const { order, projectsToShow, changeOrder, filterLanguages, arrProjects, handleOnClickProjectsBtn } =
@@ -27,6 +28,9 @@ function Projects () {
           order={order}
           filterLanguages={filterLanguages}
         />
+        {
+          arrProjects.length === 0 && <NotResults />
+        }
         <div className='projects__container'>
           {arrProjects.map((project, index) => {
             return (
