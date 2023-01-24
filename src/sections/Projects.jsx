@@ -1,12 +1,18 @@
-import { useContext, useState } from 'react'
+import { useContext, useState, useEffect } from 'react'
 import MainContext from '../context/MainContext'
 import Card from '../components/projects/Card'
 import NavFilters from '../components/projects/NavFilters'
 
 function Projects () {
-  const { projects, projectsToShow, updateProjectsToShow, setProjects } =
+  const { projects, projectsToShow, updateProjectsToShow } =
     useContext(MainContext)
   const [order, setOrder] = useState('default')
+  const [languages, setLanguages] = useState([])
+  const [arrProjects, setArrProjects] = useState([])
+
+  useEffect(() => {
+    setArrProjects(projects)
+  }, [projects])
 
   const handleOnClickProjectsBtn = (e, val) => {
     updateProjectsToShow(val)
@@ -18,26 +24,53 @@ function Projects () {
       }, 10)
   }
 
-  const changeOrder = (newOrder) => {
+  const changeOrder = (newOrder, arr = arrProjects) => {
     setOrder(newOrder)
 
     if (newOrder === 'old') {
-      setProjects(
-        projects.sort((x, y) => {
+      setArrProjects(
+        arr.sort((x, y) => {
           return x.endDate[2] - y.endDate[2]
         })
       )
       return
     }
     if (newOrder === 'new') {
-      setProjects(
-        projects.sort((x, y) => {
+      setArrProjects(
+        arr.sort((x, y) => {
           return y.endDate[2] - x.endDate[2]
         })
       )
       return
     }
-    setProjects(projects.sort((x, y) => x.id - y.id))
+    setArrProjects(arr.sort((x, y) => x.id - y.id))
+  }
+
+  const filterLanguages = (lang) => {
+    updateProjectsToShow(6)
+    if (languages.includes(lang)) {
+      const newLanguages = languages.filter((language) => language !== lang)
+      setLanguages(newLanguages)
+      filterProjects(newLanguages)
+      return
+    }
+
+    const newLanguages = [...languages, lang]
+    setLanguages(newLanguages)
+    filterProjects(newLanguages)
+  }
+
+  const filterProjects = (languagesFilter) => {
+    if (languagesFilter.length === 0) {
+      setArrProjects(projects)
+      changeOrder(order, projects)
+      return
+    }
+
+    const filteredProjects = projects.filter((project) =>
+      languagesFilter.every((lang) => project.technologies.includes(lang))
+    )
+    setArrProjects(filteredProjects)
   }
 
   return (
@@ -55,18 +88,25 @@ function Projects () {
             universitarios.
           </p>
         </div>
-        <NavFilters changeOrder={changeOrder} order={order} />
+        <NavFilters
+          changeOrder={changeOrder}
+          order={order}
+          filterLanguages={filterLanguages}
+          languages={languages}
+        />
         <div className='projects__container'>
-          {projects.map(
-            (project, index) => {
-              return (index + 1) <= projectsToShow && <Card project={project} key={index} />
-            }
-          )}
+          {arrProjects.map((project, index) => {
+            return (
+              index + 1 <= projectsToShow && (
+                <Card project={project} key={index} />
+              )
+            )
+          })}
         </div>
         <div className='btn-updates d-flex jc-center flex-wrap align-center flex-column-sm'>
           <button
             className={`btn btn-primary show-more ${
-              projectsToShow >= projects.length && 'hide'
+              projectsToShow >= arrProjects.length && 'hide'
             }`}
             onClick={(e) => {
               handleOnClickProjectsBtn(e, +3)

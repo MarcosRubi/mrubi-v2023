@@ -30,11 +30,14 @@ export function MainContextProvider (props) {
   }
 
   const updateProjectsToShow = (val) => {
+    if (val === 6) {
+      setProjectsToShow(6)
+      return
+    }
     if ((projectsToShow + val) <= 6) {
       setProjectsToShow(6)
       return
     }
-
     if ((projects.length + val) <= projectsToShow) {
       setProjectsToShow(projectsToShow - 3)
       return
