@@ -1,77 +1,11 @@
-import { useContext, useState, useEffect } from 'react'
+import { useContext } from 'react'
 import MainContext from '../context/MainContext'
 import Card from '../components/projects/Card'
 import NavFilters from '../components/projects/NavFilters'
 
 function Projects () {
-  const { projects, projectsToShow, updateProjectsToShow } =
+  const { order, projectsToShow, changeOrder, filterLanguages, arrProjects, handleOnClickProjectsBtn } =
     useContext(MainContext)
-  const [order, setOrder] = useState('default')
-  const [languages, setLanguages] = useState([])
-  const [arrProjects, setArrProjects] = useState([])
-
-  useEffect(() => {
-    setArrProjects(projects)
-  }, [projects])
-
-  const handleOnClickProjectsBtn = (e, val) => {
-    updateProjectsToShow(val)
-
-    e.target.classList.contains('show-more')
-      ? e.target.scrollIntoView(true)
-      : setTimeout(() => {
-        e.target.scrollIntoView(false)
-      }, 10)
-  }
-
-  const changeOrder = (newOrder, arr = arrProjects) => {
-    setOrder(newOrder)
-
-    if (newOrder === 'old') {
-      setArrProjects(
-        arr.sort((x, y) => {
-          return x.endDate[2] - y.endDate[2]
-        })
-      )
-      return
-    }
-    if (newOrder === 'new') {
-      setArrProjects(
-        arr.sort((x, y) => {
-          return y.endDate[2] - x.endDate[2]
-        })
-      )
-      return
-    }
-    setArrProjects(arr.sort((x, y) => x.id - y.id))
-  }
-
-  const filterLanguages = (lang) => {
-    updateProjectsToShow(6)
-    if (languages.includes(lang)) {
-      const newLanguages = languages.filter((language) => language !== lang)
-      setLanguages(newLanguages)
-      filterProjects(newLanguages)
-      return
-    }
-
-    const newLanguages = [...languages, lang]
-    setLanguages(newLanguages)
-    filterProjects(newLanguages)
-  }
-
-  const filterProjects = (languagesFilter) => {
-    if (languagesFilter.length === 0) {
-      setArrProjects(projects)
-      changeOrder(order, projects)
-      return
-    }
-
-    const filteredProjects = projects.filter((project) =>
-      languagesFilter.every((lang) => project.technologies.includes(lang))
-    )
-    setArrProjects(filteredProjects)
-  }
 
   return (
     <section className='projects'>
@@ -92,7 +26,6 @@ function Projects () {
           changeOrder={changeOrder}
           order={order}
           filterLanguages={filterLanguages}
-          languages={languages}
         />
         <div className='projects__container'>
           {arrProjects.map((project, index) => {

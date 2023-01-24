@@ -1,9 +1,12 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 
 import { AiOutlineDown } from 'react-icons/ai'
+import MainContext from '../../context/MainContext'
 
-function NavFilters ({ changeOrder, order, filterLanguages, languages }) {
+function NavFilters () {
   const [activeOption, setActiveOption] = useState('')
+  const { changeOrder, order, filterLanguages, languages } =
+    useContext(MainContext)
 
   const handleOnClickToggleOptions = (e, selected) => {
     if (activeOption === selected) {
@@ -94,6 +97,7 @@ function NavFilters ({ changeOrder, order, filterLanguages, languages }) {
               onChange={() => {
                 filterLanguages('JavaScript')
               }}
+              checked={languages.includes('JavaScript')}
             />
           </label>
           <label htmlFor='php' className='d-flex align-center language'>
@@ -105,6 +109,7 @@ function NavFilters ({ changeOrder, order, filterLanguages, languages }) {
               onChange={() => {
                 filterLanguages('PHP')
               }}
+              checked={languages.includes('PHP')}
             />
           </label>
           <label htmlFor='sql' className='d-flex align-center language'>
@@ -116,6 +121,7 @@ function NavFilters ({ changeOrder, order, filterLanguages, languages }) {
               onChange={() => {
                 filterLanguages('MySQL')
               }}
+              checked={languages.includes('MySQL')}
             />
           </label>
         </div>
@@ -130,6 +136,7 @@ function NavFilters ({ changeOrder, order, filterLanguages, languages }) {
               onChange={() => {
                 filterLanguages('React')
               }}
+              checked={languages.includes('React')}
             />
           </label>
           <label htmlFor='api' className='d-flex align-center language'>
@@ -141,6 +148,7 @@ function NavFilters ({ changeOrder, order, filterLanguages, languages }) {
               onChange={() => {
                 filterLanguages('API')
               }}
+              checked={languages.includes('API')}
             />
           </label>
           <label htmlFor='pug' className='d-flex align-center language'>
@@ -152,6 +160,7 @@ function NavFilters ({ changeOrder, order, filterLanguages, languages }) {
               onChange={() => {
                 filterLanguages('PUG')
               }}
+              checked={languages.includes('PUG')}
             />
           </label>
           <label htmlFor='scss' className='d-flex align-center language'>
@@ -163,6 +172,7 @@ function NavFilters ({ changeOrder, order, filterLanguages, languages }) {
               onChange={() => {
                 filterLanguages('SCSS')
               }}
+              checked={languages.includes('SCSS')}
             />
           </label>
         </div>
@@ -177,6 +187,7 @@ function NavFilters ({ changeOrder, order, filterLanguages, languages }) {
               onChange={() => {
                 filterLanguages('POO')
               }}
+              checked={languages.includes('POO')}
             />
           </label>
           <label htmlFor='ajax' className='d-flex align-center language last'>
@@ -188,6 +199,7 @@ function NavFilters ({ changeOrder, order, filterLanguages, languages }) {
               onChange={() => {
                 filterLanguages('AJAX')
               }}
+              checked={languages.includes('AJAX')}
             />
           </label>
         </div>
