@@ -30,7 +30,7 @@ function ModalProject () {
   return (
     <div className='modal project-images p-fixed d-flex flex-column'>
       <div className='close d-flex jc-end'>
-        <button className='btn btn-secondary' onClick={() => navigate(-1)}>
+        <button className='btn btn-controls' onClick={() => navigate(-1)}>
           <span><AiOutlineClose /></span>
         </button>
       </div>
@@ -40,8 +40,8 @@ function ModalProject () {
         </div>
       </div>
       <div className='d-flex jc-between mb-2 buttons'>
-        <button className={`btn btn-secondary ${positionImage === 1 && 'hide'}`} onClick={() => { handleOnClick(-1) }}><GrCaretPrevious /></button>
-        <button className={`btn btn-secondary ${positionImage === 3 && 'hide'}`} onClick={() => { handleOnClick(+1) }}><GrCaretNext /></button>
+        <button className={`btn btn-controls ${positionImage === 1 && 'hide'}`} onClick={() => { handleOnClick(-1) }}><GrCaretPrevious /></button>
+        <button className={`btn btn-controls ${positionImage === 3 && 'hide'}`} onClick={() => { handleOnClick(+1) }}><GrCaretNext /></button>
       </div>
     </div>
   )

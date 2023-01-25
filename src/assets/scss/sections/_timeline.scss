@@ -1,7 +1,8 @@
 .timeline {
-  .mb-1{
+  .mb-1 {
     margin-bottom: 1rem;
   }
+
   &__container {
     display: flex;
     justify-content: center;
@@ -47,9 +48,7 @@
     max-width: 30rem;
     margin: auto;
 
-    svg polygon {
-      stroke: var(--text-color);
-    }
+    
 
     .btn.hide {
       visibility: hidden;
@@ -80,11 +79,6 @@
       top: 50%;
       transform: translateY(-50%);
       width: -webkit-fill-available;
-      .btn{
-        border:none;
-        box-shadow: var(--shadow);
-        background: rgba(145, 145, 145, 0.5);
-      }
     }
   }
 }

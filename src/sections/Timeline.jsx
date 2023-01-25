@@ -252,8 +252,8 @@ function Timeline () {
           </div>
         </div>
         <div className='buttons d-flex align-center jc-between'>
-          <button className={`btn btn-secondary ${sectionToShow === 1 && 'hide'}`} onClick={() => { handleOnClick(-1) }}><GrCaretPrevious /></button>
-          <button className={`btn btn-secondary ${sectionToShow >= 5 && 'hide'}`} onClick={() => { handleOnClick(+1) }}><GrCaretNext /></button>
+          <button className={`btn btn-controls ${sectionToShow === 1 ? 'hide' : ''} `} onClick={() => { handleOnClick(-1) }}><GrCaretPrevious /></button>
+          <button className={`btn btn-controls ${sectionToShow >= 5 ? 'hide' : ''} `} onClick={() => { handleOnClick(+1) }}><GrCaretNext /></button>
         </div>
       </div>
     </section>
