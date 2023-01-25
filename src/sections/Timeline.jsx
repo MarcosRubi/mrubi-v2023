@@ -24,7 +24,7 @@ function Timeline () {
     setSectionToShow(sectionToShow + position)
   }
   return (
-    <section className='timeline'>
+    <section className='timeline' id='timeline'>
       <div className='container p-relative'>
         <h2 className='text-center'>Mi proceso</h2>
         <div className='timeline__container'>

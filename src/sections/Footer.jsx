@@ -4,7 +4,7 @@ import SocialLinks from '../components/footer/SocialLinks'
 
 function Footer () {
   return (
-    <footer>
+    <footer id='contact'>
       <div className='container'>
         <Repositories />
         <SocialLinks />

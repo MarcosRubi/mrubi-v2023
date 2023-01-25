@@ -39,6 +39,7 @@ function Nav ({ toggleMenu }) {
             <li className='w-100'><Link className='w-100 d-inline-block' onClick={() => handleOnClick('projects')}>Proyectos</Link></li>
             <li className='w-100'><Link className='w-100 d-inline-block' onClick={() => handleOnClick('experience')}>Experiencia</Link></li>
             <li className='w-100'><Link className='w-100 d-inline-block' onClick={() => handleOnClick('certificates')}>Certificados</Link></li>
+            <li className='w-100'><Link className='w-100 d-inline-block' onClick={() => handleOnClick('timeline')}>Mi Proceso</Link></li>
             <li className='w-100'><Link className='w-100 d-inline-block' onClick={() => handleOnClick('contact')}>Contactar</Link></li>
           </ul>
         </nav>
