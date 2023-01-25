@@ -59,7 +59,7 @@ export function MainContextProvider (props) {
   const updateProjectImages = (images) => {
     setProjectImages(images)
   }
-  // AQUI
+
   const handleOnClickProjectsBtn = (e, val) => {
     updateProjectsToShow(val)
 
