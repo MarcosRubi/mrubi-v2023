@@ -1,4 +1,8 @@
 .projects {
+  &.modal-active  .back,
+  &.modal-active  .view{
+    filter: blur(10px) opacity(.5);
+  }
   &__container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
@@ -51,8 +55,8 @@
     background: var(--bg-footer);
     top: 100%;
     border: 1px solid var(--bg-footer);
-    box-shadow: rgb(0 0 0 / 16%) 0px 10px 36px 0px,
-      rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+    border-left: none;
+    box-shadow: var(--shadow);
     z-index: 888;
     opacity: 0;
     pointer-events: none;

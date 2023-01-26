@@ -23,6 +23,7 @@
   left: 8px;
 }
 
+
 .menu {
   left: 0;
   z-index: 999;
@@ -35,6 +36,25 @@
     width: 100%;
     border-bottom: 1px solid var(--color-hover-alpha);
     pointer-events: none;
+    animation: headerLine-sm 1s ease-in-out;
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height:0%;
+    background-color: var(--bg-footer);
+    top: 0;
+    left: 0;
+    transition: height .3s ease-in-out;
+    z-index: -1;
+  }
+
+  a.logo{
+    transition: transform .3s ease-in-out;
+    &:hover{
+      transform: scale(1.15);
+    }
   }
 
   &.show-menu .menu__content {
@@ -42,47 +62,17 @@
     visibility: visible;
   }
 
-  &.sticky {
-    background-color: var(--bg-footer);
+  &.sticky::after {
+    height: 100%;
   }
 
-  &__hamburguer,
-  &__close {
+  &__hamburguer{
     width: 32px;
     cursor: pointer;
   }
 
   &__hamburguer {
     order: 5;
-  }
-
-  &__close {
-    height: 32px;
-
-    &:hover {
-      .line:first-child {
-        animation: menuCloseLine1 0.75s ease-in-out;
-      }
-
-      .line:last-child {
-        animation: menuCloseLine2 0.75s ease-in-out;
-        animation-delay: 0.1s;
-      }
-    }
-
-    .line {
-      margin: 0;
-      pointer-events: none;
-
-      &:first-child {
-        rotate: 45deg;
-      }
-
-      &:last-child {
-        rotate: -45deg;
-        transform: translate(2px, -2px);
-      }
-    }
   }
 
   &__content {
@@ -133,7 +123,7 @@
     min-width: 10rem;
     opacity: 0;
     visibility: hidden;
-    transition: all 500ms;
+    transition: top 500ms, opacity 500ms, visibility .2s;
 
     &.show {
       top: 100%;
@@ -227,45 +217,11 @@
     .btn {
       padding: 0.75rem 1rem;
       border: none;
+
+      &:hover {
+        animation: rotate 1s linear infinite;
+      }
     }
-  }
-}
-
-@keyframes menuCloseLine1 {
-
-  0%,
-  60% {
-    transform: translate(10px, -8px);
-    width: 10%;
-  }
-
-  50%,
-  100% {
-    width: 100%;
-    transform: translate(0px, 0px);
-  }
-
-  51% {
-    opacity: 0;
-  }
-}
-
-@keyframes menuCloseLine2 {
-
-  0%,
-  60% {
-    width: 10%;
-    transform: translate(10px, 8px);
-  }
-
-  50%,
-  100% {
-    width: 100%;
-    transform: translate(2px, -2px);
-  }
-
-  51% {
-    opacity: 0;
   }
 }
 
@@ -284,6 +240,7 @@
       height: 100%;
       border-right: 1px solid var(--color-hover-alpha);
       border-bottom: none;
+      animation: headerLine-md 1s ease-in-out;
     }
 
     &>div {
@@ -295,8 +252,8 @@
       left: 0;
     }
 
-    &.sticky {
-      background-color: var(--bg-color);
+    &.sticky::after {
+      height: 0;
     }
 
     &__content {
@@ -320,6 +277,9 @@
       min-width: 10rem;
       left: 50%;
       transform: translateY(-55%);
+
+      transition:top 500ms, opacity 500ms, visibility .2s, left 500ms, min-width 500ms;
+
 
       &.show {
         top: -50%;
@@ -366,7 +326,8 @@
       .social-list a {
         padding: 1rem 1.25rem;
       }
-      .btn{
+
+      .btn {
         font-size: 1rem;
       }
     }

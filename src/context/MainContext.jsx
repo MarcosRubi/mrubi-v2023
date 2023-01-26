@@ -12,6 +12,7 @@ export function MainContextProvider (props) {
   const [order, setOrder] = useState('default')
   const [languages, setLanguages] = useState([])
   const [arrProjects, setArrProjects] = useState([])
+  const [modalActive, setModalActive] = useState(false)
 
   useEffect(() => {
     setCertificates(dataCertificates)
@@ -19,9 +20,17 @@ export function MainContextProvider (props) {
     setArrProjects(dataProjects)
   }, [])
 
+  useEffect(() => {
+    document.querySelector('body').classList.toggle('overflow-hidden')
+  }, [modalActive])
+
   // Devolvemos el proyecto que coincida con la búsqueda
   const findProjectByTitle = (title) => {
     return projects.filter((project) => resetTitle(project.title) === title)
+  }
+
+  const toggleModalActive = () => {
+    setModalActive(!modalActive)
   }
 
   const findCertificateByName = (name) => {
@@ -123,7 +132,6 @@ export function MainContextProvider (props) {
     <MainContext.Provider
       value={{
         certificates,
-        projects,
         findProjectByTitle,
         projectsToShow,
         updateProjectsToShow,
@@ -132,14 +140,15 @@ export function MainContextProvider (props) {
         scrollToTop,
         projectImages,
         updateProjectImages,
-        setProjects,
         handleOnClickProjectsBtn,
         changeOrder,
         filterLanguages,
         filterProjects,
         order,
         arrProjects,
-        languages
+        languages,
+        toggleModalActive,
+        modalActive
       }}
     >
       {props.children}

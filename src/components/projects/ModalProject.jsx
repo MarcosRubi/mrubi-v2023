@@ -6,12 +6,12 @@ import MainContext from '../../context/MainContext'
 
 function ModalProject () {
   const navigate = useNavigate()
-  const { projectImages } = useContext(MainContext)
+  const { projectImages, toggleModalActive } = useContext(MainContext)
 
   const [imageToShow, setImageToShow] = useState(projectImages.mobileDesign)
   const [positionImage, setPositionImage] = useState(1)
 
-  const handleOnClick = (value) => {
+  const handleChangeImg = (value) => {
     const position = positionImage + value
 
     if (position <= 1) {
@@ -27,10 +27,14 @@ function ModalProject () {
     setImageToShow(projectImages.desktopDesign)
     setPositionImage(3)
   }
+  const handleCloseModal = () => {
+    toggleModalActive()
+    navigate(-1)
+  }
   return (
     <div className='modal project-images p-fixed d-flex flex-column'>
       <div className='close d-flex jc-end'>
-        <button className='btn btn-controls' onClick={() => navigate(-1)}>
+        <button className='btn btn-controls' onClick={() => { handleCloseModal() }}>
           <span><AiOutlineClose /></span>
         </button>
       </div>
@@ -40,8 +44,8 @@ function ModalProject () {
         </div>
       </div>
       <div className='d-flex jc-between mb-2 buttons'>
-        <button className={`btn btn-controls ${positionImage === 1 && 'hide'}`} onClick={() => { handleOnClick(-1) }}><GrCaretPrevious /></button>
-        <button className={`btn btn-controls ${positionImage === 3 && 'hide'}`} onClick={() => { handleOnClick(+1) }}><GrCaretNext /></button>
+        <button className={`btn btn-controls ${positionImage === 1 && 'hide'}`} onClick={() => { handleChangeImg(-1) }}><GrCaretPrevious /></button>
+        <button className={`btn btn-controls ${positionImage === 3 && 'hide'}`} onClick={() => { handleChangeImg(+1) }}><GrCaretNext /></button>
       </div>
     </div>
   )

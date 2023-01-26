@@ -28,7 +28,7 @@ function Nav ({ toggleMenu }) {
             />
             <span>Marcos Rubí</span>
           </div>
-          <div className='menu__close d-flex flex-column jc-center' onClick={toggleMenu}>
+          <div className='icon-close d-flex flex-column jc-center' onClick={toggleMenu}>
             <span className='line w-100' />
             <span className='line w-100' />
           </div>

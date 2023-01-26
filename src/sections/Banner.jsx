@@ -22,23 +22,50 @@ function Banner () {
           <h2>Habilidades</h2>
           <div className='skill-container d-flex align-center jc-center'>
             <div className='d-flex flex-column-sm'>
-              <AiOutlineHtml5 />
+              <div className='skill p-relative'>
+                <AiOutlineHtml5 />
+                <span className='tooltip p-absolute'>HTML5</span>
+              </div>
             </div>
             <div className='d-flex flex-column-sm'>
-              <TbBrandCss3 />
-              <FaSass />
-              <TbBrandBootstrap />
+              <div className='skill p-relative'>
+                <TbBrandCss3 />
+                <span className='tooltip p-absolute'>CSS3</span>
+              </div>
+              <div className='skill p-relative'>
+                <FaSass />
+                <span className='tooltip p-absolute'>SASS</span>
+              </div>
+              <div className='skill p-relative'>
+                <TbBrandBootstrap />
+                <span className='tooltip p-absolute'>Bootstrap</span>
+              </div>
             </div>
             <div className='d-flex flex-column-sm'>
-              <TbBrandJavascript />
-              <FaReact />
+              <div className='skill p-relative'>
+                <TbBrandJavascript />
+                <span className='tooltip p-absolute'>JavaScript</span>
+              </div>
+              <div className='skill p-relative'>
+                <FaReact />
+                <span className='tooltip p-absolute'>React.js</span>
+              </div>
             </div>
             <div className='d-flex flex-column-sm'>
-              <FiGithub />
+              <div className='skill p-relative'>
+                <FiGithub />
+                <span className='tooltip p-absolute'>Git</span>
+              </div>
             </div>
             <div className='d-flex flex-column-sm'>
-              <TbBrandPhp />
-              <SiMysql />
+              <div className='skill p-relative'>
+                <TbBrandPhp />
+                <span className='tooltip p-absolute'>PHP</span>
+              </div>
+              <div className='skill p-relative'>
+                <SiMysql />
+                <span className='tooltip p-absolute'>MySQL</span>
+              </div>
             </div>
           </div>
         </div>
