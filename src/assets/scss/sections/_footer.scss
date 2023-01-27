@@ -1,110 +1,111 @@
 footer {
-	background-color: var(--bg-footer);
-	padding: 1rem 0;
-	svg {
-		width: 24px;
-		height: 24px;
-	}
-	.container {
-		display: grid;
-		gap: 2rem;
-		justify-content: space-between;
-	}
+  background-color: var(--bg-footer);
+  transition: background-color 0.3s ease-in-out;
+  padding: 1rem 0;
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+  .container {
+    display: grid;
+    gap: 2rem;
+    justify-content: space-between;
+  }
 }
 .repositories {
-	&__item {
-		padding: 1rem 0;
-		.icon {
-			margin-right: 0.5rem;
-		}
-	}
+  &__item {
+    padding: 1rem 0;
+    .icon {
+      margin-right: 0.5rem;
+    }
+  }
 }
 .social {
-	svg {
-		fill: var(--text-color);
-	}
-	span {
-		padding-left: 0.5rem;
-	}
-	a {
-		padding: 1rem 1rem 1rem 0;
-		display: inline-flex;
-	}
+  svg {
+    fill: var(--text-color);
+  }
+  span {
+    padding-left: 0.5rem;
+  }
+  a {
+    padding: 1rem 1rem 1rem 0;
+    display: inline-flex;
+  }
 }
 .form-contact {
-	.btn span {
-		font-size: 1rem;
-	}
-	form {
-		max-width: 25rem;
-	}
+  .btn span {
+    font-size: 1rem;
+  }
+  form {
+    max-width: 25rem;
+  }
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-	width: 100%;
-	height: 40px;
-	border-radius: 0.25rem;
-	padding-left: 2rem;
-	outline: none;
-	border: none;
-	font-size: 1rem;
+  width: 100%;
+  height: 40px;
+  border-radius: 0.25rem;
+  padding-left: 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
 }
 textarea {
-	height: auto;
-	padding: 0.5rem 1rem 1rem 2rem;
+  height: auto;
+  padding: 0.5rem 1rem 1rem 2rem;
 }
 .input-group {
-	margin-top: 2rem;
-	label {
-		pointer-events: none;
-		top: 0.5rem;
-		color: #555;
-	}
-	.placeholder {
-		left: 2rem;
-		transition: all 0.3s ease-in-out;
-	}
-	.placeholder-icon {
-		left: 0.25rem;
-	}
-	input:focus ~ .placeholder-icon,
-	input:valid ~ .placeholder-icon,
-	textarea:focus ~ .placeholder-icon,
-	textarea:valid ~ .placeholder-icon {
-		color: var(--color-hover);
-	}
-	input:focus ~ .placeholder,
-	input:valid ~ .placeholder,
-	textarea:focus ~ .placeholder,
-	textarea:valid ~ .placeholder {
-		color: var(--txt-color);
-		transform: translate(-1.9rem, -1.5rem);
-		font-size: 0.9rem;
-	}
+  margin-top: 2rem;
+  label {
+    pointer-events: none;
+    top: 0.5rem;
+    color: #555;
+  }
+  .placeholder {
+    left: 2rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .placeholder-icon {
+    left: 0.25rem;
+  }
+  input:focus ~ .placeholder-icon,
+  input:valid ~ .placeholder-icon,
+  textarea:focus ~ .placeholder-icon,
+  textarea:valid ~ .placeholder-icon {
+    color: var(--color-hover);
+  }
+  input:focus ~ .placeholder,
+  input:valid ~ .placeholder,
+  textarea:focus ~ .placeholder,
+  textarea:valid ~ .placeholder {
+    color: var(--txt-color);
+    transform: translate(-1.9rem, -1.5rem);
+    font-size: 0.9rem;
+  }
 }
 
 @mixin styles-footer-768 {
-	footer {
-		.container {
-			grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-		}
-	}
+  footer {
+    .container {
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    }
+  }
 }
 
 @mixin styles-footer-1024 {
-	footer {
-		margin-top: 4rem;
-	}
+  footer {
+    margin-top: 4rem;
+  }
 }
 
 @mixin styles-footer-1200 {
-	footer .container {
-		grid-template-columns: repeat(3, 1fr);
-		padding: 1rem 0 0rem 4rem;
-	}
-	.social a{
-		padding: 1.5rem 1rem 1.5rem 0rem;
-	}
+  footer .container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 0 0rem 4rem;
+  }
+  .social a {
+    padding: 1.5rem 1rem 1.5rem 0rem;
+  }
 }

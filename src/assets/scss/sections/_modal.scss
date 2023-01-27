@@ -6,16 +6,17 @@
   padding: 0 0.5rem;
   overflow-y: scroll;
 
+  a.btn {
+    color: var(--color-hover);
+  }
+
   .btn {
     margin: 1rem 0;
-
-    svg polygon {
-      stroke: var(--text-color);
-    }
   }
 
   &.project-images {
     overflow-y: hidden;
+    background: transparent;
 
     .modal__img {
       height: 100%;
@@ -23,12 +24,22 @@
       div {
         height: 100%;
         overflow-y: scroll;
+        max-width: 75vw;
       }
+    }
+
+    .buttons .btn.hide {
+      opacity: 0;
+      pointer-events: none;
     }
   }
 }
 
 @mixin styles-modal-768 {
+  .mb-2 {
+    margin: 0;
+  }
+
   .modal {
     top: 0;
     width: calc(100vw - 4rem);
@@ -43,31 +54,29 @@
       z-index: 100;
     }
 
+    img {
+      max-width: 75%;
+    }
+
     &__img {
       padding: 1rem;
     }
 
-    .btn {
-      color: var(--color-hover);
-      background-color: rgba(0, 0, 0, 0.25);
-    }
-
     .buttons {
       position: absolute;
-      top: 70vh;
+      top: 50%;
       transform: translateY(-50%);
       width: 100%;
       padding: 0 2rem 0 1rem;
-
-      .btn {
-        svg polygon {
-          stroke: var(--color-hover);
-        }
-      }
     }
   }
+
   .projects .modal.project-images .buttons {
     padding: 0 2rem;
+  }
+
+  .projects .modal.project-images img {
+    max-width: 100%;
   }
 }
 
@@ -79,36 +88,20 @@
     margin-left: 4rem;
     overflow-x: hidden;
 
-    &__img {
-      max-width: 55%;
-      margin: auto;
-    }
-
-    .btn {
-      color: var(--color-hover);
-      background-color: rgba(0, 0, 0, 0.25);
-    }
-
     .buttons {
-      position: absolute;
-      top: 60vh;
-      transform: translateY(-50%);
-      width: 100%;
-      padding: 0 4rem 0 2rem;
-
-      .btn {
-        svg polygon {
-          stroke: var(--color-hover);
-        }
-      }
+      padding: 0 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
     }
   }
+}
 
-  .projects .modal__img {
-    margin: initial;
-    max-width: 100%;
-    .p-absolute {
-      max-width: 1000px;
+@mixin styles-modal-1200 {
+  .modal {
+    img {
+      max-width: 55%;
     }
   }
 }

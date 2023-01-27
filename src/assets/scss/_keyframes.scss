@@ -1,0 +1,61 @@
+@keyframes headerLine-sm {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+@keyframes headerLine-md {
+  0%{
+    height: 0%;
+  }
+  100%{
+    heigth: 100%;
+  }
+}
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(180deg);
+  }
+}
+@keyframes iconCloseLine1 {
+
+  0%,
+  60% {
+    transform: translate(10px, -8px);
+    width: 10%;
+  }
+
+  50%,
+  100% {
+    width: 100%;
+    transform: translate(0px, 0px);
+  }
+
+  51% {
+    opacity: 0;
+  }
+}
+
+@keyframes iconCloseLine2 {
+
+  0%,
+  60% {
+    width: 10%;
+    transform: translate(10px, 8px);
+  }
+
+  50%,
+  100% {
+    width: 100%;
+    transform: translate(2px, -2px);
+  }
+
+  51% {
+    opacity: 0;
+  }
+}

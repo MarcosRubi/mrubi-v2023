@@ -6,7 +6,7 @@ function SettingTheme ({ changeTheme }) {
   }
   return (
     <div className='menu__setting p-relative'>
-      <button className='btn btn-secondary' onClick={handleOnClick}>
+      <button className='btn' onClick={handleOnClick}>
         <FiSettings />
       </button>
       <div className='menu__preset-colors p-absolute w-100'>

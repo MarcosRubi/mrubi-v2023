@@ -38,14 +38,14 @@ function ModalCertificate () {
   return (
     <div className='modal p-fixed d-flex flex-column'>
       <div className='d-flex jc-end'>
-        <Link to='/' className='btn btn-secondary'><AiOutlineClose /></Link>
+        <Link to='/' className='btn btn-controls'><AiOutlineClose /></Link>
       </div>
       <div className='modal__img p-relative d-flex jc-center'>
         <img src={`../${certificateActive[0].routeImg}`} alt={`Certificado del curso ${certificateActive[0].name} completado por Marcos Rubí`} />
       </div>
       <div className='d-flex jc-between mb-2 buttons'>
-        <button className='btn btn-secondary' onClick={() => showNewCertificate(certificateActive[0].id - 1)}><GrCaretPrevious /></button>
-        <button className='btn btn-secondary' onClick={() => showNewCertificate(certificateActive[0].id + 1)}><GrCaretNext /></button>
+        <button className='btn btn-controls' onClick={() => showNewCertificate(certificateActive[0].id - 1)}><GrCaretPrevious /></button>
+        <button className='btn btn-controls' onClick={() => showNewCertificate(certificateActive[0].id + 1)}><GrCaretNext /></button>
       </div>
     </div>
   )

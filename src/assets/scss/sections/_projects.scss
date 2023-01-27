@@ -1,4 +1,8 @@
 .projects {
+  &.modal-active .back,
+  &.modal-active .view {
+    filter: blur(10px) opacity(0.5);
+  }
   &__container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
@@ -26,6 +30,7 @@
 
   .filter {
     border: 1px solid var(--bg-footer);
+    transition: border 0.3s ease-in-out;
     padding: 0.75rem 1.5rem;
     border-radius: 0.25rem;
     flex-grow: 1;
@@ -51,8 +56,8 @@
     background: var(--bg-footer);
     top: 100%;
     border: 1px solid var(--bg-footer);
-    box-shadow: rgb(0 0 0 / 16%) 0px 10px 36px 0px,
-      rgb(0 0 0 / 6%) 0px 0px 0px 1px;
+    border-left: none;
+    box-shadow: var(--shadow);
     z-index: 888;
     opacity: 0;
     pointer-events: none;
@@ -63,31 +68,34 @@
       pointer-events: initial;
     }
 
-    .btn-secondary {
+    .btn {
       border: none;
       border-bottom: 1px solid var(--color-hover-alpha);
       text-align: start;
       font-size: 1rem;
       border-radius: initial;
       position: relative;
+      span {
+        color: var(--text-color);
+      }
 
       &:last-child {
         border-bottom: none;
       }
 
-      &::before {
-        content: '';
+      &::after {
+        content: "";
         position: absolute;
         width: 0;
         height: 100%;
         top: 0;
         left: 0;
         background-color: var(--color-hover);
-        transition: width .3s ease-in-out;
+        transition: width 0.3s ease-in-out;
       }
 
-      &.selected::before {
-        width: .5rem;
+      &.selected::after {
+        width: 0.5rem;
       }
     }
   }
@@ -152,6 +160,7 @@
     margin: 0;
     padding: 0;
     width: 0;
+    opacity: 0;
   }
 
   .show-more,
@@ -160,6 +169,7 @@
     width: 100%;
     margin: 1rem;
     max-width: 14rem;
+    opacity: 1;
   }
 
   .btn-updates {
@@ -174,6 +184,7 @@
       font-size: 0.9rem;
       padding: 0.25rem;
       background-color: var(--bg-footer);
+      transition: background-color 0.3s ease-in-out;
       border-radius: 0.25rem;
       font-weight: bold;
 
@@ -189,6 +200,7 @@
 
   .date {
     background-color: var(--bg-footer);
+    transition: background-color 0.3s ease-in-out;
     padding: 0.25rem;
     border-radius: 0.25rem;
     font-size: 0.9rem;
@@ -207,6 +219,7 @@
 
   &__card {
     border: 1px solid var(--bg-footer);
+    transition: border 0.3s ease-in-out;
     border-radius: 0.25rem;
     overflow: hidden;
   }
@@ -272,6 +285,18 @@
   }
 }
 
+.not-found {
+  p {
+    max-width: 60rem;
+  }
+  svg {
+    width: 100%;
+    height: 100%;
+    max-width: 20rem;
+    margin: auto;
+  }
+}
+
 @mixin styles-projects-768 {
   .projects {
     .container {
@@ -296,12 +321,13 @@
     }
 
     .options {
-      max-width: 19.5rem;
+      max-width: 20.2rem;
     }
 
     .modal {
       .buttons {
         top: 50%;
+        transform: translateY(-50%);
         left: 0;
         padding: 0 0 0 4rem;
       }
@@ -365,11 +391,9 @@
     h3 {
       font-size: 1.5rem;
     }
-
   }
 
   .project {
-
     &.view {
       h3 {
         font-size: 2.5rem;
@@ -392,16 +416,16 @@
 
 @mixin styles-projects-1200 {
   .project {
-
     &.view {
-      grid-template-areas: "img title"
-      "img buttons"
-      "img technologies"
-      "img time"
-      "img time"
-      "learning description"
-      "difficulties description "
-      "difficulties description";
+      grid-template-areas:
+        "img title"
+        "img buttons"
+        "img technologies"
+        "img time"
+        "img time"
+        "learning description"
+        "difficulties description "
+        "difficulties description";
     }
   }
 }

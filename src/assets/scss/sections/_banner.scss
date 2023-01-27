@@ -1,65 +1,89 @@
 .skill-container {
-	align-items: flex-start;
-	& > div {
-		padding: 1rem;
-	}
-	svg {
-		color: var(--color-hover);
-		width: 2.25rem;
-		height: 2.25rem;
-		margin-top: 0.5rem;
-	}
+  align-items: flex-start;
+
+  & > div {
+    padding: 1rem;
+    gap: 1.25rem;
+  }
+
+  svg {
+    color: var(--color-hover);
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-top: 0.5rem;
+  }
 }
 
 .banner {
-	& > svg{
-		z-index: -1;
-	}
-	.btn {
-		display: inline-flex;
-		svg {
-			margin-left: 0.5rem;
-		}
-	}
-	&__about-me {
-		p {
-			margin: 1rem 0;
-		}
-	}
-	&__skills {
-		margin-top: 4rem;
-	}
+  overflow-x: hidden;
+
+  & > svg {
+    z-index: -1;
+  }
+
+  .btn {
+    display: inline-flex;
+    svg {
+      margin-left: 0.5rem;
+    }
+  }
+
+  .skill {
+    cursor: pointer;
+  }
+
+  &__about-me {
+    p {
+      margin: 1rem 0;
+    }
+  }
+
+  &__skills {
+    margin-top: 4rem;
+  }
 }
 
-@mixin styles-banner-768{
-	.skill-container {
-		& > div {
-			padding: .25rem;
-			margin-top: 1rem;
-			border: 1px solid var(--color-hover);
-			&:first-child{
-				border-radius: .25rem 0 0 .25rem;
-			}
-			&:last-child{
-				border-radius: 0 .25rem .25rem 0;
-			}
-		}
-		svg {
-			margin: 0 1rem;
-		}
-	}
+@mixin styles-banner-768 {
+  .skill-container {
+    & > div {
+      padding: 0.25rem;
+      gap: 0;
+      margin-top: 1rem;
+      border: 1px solid var(--color-hover);
+
+      &:first-child {
+        border-radius: 0.25rem 0 0 0.25rem;
+      }
+
+      &:last-child {
+        border-radius: 0 0.25rem 0.25rem 0;
+      }
+    }
+
+    svg {
+      margin: 0 1rem;
+    }
+  }
 }
 
 @mixin styles-banner-1024 {
-	.skill-container svg {
-		width: 3.25rem;
-		height: 3.25rem;
-	}
-	.banner {
-		min-height: 100vh;
-		display: flex;
-		&__about-me p {
-			font-size: 1.25rem;
-		}
-	}
+  .skill-container svg {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+
+  .banner {
+    min-height: 100vh;
+    display: flex;
+
+    &__about-me p {
+      font-size: 1.25rem;
+    }
+
+    .skill:hover span {
+      opacity: 1;
+      transform: translate(-50%, 1rem);
+      font-size: 1rem;
+    }
+  }
 }

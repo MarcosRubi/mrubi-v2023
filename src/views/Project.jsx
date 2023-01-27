@@ -7,22 +7,27 @@ import Date from '../components/projects/Date'
 function Project () {
   const navigate = useNavigate()
   const { title } = useParams()
-  const { findProjectByTitle, scrollToTop, updateProjectImages } = useContext(MainContext)
+  const { findProjectByTitle, scrollToTop, updateProjectImages, toggleModalActive, modalActive } = useContext(MainContext)
   const project = findProjectByTitle(title)
 
   scrollToTop()
 
   if (project.length === 0) { return }
 
+  const handleModalImg = () => {
+    updateProjectImages(project[0].routeImages)
+    toggleModalActive()
+  }
+
   return (
-    <section className='projects'>
+    <section className={`projects ${modalActive && 'modal-active'}`}>
       <div className='container'>
         <div className='back'>
           <button className='btn btn-secondary' onClick={() => { navigate(-1) }}><span>Ir a proyectos</span> </button>
         </div>
         <div className='project view'>
-          <Link to='imagenes' className='img d-flex jc-center-sm' onClick={() => { updateProjectImages(project[0].routeImages) }}>
-            <img src={`../public/${project[0].routeImages.preview}`} alt='Imagen del proyecto' className='d-flex' />
+          <Link to='imagenes' className='img d-flex jc-center-sm' onClick={handleModalImg}>
+            <img src={`../public/${project[0].routeImages.preview}`} alt={`Imagen del proyecto ${project[0].title} realizado por Marcos Rubí`} className='d-flex' />
           </Link>
           <h3>{project[0].title}</h3>
           <div className='technologies'>
