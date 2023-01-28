@@ -12,9 +12,9 @@
 		"urlRepo": "https://github.com/MarcosRubi/pintelog",
 		"routeImages": {
 			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "images/projects/mobileDesign/a.jpg",
-			"tabletDesign": "images/projects/tabletDesign/a.jpg",
-			"desktopDesign": "images/projects/desktopDesign/a.jpg"
+			"mobileDesign": "images/projects/mobileDesign/pintelog-sm.png",
+			"tabletDesign": "images/projects/tabletDesign/pintelog-md.png",
+			"desktopDesign": "images/projects/desktopDesign/pintelog-xl.png"
 		}
 	},
 	{
