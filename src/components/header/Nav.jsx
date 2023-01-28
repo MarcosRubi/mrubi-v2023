@@ -12,7 +12,7 @@ function Nav ({ toggleMenu }) {
   return (
     <>
       <div className='menu__hamburguer d-flex align-center'>
-        <div className='d-flex flex-column w-100' onClick={toggleMenu}>
+        <div className='lines d-flex flex-column w-100' onClick={toggleMenu}>
           <span className='line w-100' />
           <span className='line w-100' />
           <span className='line w-100' />

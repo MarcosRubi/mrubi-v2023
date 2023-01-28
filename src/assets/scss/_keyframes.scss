@@ -59,3 +59,16 @@
     opacity: 0;
   }
 }
+@keyframes menuHamburguerLine {
+  0% {
+    width: 100%;
+    margin-left: 0%;
+  }
+  50% {
+    width: 10%;
+    margin-left: 90%;
+  }
+  51% {
+    opacity: 0;
+  }
+}

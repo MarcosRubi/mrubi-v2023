@@ -38,11 +38,12 @@
     pointer-events: none;
     animation: headerLine-sm 1s ease-in-out;
   }
-  &::after{
+
+  &::after {
     content: '';
     position: absolute;
     width: 100%;
-    height:0%;
+    height: 0%;
     background-color: var(--bg-footer);
     top: 0;
     left: 0;
@@ -50,9 +51,10 @@
     z-index: -1;
   }
 
-  a.logo{
+  a.logo {
     transition: transform .3s ease-in-out;
-    &:hover{
+
+    &:hover {
       transform: scale(1.15);
     }
   }
@@ -66,9 +68,28 @@
     height: 100%;
   }
 
-  &__hamburguer{
+  &__hamburguer {
     width: 32px;
     cursor: pointer;
+
+    .lines {
+      &:hover span:first-child {
+        animation: menuHamburguerLine 0.75s ease-in-out;
+        animation-delay: 0.1s;
+        margin-bottom: 0.5rem;
+      }
+
+      &:hover span:nth-child(2) {
+        animation: menuHamburguerLine 0.75s ease-in-out;
+        animation-delay: 0.2s;
+      }
+
+      &:hover span:last-child {
+        margin-top: 0.15rem;
+        animation: menuHamburguerLine 0.75s ease-in-out;
+        animation-delay: 0.3s;
+      }
+    }
   }
 
   &__hamburguer {
@@ -219,7 +240,7 @@
       border: none;
 
       &:hover {
-        animation: rotate 1s linear infinite;
+        animation: rotate 1s linear;
       }
     }
   }
@@ -278,7 +299,7 @@
       left: 50%;
       transform: translateY(-55%);
 
-      transition:top 500ms, opacity 500ms, visibility .2s, left 500ms, min-width 500ms;
+      transition: top 500ms, opacity 500ms, visibility .2s, left 500ms, min-width 500ms;
 
 
       &.show {

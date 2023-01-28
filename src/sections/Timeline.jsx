@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import testImg from '../../public/images/projects/preview/a.webp'
+// eslint-disable-next-line import/no-absolute-path
+import testImg from '/images/projects/preview/a.webp'
 import { GrCaretPrevious, GrCaretNext } from 'react-icons/gr'
 import { useState, useEffect } from 'react'
 
