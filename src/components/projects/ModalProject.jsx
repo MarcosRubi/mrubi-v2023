@@ -6,7 +6,8 @@ import MainContext from '../../context/MainContext'
 
 function ModalProject () {
   const navigate = useNavigate()
-  const { projectImages, toggleModalActive } = useContext(MainContext)
+  const { projectImages, toggleModalActive, overflowBody } =
+    useContext(MainContext)
 
   const [imageToShow, setImageToShow] = useState(projectImages.mobileDesign)
   const [positionImage, setPositionImage] = useState(1)
@@ -29,13 +30,21 @@ function ModalProject () {
   }
   const handleCloseModal = () => {
     toggleModalActive()
+    overflowBody()
     navigate(-1)
   }
   return (
     <div className='modal project-images p-fixed d-flex flex-column'>
       <div className='close d-flex jc-end'>
-        <button className='btn btn-controls' onClick={() => { handleCloseModal() }}>
-          <span><AiOutlineClose /></span>
+        <button
+          className='btn btn-controls'
+          onClick={() => {
+            handleCloseModal()
+          }}
+        >
+          <span>
+            <AiOutlineClose />
+          </span>
         </button>
       </div>
       <div className='modal__img p-relative d-flex jc-center'>
@@ -44,8 +53,22 @@ function ModalProject () {
         </div>
       </div>
       <div className='d-flex jc-between mb-2 buttons'>
-        <button className={`btn btn-controls ${positionImage === 1 && 'hide'}`} onClick={() => { handleChangeImg(-1) }}><GrCaretPrevious /></button>
-        <button className={`btn btn-controls ${positionImage === 3 && 'hide'}`} onClick={() => { handleChangeImg(+1) }}><GrCaretNext /></button>
+        <button
+          className={`btn btn-controls ${positionImage === 1 && 'hide'}`}
+          onClick={() => {
+            handleChangeImg(-1)
+          }}
+        >
+          <GrCaretPrevious />
+        </button>
+        <button
+          className={`btn btn-controls ${positionImage === 3 && 'hide'}`}
+          onClick={() => {
+            handleChangeImg(+1)
+          }}
+        >
+          <GrCaretNext />
+        </button>
       </div>
     </div>
   )

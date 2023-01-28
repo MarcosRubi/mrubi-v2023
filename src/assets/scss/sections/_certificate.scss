@@ -1,8 +1,17 @@
-.certificates{
-	h2{
+.certificates {
+	h2 {
 		margin-bottom: 2rem;
 	}
-	&__container{
+
+	&__item {
+		transition: transform .3s ease-in-out;
+
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+
+	&__container {
 		display: grid;
 		gap: 1rem;
 		grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));

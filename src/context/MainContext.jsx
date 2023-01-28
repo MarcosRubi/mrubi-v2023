@@ -20,9 +20,9 @@ export function MainContextProvider (props) {
     setArrProjects(dataProjects)
   }, [])
 
-  useEffect(() => {
+  const overflowBody = () => {
     document.querySelector('body').classList.toggle('overflow-hidden')
-  }, [modalActive])
+  }
 
   // Devolvemos el proyecto que coincida con la búsqueda
   const findProjectByTitle = (title) => {
@@ -148,7 +148,8 @@ export function MainContextProvider (props) {
         arrProjects,
         languages,
         toggleModalActive,
-        modalActive
+        modalActive,
+        overflowBody
       }}
     >
       {props.children}

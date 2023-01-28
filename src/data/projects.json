@@ -1,254 +1,371 @@
 [
-	{
-		"id": 1,
-		"title": "Pintelog",
-		"description": "Red social de fotos.",
-		"technologies": ["HTML & CSS", "JavaScript", "SCSS", "PHP", "POO", "AJAX", "PUG", "MySQL"],
-		"startDate":["11","Junio", "2022"] ,
-		"endDate": [7, "Julio", 2022],
-		"learning": "Práctica usando AJAX con PHP y la Programación Orientada a Objetos, aprendí a usar las librerías de <a href='https://github.com/vlucas/phpdotenv' target='_blank'>Dotenv</a> para variables de entorno y <a href='https://github.com/PHPMailer/PHPMailer' target='_blank'>PHPMailer</a>  para el envío de emails.",
-		"difficulties": "La estructura de archivos ya que es el primer proyecto complejo, dentro de lo cabe que realizo, implementando un sistema de inicio de sesión, registro, crear publicaciones, buscar usuarios, añadir fotos a favoritos, editar usuario, eliminar publicaciones, entre otros funcionamientos.",
-		"urlDemo": "https://pintelog-app.000webhostapp.com/",
-		"urlRepo": "https://github.com/MarcosRubi/pintelog",
-		"routeImages": {
-			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "images/projects/mobileDesign/pintelog-sm.png",
-			"tabletDesign": "images/projects/tabletDesign/pintelog-md.png",
-			"desktopDesign": "images/projects/desktopDesign/pintelog-xl.png"
-		}
-	},
-	{
-		"id": 2,
-		"title": "Manage landing page",
-		"description": "Desafio de <a href='https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5' target='_blank'>Frontend Mentor</a>.",
-		"technologies": ["HTML & CSS", "JavaScript", "React"],
-		"startDate":["09","Septiembre", "2022"] ,
-		"endDate": [10, "Septiembre", 2022],
-		"learning": "Este es mi segundo proyecto realizado usando <a href='https://reactjs.org/' target='_blank'>React</a> y con este proyecto aprendí a usar <a href='https://www.w3schools.com/react/react_useref.asp' target='_blank'>useRef</a> y <a href='https://appatico.com/detectar-elemento-con-intersection-observer-en-react/' target='_blank'>la API de observer</a> con React.",
-		"difficulties": "",
-		"urlDemo": "https://marcosrubi.github.io/Manage-landing-page/",
-		"urlRepo": "https://github.com/MarcosRubi/Manage-landing-page",
-		"routeImages": {
-			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "images/projects/mobileDesign/a.jpg",
-			"tabletDesign": "images/projects/tabletDesign/a.jpg",
-			"desktopDesign": "images/projects/desktopDesign/a.jpg"
-		}
-	},
-	{
-		"id": 3,
-		"title": "Crowdfunding product page",
-		"description": "Desafio de <a href='https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR' target='_blank'>Frontend Mentor</a>.",
-		"technologies": ["HTML & CSS", "JavaScript"],
-		"startDate":["14","Agosto", "2022"] ,
-		"endDate": [15, "Agosto", 2022],
-		"learning": "",
-		"difficulties": "",
-		"urlDemo": "https://marcosrubi.github.io/Crowdfunding-product-page/",
-		"urlRepo": "https://github.com/MarcosRubi/Crowdfunding-product-page",
-		"routeImages": {
-			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "images/projects/mobileDesign/a.jpg",
-			"tabletDesign": "images/projects/tabletDesign/a.jpg",
-			"desktopDesign": "images/projects/desktopDesign/a.jpg"
-		}
-	},
-	{
-		"id": 4,
-		"title": "Tip calculator app",
-		"description": "Desafio de <a href='https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX' target='_blank'>Frontend Mentor</a>.",
-		"technologies": ["HTML & CSS", "JavaScript", "React"],
-		"startDate":["13","Septiembre", "2022"] ,
-		"endDate": [14, "Septiembre", 2022],
-		"learning": "",
-		"difficulties": "",
-		"urlDemo": "https://marcosrubi.github.io/Tip-calculator-app/",
-		"urlRepo": "https://github.com/MarcosRubi/Tip-calculator-app",
-		"routeImages": {
-			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "images/projects/mobileDesign/a.jpg",
-			"tabletDesign": "images/projects/tabletDesign/a.jpg",
-			"desktopDesign": "images/projects/desktopDesign/a.jpg"
-		}
-	},
-	{
-		"id": 5,
-		"title": "Social media dashboard with theme switcher",
-		"description": "Desafio de <a href='https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H' target='_blank'>Frontend Mentor</a>.",
-		"technologies": ["HTML & CSS", "JavaScript"],
-		"startDate":["26","Agosto", "2022"] ,
-		"endDate": [26, "Agosto", 2022],
-		"learning": "",
-		"difficulties": "",
-		"urlDemo": "https://marcosrubi.github.io/Social-media-dashboard-with-theme-switcher/",
-		"urlRepo": "https://github.com/MarcosRubi/Social-media-dashboard-with-theme-switcher",
-		"routeImages": {
-			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "images/projects/mobileDesign/a.jpg",
-			"tabletDesign": "images/projects/tabletDesign/a.jpg",
-			"desktopDesign": "images/projects/desktopDesign/a.jpg"
-		}
-	},
-	{
-		"id": 6,
-		"title": "Lista de Tareas",
-		"description": "Lista de Tareas.",
-		"technologies": ["HTML & CSS", "JavaScript", "AJAX", "PHP", "POO", "MySQL"],
-		"startDate":["03","Enero", "2021"] ,
-		"endDate": [2, "Febrero", 2021],
-		"learning": "Implementar AJAX con PHP. Primera vez que lo realizaba por mi cuenta, anteriormente solo en proyectos de la universidad lo había realizado.",
-		"difficulties": "Implementar AJAX con PHP. Primera vez que lo realizaba por mi cuenta, anteriormente solo en proyectos de la universidad lo había realizado.",
-		"urlDemo": "https://mi-proyecto.com",
-		"urlRepo": "https://github.com/MarcosRubi/ListaTareas",
-		"routeImages": {
-			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "images/projects/mobileDesign/a.jpg",
-			"tabletDesign": "images/projects/tabletDesign/a.jpg",
-			"desktopDesign": "images/projects/desktopDesign/a.jpg"
-		}
-	},
-	{
-		"id": 7,
-		"title": "Job listings with filtering",
-		"description": "Desafio de <a href='https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt' target='_blank'>Frontend Mentor</a>.",
-		"technologies": ["HTML & CSS", "JavaScript", "React"],
-		"startDate":["16","Septiembre", "2022"] ,
-		"endDate": [17, "Septiembre", 2022],
-		"learning": "",
-		"difficulties": "",
-		"urlDemo": "https://marcosrubi.github.io/Job-listings-with-filtering/",
-		"urlRepo": "https://github.com/MarcosRubi/Job-listings-with-filtering",
-		"routeImages": {
-			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "images/projects/mobileDesign/a.jpg",
-			"tabletDesign": "images/projects/tabletDesign/a.jpg",
-			"desktopDesign": "images/projects/desktopDesign/a.jpg"
-		}
-	},
-	{
-		"id": 8,
-		"title": "Advice generator app",
-		"description": "Desafio de <a href='https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db' target='_blank'>Frontend Mentor</a> usando una API.",
-		"technologies": ["HTML & CSS", "JavaScript", "React"],
-		"startDate":["07","Septiembre", "2022"] ,
-		"endDate": [8, "Septiembre", 2022],
-		"learning": "Consumo de API con <span>Fetch y React</span>, también conociendo el framework de <a href='https://tailwindcss.com/' target='_blank'>tailwind</a> para dar estilos",
-		"difficulties": "",
-		"urlDemo": "https://marcosrubi.github.io/Advice-generator-app-with-react-and-tailwind/",
-		"urlRepo": "https://github.com/MarcosRubi/Advice-generator-app-with-react-and-tailwind",
-		"routeImages": {
-			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "images/projects/mobileDesign/a.jpg",
-			"tabletDesign": "images/projects/tabletDesign/a.jpg",
-			"desktopDesign": "images/projects/desktopDesign/a.jpg"
-		}
-	},
-	{
-		"id": 9,
-		"title": "Clipboard landing page",
-		"description": "Desafio de <a href='https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9' target='_blank'>Frontend Mentor</a>.",
-		"technologies": ["HTML & CSS", "JavaScript"],
-		"startDate":["13","Septiembre", "2022"] ,
-		"endDate": [14, "Diciembre", 2022],
-		"learning": "",
-		"difficulties": "",
-		"urlDemo": "https://marcosrubi.github.io/Clipboard-landing-page/",
-		"urlRepo": "https://github.com/MarcosRubi/Clipboard-landing-page",
-		"routeImages": {
-			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "images/projects/mobileDesign/a.jpg",
-			"tabletDesign": "images/projects/tabletDesign/a.jpg",
-			"desktopDesign": "images/projects/desktopDesign/a.jpg"
-		}
-	},
-	{
-		"id": 10,
-		"title": "Fylo dark theme landing page",
-		"description": "Desafio de <a href='https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd' target='_blank'>Frontend Mentor</a>.",
-		"technologies": ["HTML & CSS", "JavaScript"],
-		"startDate":["09","Agosto", "2022"] ,
-		"endDate": [9, "Agosto", 2022],
-		"learning": "He aprendido mucho trabajando en este proyecto",
-		"difficulties": "La mayor dificultad ha sido integrar la API de tal servicio",
-		"urlDemo": "https://github.com/MarcosRubi/Fylo-dark-theme-landing-page",
-		"urlRepo": "https://github.com/MarcosRubi/Fylo-dark-theme-landing-page",
-		"routeImages": {
-			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "images/projects/mobileDesign/a.jpg",
-			"tabletDesign": "images/projects/tabletDesign/a.jpg",
-			"desktopDesign": "images/projects/desktopDesign/a.jpg"
-		}
-	},
-	{
-		"id": 11,
-		"title": "Inveto",
-		"description": "Plantilla para una web de cursos financieros.",
-		"technologies": ["HTML & CSS", "JavaScript"],
-		"startDate":["23","Diciembre", "2020"] ,
-		"endDate": [31, "Diciembre", 2020],
-		"learning": "Uso de la propiedad <span>order</span> de flexbox para obtener un mejor diseño en los diferentes tipos de pantallas.",
-		"difficulties": "Que el pie de página se adapte a cualquier tamaño de pantalla.",
-		"urlDemo": "https://inveto.vercel.app/",
-		"urlRepo": "https://github.com/MarcosRubi/inveto",
-		"routeImages": {
-			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "images/projects/mobileDesign/a.jpg",
-			"tabletDesign": "images/projects/tabletDesign/a.jpg",
-			"desktopDesign": "images/projects/desktopDesign/a.jpg"
-		}
-	},
-	{
-		"id": 12,
-		"title": "Charity",
-		"description": "Plantilla para una web de donativos.",
-		"technologies": ["HTML & CSS", "JavaScript"],
-		"startDate":["25","Noviembre", "2020"] ,
-		"endDate": [31, "Diciembre", 2020],
-		"learning": "Crear acordeón con HTML, CSS y JavaScript.",
-		"difficulties": "En la sección de <span>preguntas frecuentes</span> ya que era la primera vez que realizaba un acordeón, por lo que observe en diferentes plantillas su lógica e implemente el que consideraba mejor.",
-		"urlDemo": "https://charity.vercel.app/",
-		"urlRepo": "https://github.com/MarcosRubi/charity",
-		"routeImages": {
-			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "images/projects/mobileDesign/a.jpg",
-			"tabletDesign": "images/projects/tabletDesign/a.jpg",
-			"desktopDesign": "images/projects/desktopDesign/a.jpg"
-		}
-	},
-	{
-		"id": 13,
-		"title": "StudyInk",
-		"description": "Plantilla para una web de educación.",
-		"technologies": ["HTML & CSS", "JavaScript"],
-		"startDate":["07","Diciembre", "2020"] ,
-		"endDate": [31, "Diciembre", 2020],
-		"learning": "Menu sticky que reduce su altura cuando el usuario desplaza hacia abajo.",
-		"difficulties": "Agregar efecto al menu cuando el usuario haga scroll.",
-		"urlDemo": "https://study-ink.vercel.app/",
-		"urlRepo": "https://github.com/MarcosRubi/studyInk",
-		"routeImages": {
-			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "images/projects/mobileDesign/a.jpg",
-			"tabletDesign": "images/projects/tabletDesign/a.jpg",
-			"desktopDesign": "images/projects/desktopDesign/a.jpg"
-		}
-	},
-	{
-		"id": 14,
-		"title": "Interactive card details form",
-		"description": "Desafio de <a href='https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw' target='_blank'>Frontend Mentor</a>.",
-		"technologies": ["HTML & CSS", "SCSS"],
-		"startDate":["20","Agosto", "2022"] ,
-		"endDate": [20, "Agosto", 2022],
-		"learning": "Agregar espacios en blanco cada 4 dígitos en el número de tarjeta.",
-		"difficulties": "Agregar espacios en blanco cada 4 dígitos en el número de tarjeta.",
-		"urlDemo": "https://marcosrubi.github.io/Interactive-card-details-form/",
-		"urlRepo": "https://github.com/MarcosRubi/Interactive-card-details-form",
-		"routeImages": {
-			"preview": "images/projects/preview/a.webp",
-			"mobileDesign": "images/projects/mobileDesign/a.jpg",
-			"tabletDesign": "images/projects/tabletDesign/a.jpg",
-			"desktopDesign": "images/projects/desktopDesign/a.jpg"
-		}
-	}
+  {
+    "id": 1,
+    "title": "Pintelog",
+    "description": "Red social de fotos.",
+    "technologies": [
+      "HTML & CSS",
+      "JavaScript",
+      "SCSS",
+      "PHP",
+      "POO",
+      "AJAX",
+      "PUG",
+      "MySQL"
+    ],
+    "startDate": [11, "Junio", 2022],
+    "endDate": [7, "Julio", 2022],
+    "learning": "Práctica usando AJAX con PHP y la Programación Orientada a Objetos, aprendí a usar las librerías de <a href='https://github.com/vlucas/phpdotenv' target='_blank'>Dotenv</a> para variables de entorno y <a href='https://github.com/PHPMailer/PHPMailer' target='_blank'>PHPMailer</a>  para el envío de emails.",
+    "difficulties": "La estructura de archivos ya que es el primer proyecto complejo, dentro de lo cabe que realizo, implementando un sistema de inicio de sesión, registro, crear publicaciones, buscar usuarios, añadir fotos a favoritos, editar usuario, eliminar publicaciones, entre otros funcionamientos.",
+    "urlDemo": "https://pintelog-app.000webhostapp.com/",
+    "urlRepo": "https://github.com/MarcosRubi/pintelog",
+    "routeImages": {
+      "preview": "images/projects/preview/a.webp",
+      "mobileDesign": "images/projects/mobileDesign/pintelog-sm.png",
+      "tabletDesign": "images/projects/tabletDesign/pintelog-md.png",
+      "desktopDesign": "images/projects/desktopDesign/pintelog-xl.png"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Manage landing page",
+    "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5' target='_blank'>Frontend Mentor</a>.",
+    "technologies": ["HTML & CSS", "JavaScript", "React"],
+    "startDate": [9, "Septiembre", 2022],
+    "endDate": [10, "Septiembre", 2022],
+    "learning": "Este es mi segundo proyecto realizado usando <a href='https://reactjs.org/' target='_blank'>React</a> y con este proyecto aprendí a usar <a href='https://www.w3schools.com/react/react_useref.asp' target='_blank'>useRef</a> y <a href='https://appatico.com/detectar-elemento-con-intersection-observer-en-react/' target='_blank'>la API de observer</a> con React.",
+    "difficulties": "",
+    "urlDemo": "https://marcosrubi.github.io/Manage-landing-page/",
+    "urlRepo": "https://github.com/MarcosRubi/Manage-landing-page",
+    "routeImages": {
+      "preview": "images/projects/preview/a.webp",
+      "mobileDesign": "images/projects/mobileDesign/a.jpg",
+      "tabletDesign": "images/projects/tabletDesign/a.jpg",
+      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Crowdfunding product page",
+    "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR' target='_blank'>Frontend Mentor</a>.",
+    "technologies": ["HTML & CSS", "JavaScript"],
+    "startDate": [14, "Agosto", 2022],
+    "endDate": [15, "Agosto", 2022],
+    "learning": "",
+    "difficulties": "",
+    "urlDemo": "https://marcosrubi.github.io/Crowdfunding-product-page/",
+    "urlRepo": "https://github.com/MarcosRubi/Crowdfunding-product-page",
+    "routeImages": {
+      "preview": "images/projects/preview/a.webp",
+      "mobileDesign": "images/projects/mobileDesign/a.jpg",
+      "tabletDesign": "images/projects/tabletDesign/a.jpg",
+      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Tip calculator app",
+    "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX' target='_blank'>Frontend Mentor</a>.",
+    "technologies": ["HTML & CSS", "JavaScript", "React"],
+    "startDate": [13, "Septiembre", 2022],
+    "endDate": [14, "Septiembre", 2022],
+    "learning": "",
+    "difficulties": "",
+    "urlDemo": "https://marcosrubi.github.io/Tip-calculator-app/",
+    "urlRepo": "https://github.com/MarcosRubi/Tip-calculator-app",
+    "routeImages": {
+      "preview": "images/projects/preview/a.webp",
+      "mobileDesign": "images/projects/mobileDesign/a.jpg",
+      "tabletDesign": "images/projects/tabletDesign/a.jpg",
+      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Social media dashboard with theme switcher",
+    "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H' target='_blank'>Frontend Mentor</a>.",
+    "technologies": ["HTML & CSS", "JavaScript"],
+    "startDate": [26, "Agosto", 2022],
+    "endDate": [26, "Agosto", 2022],
+    "learning": "",
+    "difficulties": "",
+    "urlDemo": "https://marcosrubi.github.io/Social-media-dashboard-with-theme-switcher/",
+    "urlRepo": "https://github.com/MarcosRubi/Social-media-dashboard-with-theme-switcher",
+    "routeImages": {
+      "preview": "images/projects/preview/a.webp",
+      "mobileDesign": "images/projects/mobileDesign/a.jpg",
+      "tabletDesign": "images/projects/tabletDesign/a.jpg",
+      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Lista de Tareas",
+    "description": "Lista de Tareas.",
+    "technologies": ["HTML & CSS", "JavaScript", "AJAX", "PHP", "POO", "MySQL"],
+    "startDate": [3, "Enero", "2021"],
+    "endDate": [2, "Febrero", 2021],
+    "learning": "",
+    "difficulties": "Implementar AJAX con PHP. Primera vez que lo realizaba por mi cuenta, anteriormente solo en la universidad lo había realizado.",
+    "urlDemo": "https://mi-proyecto.com",
+    "urlRepo": "https://github.com/MarcosRubi/ListaTareas",
+    "routeImages": {
+      "preview": "images/projects/preview/a.webp",
+      "mobileDesign": "images/projects/mobileDesign/a.jpg",
+      "tabletDesign": "images/projects/tabletDesign/a.jpg",
+      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Job listings with filtering",
+    "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt' target='_blank'>Frontend Mentor</a>.",
+    "technologies": ["HTML & CSS", "JavaScript", "React"],
+    "startDate": [16, "Septiembre", 2022],
+    "endDate": [17, "Septiembre", 2022],
+    "learning": "",
+    "difficulties": "",
+    "urlDemo": "https://marcosrubi.github.io/Job-listings-with-filtering/",
+    "urlRepo": "https://github.com/MarcosRubi/Job-listings-with-filtering",
+    "routeImages": {
+      "preview": "images/projects/preview/a.webp",
+      "mobileDesign": "images/projects/mobileDesign/a.jpg",
+      "tabletDesign": "images/projects/tabletDesign/a.jpg",
+      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Advice generator app",
+    "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db' target='_blank'>Frontend Mentor</a> usando una API.",
+    "technologies": ["HTML & CSS", "JavaScript", "React", "API"],
+    "startDate": [7, "Septiembre", 2022],
+    "endDate": [8, "Septiembre", 2022],
+    "learning": "Consumo de API con <span>Fetch y React</span>, también conociendo el framework de <a href='https://tailwindcss.com/' target='_blank'>tailwind</a> para dar estilos",
+    "difficulties": "",
+    "urlDemo": "https://marcosrubi.github.io/Advice-generator-app-with-react-and-tailwind/",
+    "urlRepo": "https://github.com/MarcosRubi/Advice-generator-app-with-react-and-tailwind",
+    "routeImages": {
+      "preview": "images/projects/preview/a.webp",
+      "mobileDesign": "images/projects/mobileDesign/a.jpg",
+      "tabletDesign": "images/projects/tabletDesign/a.jpg",
+      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+    }
+  },
+  {
+    "id": 9,
+    "title": "Clipboard landing page",
+    "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9' target='_blank'>Frontend Mentor</a>.",
+    "technologies": ["HTML & CSS", "JavaScript"],
+    "startDate": [14, "Septiembre", 2022],
+    "endDate": [14, "Diciembre", 2022],
+    "learning": "",
+    "difficulties": "",
+    "urlDemo": "https://marcosrubi.github.io/Clipboard-landing-page/",
+    "urlRepo": "https://github.com/MarcosRubi/Clipboard-landing-page",
+    "routeImages": {
+      "preview": "images/projects/preview/a.webp",
+      "mobileDesign": "images/projects/mobileDesign/a.jpg",
+      "tabletDesign": "images/projects/tabletDesign/a.jpg",
+      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+    }
+  },
+  {
+    "id": 10,
+    "title": "Fylo dark theme landing page",
+    "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd' target='_blank'>Frontend Mentor</a>.",
+    "technologies": ["HTML & CSS", "JavaScript"],
+    "startDate": [9, "Agosto", 2022],
+    "endDate": [9, "Agosto", 2022],
+    "learning": "",
+    "difficulties": "",
+    "urlDemo": "https://github.com/MarcosRubi/Fylo-dark-theme-landing-page",
+    "urlRepo": "https://github.com/MarcosRubi/Fylo-dark-theme-landing-page",
+    "routeImages": {
+      "preview": "images/projects/preview/a.webp",
+      "mobileDesign": "images/projects/mobileDesign/a.jpg",
+      "tabletDesign": "images/projects/tabletDesign/a.jpg",
+      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+    }
+  },
+  {
+    "id": 11,
+    "title": "Inveto",
+    "description": "Plantilla para una web de cursos financieros.",
+    "technologies": ["HTML & CSS", "JavaScript"],
+    "startDate": [23, "Diciembre", "2020"],
+    "endDate": [31, "Diciembre", 2020],
+    "learning": "Uso de la propiedad <span>order</span> de flexbox para obtener un mejor diseño en los diferentes tipos de pantallas.",
+    "difficulties": "Que el pie de página se adapte a cualquier tamaño de pantalla.",
+    "urlDemo": "https://inveto.vercel.app/",
+    "urlRepo": "https://github.com/MarcosRubi/inveto",
+    "routeImages": {
+      "preview": "images/projects/preview/a.webp",
+      "mobileDesign": "images/projects/mobileDesign/a.jpg",
+      "tabletDesign": "images/projects/tabletDesign/a.jpg",
+      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+    }
+  },
+  {
+    "id": 12,
+    "title": "Charity",
+    "description": "Plantilla para una web de donativos.",
+    "technologies": ["HTML & CSS", "JavaScript"],
+    "startDate": [25, "Noviembre", "2020"],
+    "endDate": [31, "Diciembre", 2020],
+    "learning": "Crear acordeón con HTML, CSS y JavaScript.",
+    "difficulties": "En la sección de <span>preguntas frecuentes</span> ya que era la primera vez que realizaba un acordeón, por lo que observe en diferentes plantillas su lógica e implemente el que consideraba mejor.",
+    "urlDemo": "https://charity.vercel.app/",
+    "urlRepo": "https://github.com/MarcosRubi/charity",
+    "routeImages": {
+      "preview": "images/projects/preview/a.webp",
+      "mobileDesign": "images/projects/mobileDesign/a.jpg",
+      "tabletDesign": "images/projects/tabletDesign/a.jpg",
+      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+    }
+  },
+  {
+    "id": 13,
+    "title": "StudyInk",
+    "description": "Plantilla para una web de educación.",
+    "technologies": ["HTML & CSS", "JavaScript"],
+    "startDate": [7, "Diciembre", "2020"],
+    "endDate": [31, "Diciembre", 2020],
+    "learning": "Menu sticky que reduce su altura cuando el usuario desplaza hacia abajo.",
+    "difficulties": "Agregar efecto al menu cuando el usuario haga scroll.",
+    "urlDemo": "https://study-ink.vercel.app/",
+    "urlRepo": "https://github.com/MarcosRubi/studyInk",
+    "routeImages": {
+      "preview": "images/projects/preview/a.webp",
+      "mobileDesign": "images/projects/mobileDesign/a.jpg",
+      "tabletDesign": "images/projects/tabletDesign/a.jpg",
+      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+    }
+  },
+  {
+    "id": 14,
+    "title": "Interactive card details form",
+    "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw' target='_blank'>Frontend Mentor</a>.",
+    "technologies": ["HTML & CSS", "SCSS"],
+    "startDate": [20, "Agosto", 2022],
+    "endDate": [20, "Agosto", 2022],
+    "learning": "Agregar espacios en blanco cada 4 dígitos en el número de tarjeta utilizando la librería <a href='https://nosir.github.io/cleave.js/' target='_blank'>Cleave.js</a>.",
+    "difficulties": "",
+    "urlDemo": "https://marcosrubi.github.io/Interactive-card-details-form/",
+    "urlRepo": "https://github.com/MarcosRubi/Interactive-card-details-form",
+    "routeImages": {
+      "preview": "images/projects/preview/a.webp",
+      "mobileDesign": "images/projects/mobileDesign/a.jpg",
+      "tabletDesign": "images/projects/tabletDesign/a.jpg",
+      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+    }
+  },
+  {
+    "id": 15,
+    "title": "Bookmark landing page",
+    "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158' target='_blank'>Frontend Mentor</a>.",
+    "technologies": ["HTML & CSS", "SCSS", "JavaScript"],
+    "startDate": [24, "Diciembre", 2022],
+    "endDate": [24, "Diciembre", 2022],
+    "learning": "",
+    "difficulties": "",
+    "urlDemo": "https://marcosrubi.github.io/Bookmark-landing-page/",
+    "urlRepo": "https://github.com/MarcosRubi/Bookmark-landing-page",
+    "routeImages": {
+      "preview": "images/projects/preview/a.webp",
+      "mobileDesign": "images/projects/mobileDesign/a.jpg",
+      "tabletDesign": "images/projects/tabletDesign/a.jpg",
+      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+    }
+  },
+  {
+    "id": 16,
+    "title": "Loopstudios landing page",
+    "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw' target='_blank'>Frontend Mentor</a>.",
+    "technologies": ["HTML & CSS", "JavaScript"],
+    "startDate": [20, "Diciembre", 2022],
+    "endDate": [20, "Diciembre", 2022],
+    "learning": "",
+    "difficulties": "",
+    "urlDemo": "https://marcosrubi.github.io/Loopstudios-landing-page/",
+    "urlRepo": "https://github.com/MarcosRubi/Loopstudios-landing-page",
+    "routeImages": {
+      "preview": "images/projects/preview/a.webp",
+      "mobileDesign": "images/projects/mobileDesign/a.jpg",
+      "tabletDesign": "images/projects/tabletDesign/a.jpg",
+      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+    }
+  },
+  {
+    "id": 17,
+    "title": "Four card feature section",
+    "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK' target='_blank'>Frontend Mentor</a>.",
+    "technologies": ["HTML & CSS", "JavaScript"],
+    "startDate": [13, "Diciembre", 2022],
+    "endDate": [13, "Diciembre", 2022],
+    "learning": "",
+    "difficulties": "",
+    "urlDemo": "https://marcosrubi.github.io/Four-card-feature-section/",
+    "urlRepo": "https://github.com/MarcosRubi/Four-card-feature-section",
+    "routeImages": {
+      "preview": "images/projects/preview/a.webp",
+      "mobileDesign": "images/projects/mobileDesign/a.jpg",
+      "tabletDesign": "images/projects/tabletDesign/a.jpg",
+      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+    }
+  },
+  {
+    "id": 17,
+    "title": "Todo app",
+    "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW' target='_blank'>Frontend Mentor</a>.",
+    "technologies": ["HTML & CSS", "JavaScript", "React"],
+    "startDate": [30, "Octubre", 2022],
+    "endDate": [5, "Noviembre", 2022],
+    "learning": "Aprendí a usar la librería de <a href='https://www.youtube.com/watch?v=bZsMWorjtFI' target='_blank'> react-beautiful-dnd</a> para reordenar los elemento de un array con arrastrar y soltar el elemento. ",
+    "difficulties": "",
+    "urlDemo": "https://marcosrubi.github.io/todo-app/",
+    "urlRepo": "https://github.com/MarcosRubi/todo-app",
+    "routeImages": {
+      "preview": "images/projects/preview/a.webp",
+      "mobileDesign": "images/projects/mobileDesign/a.jpg",
+      "tabletDesign": "images/projects/tabletDesign/a.jpg",
+      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+    }
+  },
+  {
+    "id": 18,
+    "title": "Notifications page",
+    "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC' target='_blank'>Frontend Mentor</a>.",
+    "technologies": ["HTML & CSS", "JavaScript", "React"],
+    "startDate": [18, "Septiembre", 2022],
+    "endDate": [18, "Septiembre", 2022],
+    "learning": "Fue de los primeros proyectos que realicé utilizando <a href='https://es.reactjs.org/' target='_blank'> react.js</a> y comprendí el uso de los hooks useEffect, useState, useRef y useContext. ",
+    "difficulties": "",
+    "urlDemo": "https://marcosrubi.github.io/Notifications-page/",
+    "urlRepo": "https://github.com/MarcosRubi/Notifications-page",
+    "routeImages": {
+      "preview": "images/projects/preview/a.webp",
+      "mobileDesign": "images/projects/mobileDesign/a.jpg",
+      "tabletDesign": "images/projects/tabletDesign/a.jpg",
+      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+    }
+  },
+  {
+    "id": 19,
+    "title": "Job listings with filtering",
+    "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt' target='_blank'>Frontend Mentor</a>.",
+    "technologies": ["HTML & CSS", "JavaScript", "React"],
+    "startDate": [15, "Septiembre", 2022],
+    "endDate": [17, "Septiembre", 2022],
+    "learning": "Fue de los primeros proyectos que realicé utilizando <a href='https://es.reactjs.org/' target='_blank'> react.js</a> y comprendí el uso de los hooks useEffect, useState y useContext. ",
+    "difficulties": "Poder filtrar los elementos con los valores del array dentro del objeto (por rol, nivel y lenguajes)",
+    "urlDemo": "https://marcosrubi.github.io/Job-listings-with-filtering/",
+    "urlRepo": "https://github.com/MarcosRubi/Job-listings-with-filtering",
+    "routeImages": {
+      "preview": "images/projects/preview/a.webp",
+      "mobileDesign": "images/projects/mobileDesign/a.jpg",
+      "tabletDesign": "images/projects/tabletDesign/a.jpg",
+      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+    }
+  }
 ]

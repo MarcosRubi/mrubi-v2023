@@ -7,7 +7,7 @@ import Date from '../components/projects/Date'
 function Project () {
   const navigate = useNavigate()
   const { title } = useParams()
-  const { findProjectByTitle, scrollToTop, updateProjectImages, toggleModalActive, modalActive } = useContext(MainContext)
+  const { findProjectByTitle, scrollToTop, updateProjectImages, toggleModalActive, modalActive, overflowBody } = useContext(MainContext)
   const project = findProjectByTitle(title)
 
   scrollToTop()
@@ -17,6 +17,7 @@ function Project () {
   const handleModalImg = () => {
     updateProjectImages(project[0].routeImages)
     toggleModalActive()
+    overflowBody()
   }
 
   return (
