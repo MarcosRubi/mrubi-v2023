@@ -20,10 +20,10 @@
     "urlDemo": "https://pintelog-app.000webhostapp.com/",
     "urlRepo": "https://github.com/MarcosRubi/pintelog",
     "routeImages": {
-      "preview": "images/projects/preview/a.webp",
-      "mobileDesign": "images/projects/mobileDesign/pintelog-sm.png",
-      "tabletDesign": "images/projects/tabletDesign/pintelog-md.png",
-      "desktopDesign": "images/projects/desktopDesign/pintelog-xl.png"
+      "preview": "images/projects/preview/pintelog-preview.webp",
+      "mobileDesign": "images/projects/mobileDesign/pintelog-sm.webp",
+      "tabletDesign": "images/projects/tabletDesign/pintelog-md.webp",
+      "desktopDesign": "images/projects/desktopDesign/pintelog-xl.webp"
     }
   },
   {
@@ -38,10 +38,10 @@
     "urlDemo": "https://marcosrubi.github.io/Manage-landing-page/",
     "urlRepo": "https://github.com/MarcosRubi/Manage-landing-page",
     "routeImages": {
-      "preview": "images/projects/preview/a.webp",
-      "mobileDesign": "images/projects/mobileDesign/a.jpg",
-      "tabletDesign": "images/projects/tabletDesign/a.jpg",
-      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+      "preview": "images/projects/preview/manage-landing-page-preview.webp",
+      "mobileDesign": "images/projects/mobileDesign/manage-landing-page-sm.webp",
+      "tabletDesign": "images/projects/tabletDesign/manage-landing-page-md.webp",
+      "desktopDesign": "images/projects/desktopDesign/manage-landing-page-xl.webp"
     }
   },
   {
@@ -56,10 +56,10 @@
     "urlDemo": "https://marcosrubi.github.io/Crowdfunding-product-page/",
     "urlRepo": "https://github.com/MarcosRubi/Crowdfunding-product-page",
     "routeImages": {
-      "preview": "images/projects/preview/a.webp",
-      "mobileDesign": "images/projects/mobileDesign/a.jpg",
-      "tabletDesign": "images/projects/tabletDesign/a.jpg",
-      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+      "preview": "images/projects/preview/crowdfunding-product-page-preview.webp",
+      "mobileDesign": "images/projects/mobileDesign/crowdfunding-product-page-sm.webp",
+      "tabletDesign": "images/projects/tabletDesign/crowdfunding-product-page-md.webp",
+      "desktopDesign": "images/projects/desktopDesign/crowdfunding-product-page-xl.webp"
     }
   },
   {
@@ -74,10 +74,10 @@
     "urlDemo": "https://marcosrubi.github.io/Tip-calculator-app/",
     "urlRepo": "https://github.com/MarcosRubi/Tip-calculator-app",
     "routeImages": {
-      "preview": "images/projects/preview/a.webp",
-      "mobileDesign": "images/projects/mobileDesign/a.jpg",
-      "tabletDesign": "images/projects/tabletDesign/a.jpg",
-      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+      "preview": "images/projects/preview/tip-calculator-app-preview.webp",
+      "mobileDesign": "images/projects/mobileDesign/tip-calculator-app-sm.webp",
+      "tabletDesign": "images/projects/tabletDesign/tip-calculator-app-md.webp",
+      "desktopDesign": "images/projects/desktopDesign/tip-calculator-app-xl.webp"
     }
   },
   {
@@ -92,28 +92,10 @@
     "urlDemo": "https://marcosrubi.github.io/Social-media-dashboard-with-theme-switcher/",
     "urlRepo": "https://github.com/MarcosRubi/Social-media-dashboard-with-theme-switcher",
     "routeImages": {
-      "preview": "images/projects/preview/a.webp",
-      "mobileDesign": "images/projects/mobileDesign/a.jpg",
-      "tabletDesign": "images/projects/tabletDesign/a.jpg",
-      "desktopDesign": "images/projects/desktopDesign/a.jpg"
-    }
-  },
-  {
-    "id": 6,
-    "title": "Lista de Tareas",
-    "description": "Lista de Tareas.",
-    "technologies": ["HTML & CSS", "JavaScript", "AJAX", "PHP", "POO", "MySQL"],
-    "startDate": [3, "Enero", "2021"],
-    "endDate": [2, "Febrero", 2021],
-    "learning": "",
-    "difficulties": "Implementar AJAX con PHP. Primera vez que lo realizaba por mi cuenta, anteriormente solo en la universidad lo había realizado.",
-    "urlDemo": "https://mi-proyecto.com",
-    "urlRepo": "https://github.com/MarcosRubi/ListaTareas",
-    "routeImages": {
-      "preview": "images/projects/preview/a.webp",
-      "mobileDesign": "images/projects/mobileDesign/a.jpg",
-      "tabletDesign": "images/projects/tabletDesign/a.jpg",
-      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+      "preview": "images/projects/preview/social-media-dashboard-with-theme-switcher-preview.webp",
+      "mobileDesign": "images/projects/mobileDesign/social-media-dashboard-with-theme-switcher-sm.webp",
+      "tabletDesign": "images/projects/tabletDesign/social-media-dashboard-with-theme-switcher-md.webp",
+      "desktopDesign": "images/projects/desktopDesign/social-media-dashboard-with-theme-switcher-xl.webp"
     }
   },
   {
@@ -128,10 +110,10 @@
     "urlDemo": "https://marcosrubi.github.io/Job-listings-with-filtering/",
     "urlRepo": "https://github.com/MarcosRubi/Job-listings-with-filtering",
     "routeImages": {
-      "preview": "images/projects/preview/a.webp",
-      "mobileDesign": "images/projects/mobileDesign/a.jpg",
-      "tabletDesign": "images/projects/tabletDesign/a.jpg",
-      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+      "preview": "images/projects/preview/job-listing-with-filtering-preview.webp",
+      "mobileDesign": "images/projects/mobileDesign/job-listing-with-filtering-sm.webp",
+      "tabletDesign": "images/projects/tabletDesign/job-listing-with-filtering-md.webp",
+      "desktopDesign": "images/projects/desktopDesign/job-listing-with-filtering-xl.webp"
     }
   },
   {
@@ -146,10 +128,10 @@
     "urlDemo": "https://marcosrubi.github.io/Advice-generator-app-with-react-and-tailwind/",
     "urlRepo": "https://github.com/MarcosRubi/Advice-generator-app-with-react-and-tailwind",
     "routeImages": {
-      "preview": "images/projects/preview/a.webp",
-      "mobileDesign": "images/projects/mobileDesign/a.jpg",
-      "tabletDesign": "images/projects/tabletDesign/a.jpg",
-      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+      "preview": "images/projects/preview/Advice-generator-app-with-react-and-tailwind-preview.webp",
+      "mobileDesign": "images/projects/mobileDesign/advice-generator-app-with-react-and-tailwind-sm.webp",
+      "tabletDesign": "images/projects/tabletDesign/advice-generator-app-with-react-and-tailwind-md.webp",
+      "desktopDesign": "images/projects/desktopDesign/advice-generator-app-with-react-and-tailwind-xl.webp"
     }
   },
   {
@@ -164,10 +146,10 @@
     "urlDemo": "https://marcosrubi.github.io/Clipboard-landing-page/",
     "urlRepo": "https://github.com/MarcosRubi/Clipboard-landing-page",
     "routeImages": {
-      "preview": "images/projects/preview/a.webp",
-      "mobileDesign": "images/projects/mobileDesign/a.jpg",
-      "tabletDesign": "images/projects/tabletDesign/a.jpg",
-      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+      "preview": "images/projects/preview/clipboard-landing-page-preview.webp",
+      "mobileDesign": "images/projects/mobileDesign/clipboard-landing-page-sm.webp",
+      "tabletDesign": "images/projects/tabletDesign/clipboard-landing-page-md.webp",
+      "desktopDesign": "images/projects/desktopDesign/clipboard-landing-page-xl.webp"
     }
   },
   {
@@ -179,13 +161,13 @@
     "endDate": [9, "Agosto", 2022],
     "learning": "",
     "difficulties": "",
-    "urlDemo": "https://github.com/MarcosRubi/Fylo-dark-theme-landing-page",
+    "urlDemo": "https://marcosrubi.github.io/Fylo-dark-theme-landing-page/",
     "urlRepo": "https://github.com/MarcosRubi/Fylo-dark-theme-landing-page",
     "routeImages": {
-      "preview": "images/projects/preview/a.webp",
-      "mobileDesign": "images/projects/mobileDesign/a.jpg",
-      "tabletDesign": "images/projects/tabletDesign/a.jpg",
-      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+      "preview": "images/projects/preview/fylo-dark-theme-landing-page-preview.webp",
+      "mobileDesign": "images/projects/mobileDesign/fylo-dark-theme-landing-page-sm.webp",
+      "tabletDesign": "images/projects/tabletDesign/fylo-dark-theme-landing-page-md.webp",
+      "desktopDesign": "images/projects/desktopDesign/fylo-dark-theme-landing-page-xl.webp"
     }
   },
   {
@@ -200,10 +182,10 @@
     "urlDemo": "https://inveto.vercel.app/",
     "urlRepo": "https://github.com/MarcosRubi/inveto",
     "routeImages": {
-      "preview": "images/projects/preview/a.webp",
-      "mobileDesign": "images/projects/mobileDesign/a.jpg",
-      "tabletDesign": "images/projects/tabletDesign/a.jpg",
-      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+      "preview": "images/projects/preview/inveto-preview.webp",
+      "mobileDesign": "images/projects/mobileDesign/inveto-sm.webp",
+      "tabletDesign": "images/projects/tabletDesign/inveto-md.webp",
+      "desktopDesign": "images/projects/desktopDesign/inveto-xl.webp"
     }
   },
   {
@@ -218,10 +200,10 @@
     "urlDemo": "https://charity.vercel.app/",
     "urlRepo": "https://github.com/MarcosRubi/charity",
     "routeImages": {
-      "preview": "images/projects/preview/a.webp",
-      "mobileDesign": "images/projects/mobileDesign/a.jpg",
-      "tabletDesign": "images/projects/tabletDesign/a.jpg",
-      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+      "preview": "images/projects/preview/charity-preview.webp",
+      "mobileDesign": "images/projects/mobileDesign/charity-sm.webp",
+      "tabletDesign": "images/projects/tabletDesign/charity-md.webp",
+      "desktopDesign": "images/projects/desktopDesign/charity-xl.webp"
     }
   },
   {
@@ -236,10 +218,10 @@
     "urlDemo": "https://study-ink.vercel.app/",
     "urlRepo": "https://github.com/MarcosRubi/studyInk",
     "routeImages": {
-      "preview": "images/projects/preview/a.webp",
-      "mobileDesign": "images/projects/mobileDesign/a.jpg",
-      "tabletDesign": "images/projects/tabletDesign/a.jpg",
-      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+      "preview": "images/projects/preview/study-ink-preview.webp",
+      "mobileDesign": "images/projects/mobileDesign/study-ink-sm.webp",
+      "tabletDesign": "images/projects/tabletDesign/study-ink-md.webp",
+      "desktopDesign": "images/projects/desktopDesign/study-ink-xl.webp"
     }
   },
   {
@@ -254,10 +236,10 @@
     "urlDemo": "https://marcosrubi.github.io/Interactive-card-details-form/",
     "urlRepo": "https://github.com/MarcosRubi/Interactive-card-details-form",
     "routeImages": {
-      "preview": "images/projects/preview/a.webp",
-      "mobileDesign": "images/projects/mobileDesign/a.jpg",
-      "tabletDesign": "images/projects/tabletDesign/a.jpg",
-      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+      "preview": "images/projects/preview/interactive-card-details-form-preview.webp",
+      "mobileDesign": "images/projects/mobileDesign/interactive-card-details-form-sm.webp",
+      "tabletDesign": "images/projects/tabletDesign/interactive-card-details-form-md.webp",
+      "desktopDesign": "images/projects/desktopDesign/interactive-card-details-form-xl.webp"
     }
   },
   {
@@ -272,10 +254,10 @@
     "urlDemo": "https://marcosrubi.github.io/Bookmark-landing-page/",
     "urlRepo": "https://github.com/MarcosRubi/Bookmark-landing-page",
     "routeImages": {
-      "preview": "images/projects/preview/a.webp",
-      "mobileDesign": "images/projects/mobileDesign/a.jpg",
-      "tabletDesign": "images/projects/tabletDesign/a.jpg",
-      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+      "preview": "images/projects/preview/bookmark-landing-page-preview.webp",
+      "mobileDesign": "images/projects/mobileDesign/bookmark-landing-page-sm.webp",
+      "tabletDesign": "images/projects/tabletDesign/bookmark-landing-page-md.webp",
+      "desktopDesign": "images/projects/desktopDesign/bookmark-landing-page-xl.webp"
     }
   },
   {
@@ -290,10 +272,10 @@
     "urlDemo": "https://marcosrubi.github.io/Loopstudios-landing-page/",
     "urlRepo": "https://github.com/MarcosRubi/Loopstudios-landing-page",
     "routeImages": {
-      "preview": "images/projects/preview/a.webp",
-      "mobileDesign": "images/projects/mobileDesign/a.jpg",
-      "tabletDesign": "images/projects/tabletDesign/a.jpg",
-      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+      "preview": "images/projects/preview/loopstudios-landing-page-preview.webp",
+      "mobileDesign": "images/projects/mobileDesign/loopstudios-landing-page-sm.webp",
+      "tabletDesign": "images/projects/tabletDesign/loopstudios-landing-page-md.webp",
+      "desktopDesign": "images/projects/desktopDesign/loopstudios-landing-page-xl.webp"
     }
   },
   {
@@ -308,10 +290,10 @@
     "urlDemo": "https://marcosrubi.github.io/Four-card-feature-section/",
     "urlRepo": "https://github.com/MarcosRubi/Four-card-feature-section",
     "routeImages": {
-      "preview": "images/projects/preview/a.webp",
-      "mobileDesign": "images/projects/mobileDesign/a.jpg",
-      "tabletDesign": "images/projects/tabletDesign/a.jpg",
-      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+      "preview": "images/projects/preview/four-card-feature-section-preview.webp",
+      "mobileDesign": "images/projects/mobileDesign/four-card-feature-section-sm.webp",
+      "tabletDesign": "images/projects/tabletDesign/four-card-feature-section-md.webp",
+      "desktopDesign": "images/projects/desktopDesign/four-card-feature-section-xl.webp"
     }
   },
   {
@@ -326,10 +308,10 @@
     "urlDemo": "https://marcosrubi.github.io/todo-app/",
     "urlRepo": "https://github.com/MarcosRubi/todo-app",
     "routeImages": {
-      "preview": "images/projects/preview/a.webp",
-      "mobileDesign": "images/projects/mobileDesign/a.jpg",
-      "tabletDesign": "images/projects/tabletDesign/a.jpg",
-      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+      "preview": "images/projects/preview/todo-app-preview.webp",
+      "mobileDesign": "images/projects/mobileDesign/todo-app-sm.webp",
+      "tabletDesign": "images/projects/tabletDesign/todo-app-md.webp",
+      "desktopDesign": "images/projects/desktopDesign/todo-app-xl.webp"
     }
   },
   {
@@ -344,28 +326,10 @@
     "urlDemo": "https://marcosrubi.github.io/Notifications-page/",
     "urlRepo": "https://github.com/MarcosRubi/Notifications-page",
     "routeImages": {
-      "preview": "images/projects/preview/a.webp",
-      "mobileDesign": "images/projects/mobileDesign/a.jpg",
-      "tabletDesign": "images/projects/tabletDesign/a.jpg",
-      "desktopDesign": "images/projects/desktopDesign/a.jpg"
-    }
-  },
-  {
-    "id": 19,
-    "title": "Job listings with filtering",
-    "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt' target='_blank'>Frontend Mentor</a>.",
-    "technologies": ["HTML & CSS", "JavaScript", "React"],
-    "startDate": [15, "Septiembre", 2022],
-    "endDate": [17, "Septiembre", 2022],
-    "learning": "Fue de los primeros proyectos que realicé utilizando <a href='https://es.reactjs.org/' target='_blank'> react.js</a> y comprendí el uso de los hooks useEffect, useState y useContext. ",
-    "difficulties": "Poder filtrar los elementos con los valores del array dentro del objeto (por rol, nivel y lenguajes)",
-    "urlDemo": "https://marcosrubi.github.io/Job-listings-with-filtering/",
-    "urlRepo": "https://github.com/MarcosRubi/Job-listings-with-filtering",
-    "routeImages": {
-      "preview": "images/projects/preview/a.webp",
-      "mobileDesign": "images/projects/mobileDesign/a.jpg",
-      "tabletDesign": "images/projects/tabletDesign/a.jpg",
-      "desktopDesign": "images/projects/desktopDesign/a.jpg"
+      "preview": "images/projects/preview/notifications-page-preview.webp",
+      "mobileDesign": "images/projects/mobileDesign/notifications-page-sm.webp",
+      "tabletDesign": "images/projects/tabletDesign/notifications-page-md.webp",
+      "desktopDesign": "images/projects/desktopDesign/notifications-page-xl.webp"
     }
   }
 ]
