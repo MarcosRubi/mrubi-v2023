@@ -5,7 +5,7 @@ import NavFilters from '../components/projects/NavFilters'
 import NotResults from '../components/projects/NotResults'
 
 function Projects () {
-  const { order, projectsToShow, changeOrder, filterLanguages, arrProjects, handleOnClickProjectsBtn } =
+  const { projectsToShow, arrProjects, handleOnClickProjectsBtn } =
     useContext(MainContext)
 
   return (
@@ -23,11 +23,7 @@ function Projects () {
             universitarios.
           </p>
         </div>
-        <NavFilters
-          changeOrder={changeOrder}
-          order={order}
-          filterLanguages={filterLanguages}
-        />
+        <NavFilters />
         {
           arrProjects.length === 0 && <NotResults />
         }

@@ -48,12 +48,6 @@ function NavFilters () {
       >
         <div className=' d-flex flex-column'>
           <button
-            className={`btn ${order === 'default' ? 'selected' : ''}`}
-            onClick={() => { changeOrder('default') }}
-          >
-            <span>Destacados</span>
-          </button>
-          <button
             className={`btn ${order === 'new' ? 'selected' : ''}`}
             onClick={() => { changeOrder('new') }}
           >

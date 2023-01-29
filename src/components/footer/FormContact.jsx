@@ -5,7 +5,7 @@ function FormContact () {
   return (
     <div className='form-contact'>
       <h4>Contactar</h4>
-      <form action='#' method='post' onSubmit={() => { return false }}>
+      <form action='https://formsubmit.io/send/danielhernandez9980@gmail.com' method='post' onSubmit={() => { return false }}>
         <div className='input-group p-relative'>
           <input type='text' name='txtName' id='txtName' required='required' />
           <label htmlFor='txtName' className='p-absolute placeholder'>Nombre</label>

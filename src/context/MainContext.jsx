@@ -9,7 +9,7 @@ export function MainContextProvider (props) {
   const [projects, setProjects] = useState([])
   const [projectsToShow, setProjectsToShow] = useState(6)
   const [projectImages, setProjectImages] = useState([])
-  const [order, setOrder] = useState('default')
+  const [order, setOrder] = useState('new')
   const [languages, setLanguages] = useState([])
   const [arrProjects, setArrProjects] = useState([])
   const [modalActive, setModalActive] = useState(false)
@@ -81,24 +81,7 @@ export function MainContextProvider (props) {
 
   const changeOrder = (newOrder, arr = arrProjects) => {
     setOrder(newOrder)
-
-    if (newOrder === 'old') {
-      setArrProjects(
-        arr.sort((x, y) => {
-          return x.endDate[2] - y.endDate[2]
-        })
-      )
-      return
-    }
-    if (newOrder === 'new') {
-      setArrProjects(
-        arr.sort((x, y) => {
-          return y.endDate[2] - x.endDate[2]
-        })
-      )
-      return
-    }
-    setArrProjects(arr.sort((x, y) => x.id - y.id))
+    setArrProjects(arr.reverse())
   }
 
   const filterLanguages = (lang) => {

@@ -1,17 +1,17 @@
 /* eslint-disable import/no-absolute-path */
 import { Link } from 'react-router-dom'
 
-import inicioCarrera2017 from '/public/images/timeline/inicio-de-la-carrera-2017.webp'
-import finCarrera2018 from '/public/images/timeline/fin-de-la-carrera-2018.webp'
-import cursosMaquetacionWeb from '/public/images/timeline/cursos-en-linea-maquetacion-web.webp'
-import sindromeDelImpostor from '/public/images/timeline/sindrome-del-impostor.webp'
-import inicioIngSistemas from '/public/images/timeline/inicio-ing-sistemas-2020.webp'
-import menuResponsive from '/public/images/timeline/primer-menu-responsive.webp'
-import codepen2021 from '/public/images/timeline/codepen-2021.webp'
+import inicioCarrera2017 from '/images/timeline/inicio-de-la-carrera-2017.webp'
+import finCarrera2018 from '/images/timeline/fin-de-la-carrera-2018.webp'
+import cursosMaquetacionWeb from '/images/timeline/cursos-en-linea-maquetacion-web.webp'
+import sindromeDelImpostor from '/images/timeline/sindrome-del-impostor.webp'
+import inicioIngSistemas from '/images/timeline/inicio-ing-sistemas-2020.webp'
+import menuResponsive from '/images/timeline/primer-menu-responsive.webp'
+import codepen2021 from '/images/timeline/codepen-2021.webp'
 
-import pintelogImg from '/public/images/projects/preview/pintelog-preview.webp'
-import frontentReactApis from '/public/images/timeline/frontend-react-apis.webp'
-import actualidad from '/public/images/timeline/actualidad.webp'
+import pintelogImg from '/images/projects/preview/pintelog-preview.webp'
+import frontentReactApis from '/images/timeline/frontend-react-apis.webp'
+import actualidad from '/images/timeline/actualidad.webp'
 import { GrCaretPrevious, GrCaretNext } from 'react-icons/gr'
 import { useState, useEffect } from 'react'
 

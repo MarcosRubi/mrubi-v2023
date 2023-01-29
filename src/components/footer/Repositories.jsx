@@ -12,7 +12,7 @@ function Repositories () {
         </div>
         <div>
           <p>Frontend Mentor</p>
-          <a href='#'>Visitar</a>
+          <a href='https://www.frontendmentor.io/profile/MarcosRubi' target='_blank' rel='noreferrer'>Visitar</a>
         </div>
       </div>
 
@@ -22,7 +22,7 @@ function Repositories () {
         </div>
         <div>
           <p>GitHub</p>
-          <a href='#'>Visitar</a>
+          <a href='https://github.com/MarcosRubi' target='_blank' rel='noreferrer'>Visitar</a>
         </div>
       </div>
 
@@ -32,7 +32,7 @@ function Repositories () {
         </div>
         <div>
           <p>Codepen</p>
-          <a href='#'>Visitar</a>
+          <a href='https://codepen.io/Marcos_Rubi' target='_blank' rel='noreferrer'>Visitar</a>
         </div>
       </div>
     </div>

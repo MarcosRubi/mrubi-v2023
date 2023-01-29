@@ -48,16 +48,16 @@ function Nav ({ toggleMenu }) {
             <a href='mailto:danielhernandez9980%40gmail.com' className='btn btn-secondary' onClick={toggleMenu}><span>Enviar Correo </span></a>
             <ul className='d-flex align-center social-list'>
               <li>
-                <a href='#'><SlSocialLinkedin /></a>
+                <a href='https://www.linkedin.com/in/marcos-rubi/' target='_blank' rel='noreferrer'><SlSocialLinkedin /></a>
               </li>
               <li>
-                <a href='#'><SlSocialInstagram /></a>
+                <a href='https://www.instagram.com/mrubi__07/' target='_blank' rel='noreferrer'><SlSocialInstagram /></a>
               </li>
               <li>
-                <a href='#'><SlSocialFacebook /></a>
+                <a href='https://www.facebook.com/MarcosRubi07' target='_blank' rel='noreferrer'><SlSocialFacebook /></a>
               </li>
               <li>
-                <a href='#'><SlSocialTwitter /></a>
+                <a href='https://twitter.com/Fuhrer_RD' target='_blank' rel='noreferrer'><SlSocialTwitter /></a>
               </li>
             </ul>
           </div>

@@ -28,7 +28,7 @@ function Project () {
         </div>
         <div className='project view'>
           <Link to='imagenes' className='img d-flex jc-center-sm' onClick={handleModalImg}>
-            <img src={`../public/${project[0].routeImages.preview}`} alt={`Imagen del proyecto ${project[0].title} realizado por Marcos Rubí`} className='d-flex' />
+            <img src={`../${project[0].routeImages.preview}`} alt={`Imagen del proyecto ${project[0].title} realizado por Marcos Rubí`} className='d-flex' />
           </Link>
           <h3>{project[0].title}</h3>
           <div className='technologies'>
