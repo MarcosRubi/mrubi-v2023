@@ -1,12 +1,17 @@
 /* eslint-disable import/no-absolute-path */
 import { Link } from 'react-router-dom'
-import testImg from '/public/images/projects/preview/a.webp'
-import radioImg from '/public/images/timeline/radio.png'
+
+import inicioCarrera2017 from '/public/images/timeline/inicio-de-la-carrera-2017.webp'
+import finCarrera2018 from '/public/images/timeline/fin-de-la-carrera-2018.webp'
+import cursosMaquetacionWeb from '/public/images/timeline/cursos-en-linea-maquetacion-web.webp'
+import sindromeDelImpostor from '/public/images/timeline/sindrome-del-impostor.webp'
+import inicioIngSistemas from '/public/images/timeline/inicio-ing-sistemas-2020.webp'
+import menuResponsive from '/public/images/timeline/primer-menu-responsive.webp'
+import codepen2021 from '/public/images/timeline/codepen-2021.webp'
+
 import pintelogImg from '/public/images/projects/preview/pintelog-preview.webp'
-import menuResponsiveImg from '/public/images/timeline/menu-responsive.png'
-import sindromeDelImpostorImg from '/public/images/timeline/sindrome-del-impostor.png'
-import ugbInicioImg from '/public/images/timeline/ugb-inicio.png'
-import cursosImg from '/public/images/timeline/cursos.png'
+import frontentReactApis from '/public/images/timeline/frontend-react-apis.webp'
+import actualidad from '/public/images/timeline/actualidad.webp'
 import { GrCaretPrevious, GrCaretNext } from 'react-icons/gr'
 import { useState, useEffect } from 'react'
 
@@ -52,12 +57,12 @@ function Timeline () {
                 </p>
               </div>
               <div className='img'>
-                <img src={radioImg} alt='Diseño de la radio creada en 2017 en la asignatura de diseños de páginas web' />
+                <img src={inicioCarrera2017} alt='Diseño de la radio creada en 2017 en la asignatura de diseños de páginas web' />
               </div>
             </div>
             <div className='timeline__element d-flex flex-column'>
               <div className='img mb-1'>
-                <img src={pintelogImg} alt='Imagen de la página de inicio de la red social pintelog' />
+                <img src={finCarrera2018} alt='Imagen de la página de inicio de la red social pintelog' />
               </div>
               <div className='content'>
                 <h5 className='text-center'>
@@ -96,12 +101,12 @@ function Timeline () {
                 </p>
               </div>
               <div className='img'>
-                <img src={menuResponsiveImg} alt='Diseño del primer menú responsive que realicé' />
+                <img src={menuResponsive} alt='Diseño del primer menú responsive que realicé' />
               </div>
             </div>
             <div className='timeline__element d-flex flex-column'>
               <div className='img mb-1'>
-                <img src={sindromeDelImpostorImg} alt='Imagen ilustrativa del sindrome del impostor' />
+                <img src={sindromeDelImpostor} alt='Imagen ilustrativa del sindrome del impostor' />
               </div>
               <div className='content'>
                 <h5 className='text-center'>
@@ -139,12 +144,12 @@ function Timeline () {
                 </p>
               </div>
               <div className='img'>
-                <img src={ugbInicioImg} alt='Imagen del proyecto realizado con MVC en la UGB' />
+                <img src={inicioIngSistemas} alt='Imagen del proyecto realizado con MVC en la UGB' />
               </div>
             </div>
             <div className='timeline__element d-flex flex-column'>
               <div className='img mb-1'>
-                <img src={cursosImg} alt='Imagen con los dos cursos realizados y el logo de los 4 proyectos realizados.' />
+                <img src={cursosMaquetacionWeb} alt='Imagen con los dos cursos realizados y el logo de los 4 proyectos realizados.' />
               </div>
               <div className='content'>
                 <h5 className='text-center'>
@@ -173,15 +178,14 @@ function Timeline () {
                   Práctica y más práctica.
                 </h5>
                 <p>
-                  En mayo terminé mi <span>portafolio personal</span> y aunque
-                  no me quedaba mucho tiempo libre por la universidad de vez
-                  en cuando creaba proyectos simples en <span>codepen</span>{' '}
+                  En mayo realice mi primer diseño de mi <span>portafolio personal</span> y de vez
+                  en cuando creaba proyectos simples en <a href='https://codepen.io/Marcos_Rubi' target='_blank' rel='noreferrer'>codepen </a>
                   donde me centraba en realizar un buen responsive y dominar
                   flexbox para ello.
                 </p>
               </div>
               <div className='img'>
-                <img src={testImg} alt='' />
+                <img src={codepen2021} alt='Imagen de los proyectos realizados en codepen' />
               </div>
             </div>
             <div className='timeline__element d-flex flex-column'>
@@ -224,16 +228,16 @@ function Timeline () {
                   Mejoré mi portafolio, comencé con <span>React</span>,{' '}
                   <span>APIs</span>, y creé una API con Node.js y Express que
                   scrapea datos en plataformas de compras de videojuegos y
-                  creé <span>GamesScraping</span>.
+                  creé <a href='https://marcosrubi.github.io/GamesScraping/' target='_blank' rel='noreferrer'>GamesScraping</a>.
                 </p>
               </div>
               <div className='img'>
-                <img src={testImg} alt='' />
+                <img src={frontentReactApis} alt='Imagen de mi perfil en frontend-mentor y la página inicial de gamesScraping' />
               </div>
             </div>
             <div className='timeline__element d-flex flex-column'>
               <div className='img mb-1'>
-                <img src={pintelogImg} alt='' />
+                <img src={actualidad} alt='Sombra de un hombre viendo al cielo' />
               </div>
               <div className='content'>
                 <h5 className='text-center'>
