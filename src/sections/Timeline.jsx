@@ -1,6 +1,12 @@
+/* eslint-disable import/no-absolute-path */
 import { Link } from 'react-router-dom'
-// eslint-disable-next-line import/no-absolute-path
-import testImg from '/images/projects/preview/a.webp'
+import testImg from '/public/images/projects/preview/a.webp'
+import radioImg from '/public/images/timeline/radio.png'
+import pintelogImg from '/public/images/projects/preview/pintelog-preview.webp'
+import menuResponsiveImg from '/public/images/timeline/menu-responsive.png'
+import sindromeDelImpostorImg from '/public/images/timeline/sindrome-del-impostor.png'
+import ugbInicioImg from '/public/images/timeline/ugb-inicio.png'
+import cursosImg from '/public/images/timeline/cursos.png'
 import { GrCaretPrevious, GrCaretNext } from 'react-icons/gr'
 import { useState, useEffect } from 'react'
 
@@ -46,12 +52,12 @@ function Timeline () {
                 </p>
               </div>
               <div className='img'>
-                <img src={testImg} alt='' />
+                <img src={radioImg} alt='Diseño de la radio creada en 2017 en la asignatura de diseños de páginas web' />
               </div>
             </div>
             <div className='timeline__element d-flex flex-column'>
               <div className='img mb-1'>
-                <img src={testImg} alt='' />
+                <img src={pintelogImg} alt='Imagen de la página de inicio de la red social pintelog' />
               </div>
               <div className='content'>
                 <h5 className='text-center'>
@@ -86,16 +92,16 @@ function Timeline () {
                 </p>
                 <p>
                   Además, comence a usar <span>GitHub</span> y realize mi{' '}
-                  <span>primer menú responsive</span>.
+                  <a href='https://codepen.io/Marcos_Rubi/pen/YMVOoR' target='_blank' rel='noreferrer'>primer menú responsive</a>.
                 </p>
               </div>
               <div className='img'>
-                <img src={testImg} alt='' />
+                <img src={menuResponsiveImg} alt='Diseño del primer menú responsive que realicé' />
               </div>
             </div>
             <div className='timeline__element d-flex flex-column'>
               <div className='img mb-1'>
-                <img src={testImg} alt='' />
+                <img src={sindromeDelImpostorImg} alt='Imagen ilustrativa del sindrome del impostor' />
               </div>
               <div className='content'>
                 <h5 className='text-center'>
@@ -133,12 +139,12 @@ function Timeline () {
                 </p>
               </div>
               <div className='img'>
-                <img src={testImg} alt='' />
+                <img src={ugbInicioImg} alt='Imagen del proyecto realizado con MVC en la UGB' />
               </div>
             </div>
             <div className='timeline__element d-flex flex-column'>
               <div className='img mb-1'>
-                <img src={testImg} alt='' />
+                <img src={cursosImg} alt='Imagen con los dos cursos realizados y el logo de los 4 proyectos realizados.' />
               </div>
               <div className='content'>
                 <h5 className='text-center'>
@@ -180,7 +186,7 @@ function Timeline () {
             </div>
             <div className='timeline__element d-flex flex-column'>
               <div className='img mb-1'>
-                <img src={testImg} alt='' />
+                <img src={pintelogImg} alt='Imagen de la página de inicio de la red social pintelog' />
               </div>
               <div className='content'>
                 <h5 className='text-center'>
@@ -227,7 +233,7 @@ function Timeline () {
             </div>
             <div className='timeline__element d-flex flex-column'>
               <div className='img mb-1'>
-                <img src={testImg} alt='' />
+                <img src={pintelogImg} alt='' />
               </div>
               <div className='content'>
                 <h5 className='text-center'>
