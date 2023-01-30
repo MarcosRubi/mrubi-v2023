@@ -33,6 +33,7 @@ function ModalProject () {
     overflowBody()
     navigate(-1)
   }
+
   return (
     <div className='modal project-images p-fixed d-flex flex-column'>
       <div className='close d-flex jc-end'>

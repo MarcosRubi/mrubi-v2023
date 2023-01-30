@@ -15,27 +15,29 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   transition: background 0.3s ease-in-out;
+
   &.overflow-hidden {
     overflow-y: hidden;
   }
 }
+
 ::-webkit-scrollbar {
   width: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    transparent,
-    var(--color-hover-alpha),
-    var(--color-hover)
-  );
+  background: linear-gradient(transparent,
+      var(--color-hover-alpha),
+      var(--color-hover));
   border-radius: 6px;
 }
-.modal .p-absolute::-webkit-scrollbar-thumb{
+
+.modal .p-absolute::-webkit-scrollbar-thumb {
   background: var(--color-link);
   border-radius: 0px;
 }
-.modal .p-absolute::-webkit-scrollbar{
+
+.modal .p-absolute::-webkit-scrollbar {
   width: 20px;
 }
 
@@ -49,8 +51,8 @@ a {
   color: var(--color-link);
   transition: color .3s ease-in-out;
 
-  &:hover{
-    color:var(--color-hover);
+  &:hover {
+    color: var(--color-hover);
   }
 }
 
@@ -187,6 +189,7 @@ section {
     border-radius: 100%;
     transition: all 0.3s ease-in-out;
   }
+
   &:hover::before {
     transform: scale(350);
   }
@@ -196,28 +199,33 @@ section {
     pointer-events: none;
     z-index: 10;
     color: var(--text-color);
+    transition: color .3s ease-in-out;
   }
 }
 
 .btn-primary {
   background-color: var(--color-hover-alpha);
 
+  span,
+  svg {
+    color: #0e0f26;
+  }
+
   &:hover::before {
     background-color: var(--color-hover);
   }
-  span,
-  svg {
-    color: var(--bg-color);
-  }
+
 }
 
 .btn-secondary {
   border: 1px solid var(--color-link);
   background-color: transparent;
   color: var(--text-color);
+
   &:hover::before {
     background-color: var(--color-link);
   }
+
   &:hover span {
     color: var(--bg-color);
   }
@@ -230,13 +238,16 @@ section {
 
   svg {
     transition: transform 0.3s ease-in-out;
+
     polygon {
       stroke: var(--color-hover);
     }
+
     path {
       fill: var(--color-hover);
     }
   }
+
   &:hover svg {
     transform: scale(1.15);
   }

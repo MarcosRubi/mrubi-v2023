@@ -80,8 +80,9 @@ export function MainContextProvider (props) {
   }
 
   const changeOrder = (newOrder, arr = arrProjects) => {
-    setOrder(newOrder)
+    if (newOrder === order) { return }
     setArrProjects(arr.reverse())
+    setOrder(newOrder)
   }
 
   const filterLanguages = (lang) => {

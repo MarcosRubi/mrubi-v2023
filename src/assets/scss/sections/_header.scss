@@ -58,6 +58,9 @@
       transform: scale(1.15);
     }
   }
+  .logo img{
+    width: 2.5rem;
+  }
 
   &.show-menu .menu__content {
     top: 0;

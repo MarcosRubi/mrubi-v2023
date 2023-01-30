@@ -18,14 +18,14 @@
 
 [data-theme="default-light"] {
   --color-link: rgba(75, 117, 212, 1);
-  --color-hover: rgb(6, 196, 158, 1);
+  --color-hover: rgb(6, 196, 158);
   --color-link-alpha: rgba(75, 117, 212, 0.8);
-  --color-hover-alpha: rgba(6, 224, 180, 0.8);
+  --color-hover-alpha: rgba(6, 196, 158, 0.8);
 }
 
 [data-theme="default-dark"] {
-  --color-link: rgba(31, 108, 171, 1);
-  --color-hover: rgba(0, 230, 246, 1);
+  --color-link: rgb(106, 149, 249);
+  --color-hover: rgba(168, 219, 210, 1);
   --color-link-alpha: rgba(75, 117, 212, 0.8);
   --color-hover-alpha: rgba(168, 219, 210, 0.8);
 }

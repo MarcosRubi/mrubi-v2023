@@ -23,7 +23,7 @@ function Nav ({ toggleMenu }) {
           <div className='logo d-flex align-center'>
             <img
               className='d-flex'
-              src='https://marcosrubi.github.io/_mrubi-v2023/public/images/logo.webp'
+              src='/logo.svg'
               alt='Logo de Marcos Rubí'
             />
             <span>Marcos Rubí</span>

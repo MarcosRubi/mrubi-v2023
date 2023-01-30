@@ -16,12 +16,14 @@ function Header () {
     const { matches } = window.matchMedia('(prefers-color-scheme: dark)')
     const userPrefersDark = matches
 
+    if (localStorage.getItem('theme') === null) {
+      localStorage.setItem('theme', 'default')
+    }
     if (localStorage.getItem('isDark') === null && userPrefersDark) {
       localStorage.setItem('isDark', 'dark')
     }
-
-    if (localStorage.getItem('theme') === null) {
-      localStorage.setItem('theme', 'default')
+    if (localStorage.getItem('isDark') === null) {
+      localStorage.setItem('isDark', 'light')
     }
 
     changeTheme()

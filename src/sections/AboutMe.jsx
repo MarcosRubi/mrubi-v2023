@@ -1,4 +1,3 @@
-
 function AboutMe () {
   return (
     <section className='about-me p-relative'>

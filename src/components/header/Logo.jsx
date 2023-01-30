@@ -6,7 +6,7 @@ function Logo () {
   const { scrollToTop } = useContext(MainContext)
   return (
     <Link to='/' onClick={scrollToTop} className='logo'>
-      <img src='https://marcosrubi.github.io/_mrubi-v2023/public/images/logo.webp' alt='Logo de Marcos Rubí' />
+      <img src='/logo.svg' alt='Logo de Marcos Rubí' />
     </Link>
   )
 }
