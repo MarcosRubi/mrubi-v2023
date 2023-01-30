@@ -3,10 +3,11 @@ import MainContext from '../context/MainContext'
 import Card from '../components/projects/Card'
 import NavFilters from '../components/projects/NavFilters'
 import NotResults from '../components/projects/NotResults'
+import { useProjects } from '../components/hooks/useProjects'
 
 function Projects () {
-  const { projectsToShow, arrProjects, handleOnClickProjectsBtn } =
-    useContext(MainContext)
+  const { arrProjects, projectsToShow } = useContext(MainContext)
+  const { handleOnClickProjectsBtn } = useProjects()
 
   return (
     <section className='projects'>

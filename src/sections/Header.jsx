@@ -8,6 +8,7 @@ import { useEffect, useState, useContext } from 'react'
 import MainContext from '../context/MainContext'
 
 function Header () {
+  let timeout
   const [showMenu, setShowMenu] = useState(false)
   const [sticky, setSticky] = useState('')
   const { overflowBody } = useContext(MainContext)
@@ -48,9 +49,17 @@ function Header () {
     )
   }
 
-  window.addEventListener('scroll', () => {
-    window.scrollY > 0 ? setSticky('sticky') : setSticky('')
-  })
+  if (window.innerWidth < 768) {
+    window.addEventListener('scroll', () => {
+      if (timeout) {
+        clearTimeout(timeout)
+      }
+
+      timeout = setTimeout(function () {
+        window.scrollY > 0 ? setSticky('sticky') : setSticky('')
+      }, 100)
+    })
+  }
 
   return (
     <>

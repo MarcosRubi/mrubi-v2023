@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Date ({ date }) {
   return (
     <div className='date'>

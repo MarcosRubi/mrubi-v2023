@@ -3,11 +3,13 @@ import { Link, useNavigate, Outlet, useParams } from 'react-router-dom'
 import Technologies from '../components/projects/Technologies'
 import MainContext from '../context/MainContext'
 import Date from '../components/projects/Date'
+import { useProjects } from '../components/hooks/useProjects'
 
 function Project () {
   const navigate = useNavigate()
   const { title } = useParams()
-  const { findProjectByTitle, scrollToTop, updateProjectImages, toggleModalActive, modalActive, overflowBody } = useContext(MainContext)
+  const { scrollToTop, toggleModalActive, modalActive, overflowBody } = useContext(MainContext)
+  const { findProjectByTitle, updateProjectImages } = useProjects()
   const project = findProjectByTitle(title)
 
   scrollToTop()

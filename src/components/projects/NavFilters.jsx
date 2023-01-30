@@ -2,11 +2,12 @@ import { useContext, useState } from 'react'
 
 import { AiOutlineDown } from 'react-icons/ai'
 import MainContext from '../../context/MainContext'
+import { useProjects } from '../hooks/useProjects'
 
 function NavFilters () {
   const [activeOption, setActiveOption] = useState('')
-  const { changeOrder, order, filterLanguages, languages } =
-    useContext(MainContext)
+  const { order, languages } = useContext(MainContext)
+  const { changeOrder, filterLanguages } = useProjects()
 
   const handleOnClickToggleOptions = (e, selected) => {
     if (activeOption === selected) {

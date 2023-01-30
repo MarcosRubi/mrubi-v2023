@@ -14,8 +14,8 @@ function SettingTheme ({ changeTheme }) {
         <ul>
           <li className='w-100' onClick={() => { changeTheme('default') }}>
             <div>
-              <span className='theme-color' style={{ background: '#3959a2' }} />
-              <span className='theme-color' style={{ background: '#a8dbd2' }} />
+              <span className='theme-color' style={{ background: '#78A6C8' }} />
+              <span className='theme-color' style={{ background: '#E65C4F' }} />
             </div>
           </li>
           <li className='w-100' onClick={() => { changeTheme('purple') }}>
@@ -24,10 +24,11 @@ function SettingTheme ({ changeTheme }) {
               <span className='theme-color' style={{ background: '#A2DCEE' }} />
             </div>
           </li>
-          <li className='w-100' onClick={() => { changeTheme('gray') }}>
+          <li className='w-100' onClick={() => { changeTheme('blue') }}>
+
             <div>
-              <span className='theme-color' style={{ background: '#78A6C8' }} />
-              <span className='theme-color' style={{ background: '#E65C4F' }} />
+              <span className='theme-color' style={{ background: '#3959a2' }} />
+              <span className='theme-color' style={{ background: '#a8dbd2' }} />
             </div>
           </li>
           <li className='w-100' onClick={() => { changeTheme('green') }}>

@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Technologies ({ technologies }) {
   return (
     <div className='technologies d-flex align-center flex-wrap'>
