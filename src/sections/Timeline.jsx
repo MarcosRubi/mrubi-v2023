@@ -1,5 +1,6 @@
 /* eslint-disable import/no-absolute-path */
 import { Link } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 import inicioCarrera2017 from '/images/timeline/inicio-de-la-carrera-2017.webp'
 import finCarrera2018 from '/images/timeline/fin-de-la-carrera-2018.webp'
@@ -57,12 +58,12 @@ function Timeline () {
                 </p>
               </div>
               <div className='img'>
-                <img src={inicioCarrera2017} alt='Diseño de la radio creada en 2017 en la asignatura de diseños de páginas web' />
+                <LazyLoadImage src={inicioCarrera2017} alt='Diseño de la radio creada en 2017 en la asignatura de diseños de páginas web' />
               </div>
             </div>
             <div className='timeline__element d-flex flex-column'>
               <div className='img mb-1'>
-                <img src={finCarrera2018} alt='Imagen de la página de inicio de la red social pintelog' />
+                <LazyLoadImage src={finCarrera2018} alt='Imagen de la página de inicio de la red social pintelog' />
               </div>
               <div className='content'>
                 <h5 className='text-center'>
@@ -101,12 +102,12 @@ function Timeline () {
                 </p>
               </div>
               <div className='img'>
-                <img src={menuResponsive} alt='Diseño del primer menú responsive que realicé' />
+                <LazyLoadImage src={menuResponsive} alt='Diseño del primer menú responsive que realicé' />
               </div>
             </div>
             <div className='timeline__element d-flex flex-column'>
               <div className='img mb-1'>
-                <img src={sindromeDelImpostor} alt='Imagen ilustrativa del sindrome del impostor' />
+                <LazyLoadImage src={sindromeDelImpostor} alt='Imagen ilustrativa del sindrome del impostor' />
               </div>
               <div className='content'>
                 <h5 className='text-center'>
@@ -144,12 +145,12 @@ function Timeline () {
                 </p>
               </div>
               <div className='img'>
-                <img src={inicioIngSistemas} alt='Imagen del proyecto realizado con MVC en la UGB' />
+                <LazyLoadImage src={inicioIngSistemas} alt='Imagen del proyecto realizado con MVC en la UGB' />
               </div>
             </div>
             <div className='timeline__element d-flex flex-column'>
               <div className='img mb-1'>
-                <img src={cursosMaquetacionWeb} alt='Imagen con los dos cursos realizados y el logo de los 4 proyectos realizados.' />
+                <LazyLoadImage src={cursosMaquetacionWeb} alt='Imagen con los dos cursos realizados y el logo de los 4 proyectos realizados.' />
               </div>
               <div className='content'>
                 <h5 className='text-center'>
@@ -185,12 +186,12 @@ function Timeline () {
                 </p>
               </div>
               <div className='img'>
-                <img src={codepen2021} alt='Imagen de los proyectos realizados en codepen' />
+                <LazyLoadImage src={codepen2021} alt='Imagen de los proyectos realizados en codepen' />
               </div>
             </div>
             <div className='timeline__element d-flex flex-column'>
               <div className='img mb-1'>
-                <img src={pintelogImg} alt='Imagen de la página de inicio de la red social pintelog' />
+                <LazyLoadImage src={pintelogImg} alt='Imagen de la página de inicio de la red social pintelog' />
               </div>
               <div className='content'>
                 <h5 className='text-center'>
@@ -232,12 +233,12 @@ function Timeline () {
                 </p>
               </div>
               <div className='img'>
-                <img src={frontentReactApis} alt='Imagen de mi perfil en frontend-mentor y la página inicial de gamesScraping' />
+                <LazyLoadImage src={frontentReactApis} alt='Imagen de mi perfil en frontend-mentor y la página inicial de gamesScraping' />
               </div>
             </div>
             <div className='timeline__element d-flex flex-column'>
               <div className='img mb-1'>
-                <img src={actualidad} alt='Sombra de un hombre viendo al cielo' />
+                <LazyLoadImage src={actualidad} alt='Sombra de un hombre viendo al cielo' />
               </div>
               <div className='content'>
                 <h5 className='text-center'>

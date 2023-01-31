@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom'
 import MainContext from '../../context/MainContext'
 import Technologies from './Technologies'
 import Date from './Date'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function Card ({ project }) {
   const { resetTitle } = useContext(MainContext)
   return (
     <div className='project__card'>
       <Link to={`/proyecto/${resetTitle(project.title)}`} className='project__img d-block'>
-        <img src={project.routeImages.preview} alt={`Foto del proyecto ${project.title}`} className='d-flex' />
+        <LazyLoadImage src={project.routeImages.preview} alt={`Foto del proyecto ${project.title}`} className='d-flex' />
       </Link>
       <div className='project__content'>
         <Link to={`/proyecto/${resetTitle(project.title)}`}><h3>{project.title}</h3></Link>
