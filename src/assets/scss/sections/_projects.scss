@@ -210,7 +210,7 @@
   .modal {
     left: 0;
   }
-}
+} 
 
 .project {
   h3 {
@@ -226,10 +226,13 @@
 
   &__img {
     overflow: hidden;
+    span{
+      min-height: 150px;
+    }
 
     img {
       overflow: hidden;
-      transition: transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out !important;
     }
 
     &:hover img {

@@ -5,6 +5,9 @@
 
 	&__item {
 		transition: transform .3s ease-in-out;
+    span{
+      min-height: 270px;
+    }
 
 		&:hover {
 			transform: scale(1.05);
@@ -16,4 +19,31 @@
 		gap: 1rem;
 		grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
 	}
+}
+@mixin styles-certificates-768{
+  .certificates{
+    &__item{
+      span{
+        min-height: 240px;
+      }
+    }
+  }
+}
+@mixin styles-certificates-1024{
+  .certificates{
+    &__item{
+      span{
+        min-height: 300px;
+      }
+    }
+  }
+}
+@mixin styles-certificates-1200{
+  .certificates{
+    &__item{
+      span{
+        min-height: 230px;
+      }
+    }
+  }
 }

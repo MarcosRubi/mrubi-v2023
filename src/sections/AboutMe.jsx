@@ -1,5 +1,3 @@
-import { LazyLoadImage } from 'react-lazy-load-image-component'
-
 function AboutMe () {
   return (
     <section className='about-me p-relative'>
@@ -12,7 +10,7 @@ function AboutMe () {
             <p>Soy un desarrollador web con experiencia en HTML, CSS, JavaScript, React y POO (Programación Orientada a Objetos). También he aprendido sobre patrones de diseño de software como MVC (Modelo-Vista-Controlador) a través de mi educación universitaria y cursos en línea. Me apasiona la tecnología, me encanta aprender y probar nuevas herramientas. Estoy emocionado de poner mis habilidades y conocimientos a prueba en proyectos futuros y contribuir al éxito de las empresas a través del desarrollo web.</p>
           </div>
           <div className='about-me__img'>
-            <LazyLoadImage src='https://thispersondoesnotexist.com/image' alt='Foto de perfil de Marcos Rubí' />
+            <img src='https://thispersondoesnotexist.com/image' alt='Foto de perfil de Marcos Rubí' />
           </div>
         </div>
       </div>

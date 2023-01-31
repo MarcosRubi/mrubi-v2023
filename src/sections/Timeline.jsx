@@ -1,6 +1,8 @@
 /* eslint-disable import/no-absolute-path */
 import { Link } from 'react-router-dom'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
+import placeholderImg from '../assets/images/placeholder.webp'
 
 import inicioCarrera2017 from '/images/timeline/inicio-de-la-carrera-2017.webp'
 import finCarrera2018 from '/images/timeline/fin-de-la-carrera-2018.webp'
@@ -25,12 +27,13 @@ function Timeline () {
   }, [])
 
   const handleOnClick = (position) => {
-    window.screen.width <= 1024 && document.querySelector('.timeline').scrollIntoView()
-    if ((sectionToShow + position) <= 1) {
+    window.screen.width <= 1024 &&
+      document.querySelector('.timeline').scrollIntoView()
+    if (sectionToShow + position <= 1) {
       setSectionToShow(1)
       return
     }
-    if ((sectionToShow + position) >= sections.length) {
+    if (sectionToShow + position >= sections.length) {
       setSectionToShow(sections.length)
       return
     }
@@ -58,12 +61,22 @@ function Timeline () {
                 </p>
               </div>
               <div className='img'>
-                <LazyLoadImage src={inicioCarrera2017} alt='Diseño de la radio creada en 2017 en la asignatura de diseños de páginas web' />
+                <LazyLoadImage
+                  placeholderSrc={placeholderImg}
+                  effect='blur'
+                  src={inicioCarrera2017}
+                  alt='Diseño de la radio creada en 2017 en la asignatura de diseños de páginas web'
+                />
               </div>
             </div>
             <div className='timeline__element d-flex flex-column'>
               <div className='img mb-1'>
-                <LazyLoadImage src={finCarrera2018} alt='Imagen de la página de inicio de la red social pintelog' />
+                <LazyLoadImage
+                  placeholderSrc={placeholderImg}
+                  effect='blur'
+                  src={finCarrera2018}
+                  alt='Imagen de la página de inicio de la red social pintelog'
+                />
               </div>
               <div className='content'>
                 <h5 className='text-center'>
@@ -98,16 +111,33 @@ function Timeline () {
                 </p>
                 <p>
                   Además, comence a usar <span>GitHub</span> y realize mi{' '}
-                  <a href='https://codepen.io/Marcos_Rubi/pen/YMVOoR' target='_blank' rel='noreferrer'>primer menú responsive</a>.
+                  <a
+                    href='https://codepen.io/Marcos_Rubi/pen/YMVOoR'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    primer menú responsive
+                  </a>
+                  .
                 </p>
               </div>
               <div className='img'>
-                <LazyLoadImage src={menuResponsive} alt='Diseño del primer menú responsive que realicé' />
+                <LazyLoadImage
+                  placeholderSrc={placeholderImg}
+                  effect='blur'
+                  src={menuResponsive}
+                  alt='Diseño del primer menú responsive que realicé'
+                />
               </div>
             </div>
             <div className='timeline__element d-flex flex-column'>
               <div className='img mb-1'>
-                <LazyLoadImage src={sindromeDelImpostor} alt='Imagen ilustrativa del sindrome del impostor' />
+                <LazyLoadImage
+                  placeholderSrc={placeholderImg}
+                  effect='blur'
+                  src={sindromeDelImpostor}
+                  alt='Imagen ilustrativa del sindrome del impostor'
+                />
               </div>
               <div className='content'>
                 <h5 className='text-center'>
@@ -116,11 +146,11 @@ function Timeline () {
                   Síndrome del impostor.
                 </h5>
                 <p>
-                  Comencé un curso de <span>JavaScript</span>, pero al llegar
-                  a la sección de aprender un framework como{' '}
-                  <span>Angular</span>, me encontraba con dificultades y no
-                  podía entender los conceptos, lo que me llevó a convencerme
-                  de que no era apto para programar, y dejé de estudiar.
+                  Comencé un curso de <span>JavaScript</span>, pero al llegar a
+                  la sección de aprender un framework como <span>Angular</span>,
+                  me encontraba con dificultades y no podía entender los
+                  conceptos, lo que me llevó a convencerme de que no era apto
+                  para programar, y dejé de estudiar.
                 </p>
               </div>
             </div>
@@ -140,17 +170,27 @@ function Timeline () {
                 </p>
                 <p>
                   A pesar de seguir convencido de que no era apto para
-                  programar, la pasión que siento por el desarrollo web me
-                  llevó a seguirlo estudiando como un pasatiempo.
+                  programar, la pasión que siento por el desarrollo web me llevó
+                  a seguirlo estudiando como un pasatiempo.
                 </p>
               </div>
               <div className='img'>
-                <LazyLoadImage src={inicioIngSistemas} alt='Imagen del proyecto realizado con MVC en la UGB' />
+                <LazyLoadImage
+                  placeholderSrc={placeholderImg}
+                  effect='blur'
+                  src={inicioIngSistemas}
+                  alt='Imagen del proyecto realizado con MVC en la UGB'
+                />
               </div>
             </div>
             <div className='timeline__element d-flex flex-column'>
               <div className='img mb-1'>
-                <LazyLoadImage src={cursosMaquetacionWeb} alt='Imagen con los dos cursos realizados y el logo de los 4 proyectos realizados.' />
+                <LazyLoadImage
+                  placeholderSrc={placeholderImg}
+                  effect='blur'
+                  src={cursosMaquetacionWeb}
+                  alt='Imagen con los dos cursos realizados y el logo de los 4 proyectos realizados.'
+                />
               </div>
               <div className='content'>
                 <h5 className='text-center'>
@@ -163,9 +203,8 @@ function Timeline () {
                   hacerlos responsive. Completé un <span>curso de CSS</span> y
                   otro de <span>JavaScript</span>, el curso que antes me había
                   derrotado. En las últimas semanas de diciembre realicé{' '}
-                  <span>4 páginas web totalmente responsivas</span>, 2 de
-                  ellas utilizando css puro y las otras 2 utilizando
-                  Booststrap.
+                  <span>4 páginas web totalmente responsivas</span>, 2 de ellas
+                  utilizando css puro y las otras 2 utilizando Booststrap.
                 </p>
               </div>
             </div>
@@ -179,19 +218,37 @@ function Timeline () {
                   Práctica y más práctica.
                 </h5>
                 <p>
-                  En mayo realice mi primer diseño de mi <span>portafolio personal</span> y de vez
-                  en cuando creaba proyectos simples en <a href='https://codepen.io/Marcos_Rubi' target='_blank' rel='noreferrer'>codepen </a>
+                  En mayo realice mi primer diseño de mi{' '}
+                  <span>portafolio personal</span> y de vez en cuando creaba
+                  proyectos simples en{' '}
+                  <a
+                    href='https://codepen.io/Marcos_Rubi'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    codepen{' '}
+                  </a>
                   donde me centraba en realizar un buen responsive y dominar
                   flexbox para ello.
                 </p>
               </div>
               <div className='img'>
-                <LazyLoadImage src={codepen2021} alt='Imagen de los proyectos realizados en codepen' />
+                <LazyLoadImage
+                  placeholderSrc={placeholderImg}
+                  effect='blur'
+                  src={codepen2021}
+                  alt='Imagen de los proyectos realizados en codepen'
+                />
               </div>
             </div>
             <div className='timeline__element d-flex flex-column'>
               <div className='img mb-1'>
-                <LazyLoadImage src={pintelogImg} alt='Imagen de la página de inicio de la red social pintelog' />
+                <LazyLoadImage
+                  placeholderSrc={placeholderImg}
+                  effect='blur'
+                  src={pintelogImg}
+                  alt='Imagen de la página de inicio de la red social pintelog'
+                />
               </div>
               <div className='content'>
                 <h5 className='text-center'>
@@ -222,23 +279,39 @@ function Timeline () {
                 </h5>
                 <p>
                   Conocí <span>Frontend Mentor</span> y comencé a realizar sus
-                  ejercicios, completando 30 desafíos en un periodo de 5
-                  meses.
+                  ejercicios, completando 30 desafíos en un periodo de 5 meses.
                 </p>
                 <p>
                   Mejoré mi portafolio, comencé con <span>React</span>,{' '}
                   <span>APIs</span>, y creé una API con Node.js y Express que
-                  scrapea datos en plataformas de compras de videojuegos y
-                  creé <a href='https://marcosrubi.github.io/GamesScraping/' target='_blank' rel='noreferrer'>GamesScraping</a>.
+                  scrapea datos en plataformas de compras de videojuegos y creé{' '}
+                  <a
+                    href='https://marcosrubi.github.io/GamesScraping/'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    GamesScraping
+                  </a>
+                  .
                 </p>
               </div>
               <div className='img'>
-                <LazyLoadImage src={frontentReactApis} alt='Imagen de mi perfil en frontend-mentor y la página inicial de gamesScraping' />
+                <LazyLoadImage
+                  placeholderSrc={placeholderImg}
+                  effect='blur'
+                  src={frontentReactApis}
+                  alt='Imagen de mi perfil en frontend-mentor y la página inicial de gamesScraping'
+                />
               </div>
             </div>
             <div className='timeline__element d-flex flex-column'>
               <div className='img mb-1'>
-                <LazyLoadImage src={actualidad} alt='Sombra de un hombre viendo al cielo' />
+                <LazyLoadImage
+                  placeholderSrc={placeholderImg}
+                  effect='blur'
+                  src={actualidad}
+                  alt='Sombra de un hombre viendo al cielo'
+                />
               </div>
               <div className='content'>
                 <h5 className='text-center'>
@@ -254,8 +327,8 @@ function Timeline () {
                   <span>
                     <i>
                       El éxito es un viaje, no un destino final. No dejaré de
-                      aprender, crecer y evolucionar para alcanzar mis sueños
-                      y vivir lo que me apasiona.
+                      aprender, crecer y evolucionar para alcanzar mis sueños y
+                      vivir lo que me apasiona.
                     </i>
                   </span>
                 </p>
@@ -264,8 +337,22 @@ function Timeline () {
           </div>
         </div>
         <div className='buttons d-flex align-center jc-between'>
-          <button className={`btn btn-controls ${sectionToShow === 1 ? 'hide' : ''} `} onClick={() => { handleOnClick(-1) }}><GrCaretPrevious /></button>
-          <button className={`btn btn-controls ${sectionToShow >= 5 ? 'hide' : ''} `} onClick={() => { handleOnClick(+1) }}><GrCaretNext /></button>
+          <button
+            className={`btn btn-controls ${sectionToShow === 1 ? 'hide' : ''} `}
+            onClick={() => {
+              handleOnClick(-1)
+            }}
+          >
+            <GrCaretPrevious />
+          </button>
+          <button
+            className={`btn btn-controls ${sectionToShow >= 5 ? 'hide' : ''} `}
+            onClick={() => {
+              handleOnClick(+1)
+            }}
+          >
+            <GrCaretNext />
+          </button>
         </div>
       </div>
     </section>

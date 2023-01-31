@@ -40,6 +40,10 @@
       font-size: 1rem;
       margin: 1rem 0;
     }
+    .img span{
+      min-height: 220px;
+      min-width: 100%;
+    }
   }
 
   h5 span {
@@ -58,6 +62,14 @@
   }
 }
 
+@mixin styles-timeline-768{
+  .timeline__element{
+    .img span{
+      min-height: 325px;
+    }
+  }
+}
+
 @mixin styles-timeline-1024 {
   .timeline {
     .section {
@@ -71,6 +83,11 @@
       max-width: 1200px;
     }
   }
+  .timeline__element{
+    .img span{
+      min-height: 275px;
+    }
+  }
 }
 
 @mixin styles-timeline-1200 {
@@ -82,5 +99,11 @@
       transform: translateY(-50%);
       width: -webkit-fill-available;
     }
+    &__element{
+      .img span{
+        min-height: 325px;
+      }
+    }
   }
+  
 }

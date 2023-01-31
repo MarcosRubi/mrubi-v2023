@@ -2,14 +2,14 @@
   --font-title: "Telex", sans-serif;
 }
 
-[data-theme]:not([data-theme="default-dark"]):not([data-theme="purple-dark"]):not([data-theme="gray-dark"]):not([data-theme="green-dark"]) {
+[data-theme]:not([data-theme="default-dark"]):not([data-theme="purple-dark"]):not([data-theme="blue-dark"]):not([data-theme="green-dark"]) {
   --bg-color: #f5f5f5;
   --text-color: #212121;
   --bg-footer: rgb(207, 216, 220);
   --shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-[data-theme]:not([data-theme="default-light"]):not([data-theme="purple-light"]):not([data-theme="gray-light"]):not([data-theme="green-light"]) {
+[data-theme]:not([data-theme="default-light"]):not([data-theme="purple-light"]):not([data-theme="blue-light"]):not([data-theme="green-light"]) {
   --bg-color: #0e0f26;
   --text-color: #fffcff;
   --bg-footer: #212121;
