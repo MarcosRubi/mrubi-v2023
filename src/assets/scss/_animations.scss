@@ -1,0 +1,86 @@
+.menu {
+
+  .logo,
+  .menu__hamburguer,
+  .menu__toggle,
+  .menu__setting {
+    opacity: 0;
+  }
+
+  &.show {
+
+    .logo,
+    .menu__hamburguer,
+    .menu__toggle,
+    .menu__setting {
+      opacity: 1;
+    }
+
+    .logo {
+      animation: toBottom .5s ease-in-out .25s, visible 1s ease-in-out;
+    }
+    .menu__toggle {
+      animation: toBottom .5s ease-in-out .4s, visible 1.25s ease-in-out;
+    }
+    .menu__setting {
+      animation: toBottom .5s ease-in-out .6s, visible 1.5s ease-in-out;
+    }
+    .menu__hamburguer {
+      animation: toBottom .5s ease-in-out .75s, visible 1.75s ease-in-out;
+    }
+  }
+}
+
+.banner {
+  h1,
+  p,
+  button,
+  h2,
+  .skill-container {
+    opacity: 0;
+  }
+
+  &.show {
+    h1,
+    p,
+    button,
+    h2,
+    .skill-container {
+      opacity: 1;
+    }
+    h1{
+      animation: toBottom .5s ease-in-out .25s, visible 1s ease-in-out;
+    }
+    p{
+      animation: toBottom .5s ease-in-out .4s, visible 1.25s ease-in-out;
+    }
+    button{
+      animation: toBottom .5s ease-in-out .5s, visible 1.5s ease-in-out;
+    }
+    h2{
+      animation: toBottom .5s ease-in-out .6s, visible 1.75s ease-in-out;
+    }
+    .skill-container{
+      animation: toBottom .5s ease-in-out .75s, visible 2s ease-in-out;
+    }
+  }
+}
+
+@mixin styles-animations-768{
+  .menu{
+    &.show {
+      .logo {
+        animation: toRight .5s ease-in-out .25s, visible 1s ease-in-out;
+      }
+      .menu__hamburguer {
+        animation: toRight .5s ease-in-out .4s, visible 1.25s ease-in-out;
+      }
+      .menu__toggle {
+        animation: toRight .5s ease-in-out .6s, visible 1.5s ease-in-out;
+      }
+      .menu__setting {
+        animation: toRight .5s ease-in-out .75s, visible 1.75s ease-in-out;
+      }
+    }
+  }
+}

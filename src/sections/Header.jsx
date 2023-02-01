@@ -3,15 +3,19 @@ import Logo from '../components/header/Logo'
 import Nav from '../components/header/Nav'
 import ToggleTheme from '../components/header/ToggleTheme'
 import SettingTheme from '../components/header/SettingTheme'
-import { useEffect, useState, useContext } from 'react'
+import { useEffect, useState, useContext, useRef } from 'react'
 
 import MainContext from '../context/MainContext'
+import { useObserver } from '../components/hooks/useObserver'
 
 function Header () {
   let timeout
   const [showMenu, setShowMenu] = useState(false)
   const [sticky, setSticky] = useState('')
   const { overflowBody } = useContext(MainContext)
+  const elementRef = useRef(null)
+
+  const { show } = useObserver(elementRef)
 
   useEffect(() => {
     const { matches } = window.matchMedia('(prefers-color-scheme: dark)')
@@ -63,7 +67,7 @@ function Header () {
 
   return (
     <>
-      <header className={`menu p-fixed w-100 ${showMenu ? 'show-menu' : ''} ${sticky}`}>
+      <header ref={elementRef} className={`${show} menu p-fixed w-100 ${showMenu ? 'show-menu' : ''} ${sticky}`}>
         <div className='container d-flex align-center jc-between flex-column-md'>
           <Logo />
           <Nav toggleMenu={toggleMenu} />

@@ -72,3 +72,47 @@
     opacity: 0;
   }
 }
+
+@keyframes toBottom {
+  0%{
+    transform: translateY(-10rem);
+  }
+  75%{
+    transform: translateY(1rem);
+  }
+  100%{
+    transform: translateY(0rem);
+  }
+}
+@keyframes toTop {
+  0%{
+    transform: translateY(10rem);
+  }
+  75%{
+    transform: translateY(-1rem);
+  }
+  100%{
+    transform: translateY(0rem);
+  }
+}
+@keyframes toRight {
+  0%{
+    transform: translateX(-10rem);
+  }
+  75%{
+    transform: translateX(.5rem);
+  }
+  100%{
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes visible {
+  0%,
+  40% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}

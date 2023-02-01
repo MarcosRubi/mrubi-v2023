@@ -39,7 +39,7 @@ function Projects () {
         </div>
         <div className='btn-updates d-flex jc-center flex-wrap align-center flex-column-sm'>
           <button
-            className={`btn btn-primary show-more ${projectsToShow >= arrProjects.length && 'hide'
+            className={`btn btn-primary show-more ${projectsToShow >= arrProjects.length ? 'hide' : ''
               }`}
             onClick={(e) => {
               handleOnClickProjectsBtn(e, +3)
@@ -48,7 +48,7 @@ function Projects () {
             <span>Ver más</span>
           </button>
           <button
-            className={`btn btn-secondary show-less ${projectsToShow <= 6 && 'hide'
+            className={`btn btn-secondary show-less ${projectsToShow <= 6 ? 'hide' : ''
               }`}
             onClick={(e) => {
               handleOnClickProjectsBtn(e, -3)
