@@ -8,7 +8,6 @@ import { useProjects } from '../components/hooks/useProjects'
 function Projects () {
   const { arrProjects, projectsToShow } = useContext(MainContext)
   const { handleOnClickProjectsBtn } = useProjects()
-
   return (
     <section className='projects'>
       <div className='container' id='projects'>
@@ -30,11 +29,7 @@ function Projects () {
         }
         <div className='projects__container'>
           {arrProjects.map((project, index) => {
-            return (
-              index + 1 <= projectsToShow && (
-                <Card project={project} key={index} />
-              )
-            )
+            return index + 1 <= projectsToShow && <Card project={project} key={index} />
           })}
         </div>
         <div className='btn-updates d-flex jc-center flex-wrap align-center flex-column-sm'>

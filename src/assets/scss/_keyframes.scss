@@ -73,7 +73,7 @@
   }
 }
 
-@keyframes toBottom {
+@keyframes bounceInBottom {
   0%{
     transform: translateY(-10rem);
   }
@@ -84,7 +84,7 @@
     transform: translateY(0rem);
   }
 }
-@keyframes toTop {
+@keyframes bounceInTop {
   0%{
     transform: translateY(10rem);
   }
@@ -95,7 +95,7 @@
     transform: translateY(0rem);
   }
 }
-@keyframes toRight {
+@keyframes bounceInRight {
   0%{
     transform: translateX(-10rem);
   }
@@ -104,6 +104,34 @@
   }
   100%{
     transform: translateX(0rem);
+  }
+}
+@keyframes bounceInLeft {
+  0%{
+    transform: translateX(10rem);
+  }
+  75%{
+    transform: translateX(.5rem);
+  }
+  100%{
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes toBottom {
+  0%{
+    transform: translateY(-10rem);
+  }
+  100%{
+    transform: translateY(0rem);
+  }
+}
+@keyframes toTop {
+  0%{
+    transform: translateY(10rem);
+  }
+  100%{
+    transform: translateY(0rem);
   }
 }
 

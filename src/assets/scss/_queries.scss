@@ -11,7 +11,7 @@
 }
 
 @media (min-width: 1024px) {
-	@include styles-base-1024;
+  @include styles-base-1024;
 	@include styles-header-1024;
 	@include styles-banner-1024;
 	@include styles-about-me-1024;
@@ -21,6 +21,7 @@
   @include styles-projects-1024;
   @include styles-timeline-1024;
   @include styles-certificates-1024;
+  @include styles-animations-1024;
 }
 
 @media (min-width: 1200px) {
