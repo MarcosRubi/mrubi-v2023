@@ -29,7 +29,7 @@
 
   h1,
   p,
-  button,
+  .btn,
   h2,
   &>svg,
   .skill-container {
@@ -40,7 +40,7 @@
 
     h1,
     p,
-    button,
+    .btn,
     h2,
     .skill-container,
     &>svg {
@@ -55,7 +55,7 @@
       animation: bounceInBottom .5s ease-in-out .4s, visible 1.25s ease-in-out;
     }
 
-    button {
+    .btn {
       animation: bounceInBottom .5s ease-in-out .5s, visible 1.5s ease-in-out;
     }
 
