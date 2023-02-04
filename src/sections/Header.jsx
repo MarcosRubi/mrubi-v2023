@@ -49,8 +49,8 @@ function Header () {
     )
   }
 
-  if (window.innerWidth < 768) {
-    window.addEventListener('scroll', () => {
+  window.addEventListener('scroll', () => {
+    if (window.innerWidth < 768) {
       if (timeout) {
         clearTimeout(timeout)
       }
@@ -58,8 +58,8 @@ function Header () {
       timeout = setTimeout(function () {
         window.scrollY > 0 ? setSticky('sticky') : setSticky('')
       }, 100)
-    })
-  }
+    }
+  })
 
   return (
     <>
