@@ -432,3 +432,11 @@
     }
   }
 }
+
+@mixin styles-projects-1440{
+  .projects{
+    &__container{
+      grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+    }
+  }
+}

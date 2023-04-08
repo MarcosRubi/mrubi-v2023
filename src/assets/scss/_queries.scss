@@ -32,3 +32,8 @@
   @include styles-modal-1200;
   @include styles-certificates-1200;
 }
+
+@media (min-width: 1440px){
+	@include styles-projects-1440;
+	@include styles-certificates-1440;
+}
