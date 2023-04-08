@@ -286,11 +286,6 @@ section {
   fill: var(--color-link);
 }
 
-.text-justify,
-.text-justify-sm {
-  text-align: justify;
-}
-
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -353,11 +348,6 @@ section {
 
   .flex-column-md {
     flex-direction: column;
-  }
-
-  .text-center-sm,
-  .text-justify-sm {
-    text-align: start;
   }
 
   .jc-center-sm {

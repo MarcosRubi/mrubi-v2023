@@ -62,12 +62,12 @@ function Project () {
           {project[0].learning !== '' &&
             <div className='learning'>
               <h4>Aprendizaje obtenido</h4>
-              <p dangerouslySetInnerHTML={{ __html: project[0].learning }} className='text-justify' />
+              <p dangerouslySetInnerHTML={{ __html: project[0].learning }} />
             </div>}
           {project[0].difficulties !== '' &&
             <div className='difficulties'>
               <h4>Dificultades en el desarrollo</h4>
-              <p dangerouslySetInnerHTML={{ __html: project[0].difficulties }} className='text-justify' />
+              <p dangerouslySetInnerHTML={{ __html: project[0].difficulties }} />
             </div>}
         </div>
         <Outlet />

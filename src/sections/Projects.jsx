@@ -12,7 +12,7 @@ function Projects () {
     <section className='projects'>
       <div className='container' id='projects'>
         <h2 className='text-center'>Proyectos</h2>
-        <div className='text-justify-sm'>
+        <div>
           <p>
             De los más de 50 proyectos realizados he recopilado los que
             considero más relevantes.
