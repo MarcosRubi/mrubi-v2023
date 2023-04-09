@@ -317,16 +317,15 @@ function Timeline () {
                 <h5 className='text-center'>
                   <span>Enero 2023 - Actualidad</span>
                   <br />
-                  Un sueño posible.
+                  Mi primer empleo.
                 </h5>
                 <p>
-                  Realicé este portafolio usando react y tengo la esperanza de
-                  algún día poder dedicarme al desarrollo web.
+                Estoy trabajando en Sortos Travel Multiservices y realizando mi servicio social en el CNR, mientras continúo con mis estudios de último año. Aunque es un reto, estoy dispuesto a hacer el sacrificio necesario para obtener las recompensas en el futuro.
                 </p>
                 <p>
                   <span>
                     <i>
-                      El éxito es un viaje, no un destino final. No dejaré de
+                      No dejaré de
                       aprender, crecer y evolucionar para alcanzar mis sueños y
                       vivir lo que me apasiona.
                     </i>

@@ -12,7 +12,7 @@ function AboutMe () {
         <div className='d-flex align-center flex-column flex-row-lg'>
           <div className='about-me__content'>
             <h3>Marcos Daniel Rubí Hernández</h3>
-            <p >Soy un desarrollador web con experiencia en HTML, CSS, JavaScript, React y POO (Programación Orientada a Objetos). También he aprendido sobre patrones de diseño de software como MVC (Modelo-Vista-Controlador) a través de mi educación universitaria y cursos en línea. Me apasiona la tecnología, me encanta aprender y probar nuevas herramientas. Estoy emocionado de poner mis habilidades y conocimientos a prueba en proyectos futuros y contribuir al éxito de las empresas a través del desarrollo web.</p>
+            <p >Tengo experiencia en el desarrollo web, específicamente en HTML, CSS, JavaScript, React y POO (Programación Orientada a Objetos). En febrero comencé a trabajar en Sortos Travel Multiservices, donde he creado su sitio web en WordPress, administro sus redes sociales y desarrollo un sistema CRM con PHP. Me apasiona la tecnología y estoy siempre buscando aprender y experimentar con nuevas herramientas. Me entusiasma poder aplicar mis habilidades y conocimientos en futuros proyectos y contribuir al éxito de las empresas a través del desarrollo web.</p>
           </div>
           <div className='about-me__img'>
             <img src='/images/profile.webp' alt='Foto de perfil de Marcos Rubí' />
