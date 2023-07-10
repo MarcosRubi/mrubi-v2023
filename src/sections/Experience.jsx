@@ -11,17 +11,17 @@ function Experience () {
           </div>
           <div className='experience__activities'>
             <h4>Sortos Travel Multiservices</h4>
-            <p>Desarrollé su sitio web con wordpress, gestiono sus redes sociales y me encuentro desarrollando un sistema CRM.</p>
+            <p>He desarrollado su sitio web utilizando WordPress, además de crear un sistema CRM y encargarme de la gestión de sus redes sociales.</p>
           </div>
         </div>
         <div className='experience__item d-flex align-center flex-column'>
           <div className='experience__date w-100 text-center'>
             <h4>Soporte técnico</h4>
-            <p>15 Mar 2023 ~ Actualidad</p>
+            <p>15 Mar 2023 ~ 09 Jun 2023</p>
           </div>
           <div className='experience__activities'>
             <h4>Centro Nacional de Registros, La Unión</h4>
-            <p><strong>servicio social</strong> realizando mantenimiento en computadoras, instalación de equipos informáticos, control de inventario, entre otras actividades que no se me permite mencionar.</p>
+            <p><strong>Servicio social</strong> realizando mantenimiento y configuración en computadoras, instalación de equipos informáticos y control de inventarios.</p>
           </div>
         </div>
         <div className='experience__item d-flex align-center flex-column'>
@@ -44,8 +44,6 @@ function Experience () {
             <p><strong>Proyección social</strong> realizando mantenimiento en computadoras de las instituciones públicas de educación en la zona oriental de El Salvador.</p>
           </div>
         </div>
-        
-        
       </div>
     </section>
   )
