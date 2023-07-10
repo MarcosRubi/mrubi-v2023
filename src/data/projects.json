@@ -1,6 +1,24 @@
 [
   {
-    "id": 1,
+    "id": 2,
+    "title": "Poppo's Pizzeria",
+    "description": "Demo para una pizzería en Nueva York.",
+    "technologies": ["HTML & CSS", "SCSS", "JavaScript", "Astro"],
+    "startDate": [15, "Junio", "2023"],
+    "endDate": [29, "Junio", 2023],
+    "learning": "Usando Astro para la estructura de la página web junto a las librerías de <a href='https://lokeshdhakar.com/projects/lightbox2/' target='_blank'>LightBox Plus</a> y <a href='https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html' target='_blank'>OWL Carousel</a>.",
+    "difficulties": "Integrar las librerías en Astro.",
+    "urlDemo": "https://leafy-croissant-6c6a01.netlify.app/",
+    "urlRepo": "https://github.com/MarcosRubi/poppops-pizzeria",
+    "routeImages": {
+      "preview": "/images/projects/preview/poppops-preview.webp",
+      "mobileDesign": "/images/projects/mobileDesign/poppops-sm.webp",
+      "tabletDesign": "/images/projects/tabletDesign/poppops-md.webp",
+      "desktopDesign": "/images/projects/desktopDesign/poppops-xl.webp"
+    }
+  },
+  {
+    "id": 3,
     "title": "Bookmark landing page",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158' target='_blank'>Frontend Mentor</a>.",
     "technologies": ["HTML & CSS", "SCSS", "JavaScript"],
@@ -18,7 +36,7 @@
     }
   },
   {
-    "id": 2,
+    "id": 4,
     "title": "Loopstudios landing page",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw' target='_blank'>Frontend Mentor</a>.",
     "technologies": ["HTML & CSS", "JavaScript"],
@@ -36,7 +54,7 @@
     }
   },
   {
-    "id": 3,
+    "id": 5,
     "title": "Four card feature section",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK' target='_blank'>Frontend Mentor</a>.",
     "technologies": ["HTML & CSS", "JavaScript"],
@@ -54,7 +72,7 @@
     }
   },
   {
-    "id": 4,
+    "id": 6,
     "title": "Todo app",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW' target='_blank'>Frontend Mentor</a>.",
     "technologies": ["HTML & CSS", "JavaScript", "React"],
@@ -72,7 +90,7 @@
     }
   },
   {
-    "id": 5,
+    "id": 7,
     "title": "Notifications page",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC' target='_blank'>Frontend Mentor</a>.",
     "technologies": ["HTML & CSS", "JavaScript", "React"],
@@ -90,7 +108,7 @@
     }
   },
   {
-    "id": 6,
+    "id": 8,
     "title": "Job listings with filtering",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt' target='_blank'>Frontend Mentor</a>.",
     "technologies": ["HTML & CSS", "JavaScript", "React"],
@@ -108,7 +126,7 @@
     }
   },
   {
-    "id": 7,
+    "id": 9,
     "title": "Clipboard landing page",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9' target='_blank'>Frontend Mentor</a>.",
     "technologies": ["HTML & CSS", "JavaScript"],
@@ -126,7 +144,7 @@
     }
   },
   {
-    "id": 8,
+    "id": 10,
     "title": "Tip calculator app",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX' target='_blank'>Frontend Mentor</a>.",
     "technologies": ["HTML & CSS", "JavaScript", "React"],
@@ -144,7 +162,7 @@
     }
   },
   {
-    "id": 9,
+    "id": 11,
     "title": "Manage landing page",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5' target='_blank'>Frontend Mentor</a>.",
     "technologies": ["HTML & CSS", "JavaScript", "React"],
@@ -162,7 +180,7 @@
     }
   },
   {
-    "id": 10,
+    "id": 12,
     "title": "Advice generator app",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db' target='_blank'>Frontend Mentor</a> usando una API.",
     "technologies": ["HTML & CSS", "JavaScript", "React", "API"],
@@ -180,7 +198,7 @@
     }
   },
   {
-    "id": 11,
+    "id": 13,
     "title": "Social media dashboard with theme switcher",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H' target='_blank'>Frontend Mentor</a>.",
     "technologies": ["HTML & CSS", "JavaScript"],
@@ -198,7 +216,7 @@
     }
   },
   {
-    "id": 12,
+    "id": 14,
     "title": "Interactive card details form",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw' target='_blank'>Frontend Mentor</a>.",
     "technologies": ["HTML & CSS", "SCSS"],
@@ -216,7 +234,7 @@
     }
   },
   {
-    "id": 13,
+    "id": 15,
     "title": "Crowdfunding product page",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR' target='_blank'>Frontend Mentor</a>.",
     "technologies": ["HTML & CSS", "JavaScript"],
@@ -234,7 +252,7 @@
     }
   },
   {
-    "id": 14,
+    "id": 16,
     "title": "Fylo dark theme landing page",
     "description": "Desafio de <a href='https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd' target='_blank'>Frontend Mentor</a>.",
     "technologies": ["HTML & CSS", "JavaScript"],
@@ -252,7 +270,7 @@
     }
   },
   {
-    "id": 15,
+    "id": 17,
     "title": "Pintelog",
     "description": "Red social de fotos.",
     "technologies": [
@@ -279,7 +297,7 @@
     }
   },
   {
-    "id": 16,
+    "id": 18,
     "title": "StudyInk",
     "description": "Plantilla para una web de educación.",
     "technologies": ["HTML & CSS", "JavaScript"],
@@ -297,7 +315,7 @@
     }
   },
   {
-    "id": 17,
+    "id": 19,
     "title": "Charity",
     "description": "Plantilla para una web de donativos.",
     "technologies": ["HTML & CSS", "JavaScript"],
@@ -315,7 +333,7 @@
     }
   },
   {
-    "id": 18,
+    "id": 20,
     "title": "Inveto",
     "description": "Plantilla para una web de cursos financieros.",
     "technologies": ["HTML & CSS", "JavaScript"],

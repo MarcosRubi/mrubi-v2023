@@ -119,6 +119,18 @@ function NavFilters () {
               checked={languages.includes('React')}
             />
           </label>
+          <label htmlFor='astro' className='d-flex align-center language'>
+            <span>Astro</span>
+            <input
+              type='checkbox'
+              name='astro'
+              id='astro'
+              onChange={() => {
+                filterLanguages('Astro')
+              }}
+              checked={languages.includes('Astro')}
+            />
+          </label>
           <label htmlFor='api' className='d-flex align-center language'>
             <span>API</span>
             <input
