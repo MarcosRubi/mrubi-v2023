@@ -14,14 +14,9 @@ function Projects () {
         <h2 className='text-center'>Proyectos</h2>
         <div>
           <p>
-            De los más de 50 proyectos realizados he recopilado los que
-            considero más relevantes.
+            De los más de 50 proyectos, he seleccionado los más relevantes.
           </p>
-          <p>
-            Estos proyectos <strong>no</strong> fueron creados siguiendo
-            tutoriales ni son descargados de Internet, y tampoco son proyectos
-            universitarios.
-          </p>
+          <p>No son realizados con tutoriales, descargas web ni trabajos universitarios.</p>
         </div>
         <NavFilters />
         {
@@ -32,7 +27,7 @@ function Projects () {
             return index + 1 <= projectsToShow && <Card project={project} key={index} />
           })}
         </div>
-        <div className='btn-updates d-flex jc-center flex-wrap align-center flex-column-sm'>
+        <div className='flex-wrap btn-updates d-flex jc-center align-center flex-column-sm'>
           <button
             className={`btn btn-primary show-more ${projectsToShow >= arrProjects.length ? 'hide' : ''
               }`}
